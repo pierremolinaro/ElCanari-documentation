@@ -5,12 +5,9 @@
 *.pyc
 
 ## Xcode files
-*/project.xcworkspace/**
-*/xcuserdata/**
-*/xcshareddata/**
-build/**
 *.o
 *.dep
+
 **/build/**
 **/*.xcodeproj/project.xcworkspace/*
 **/*.xcodeproj/xcuserdata/*
