@@ -15,64 +15,6 @@ extension NSView {
 
   //····················································································································
 
-  func layout (_ inViewAttribute : NSLayoutConstraint.Attribute,
-               _ inRelation : NSLayoutConstraint.Relation,
-               superview inSuperviewAttribute : NSLayoutConstraint.Attribute,
-               plus inDistance : CGFloat = 0.0) {
-    if let superview = self.superview {
-      let c = NSLayoutConstraint (
-        item: self,
-        attribute: inViewAttribute,
-        relatedBy: inRelation,
-        toItem: superview,
-        attribute: inSuperviewAttribute,
-        multiplier: 1.0,
-        constant: inDistance
-      )
-      superview.addConstraint (c)
-    }
-  }
-
-  //····················································································································
-
-  func layout (_ inViewAttribute : NSLayoutConstraint.Attribute,
-               _ inRelation : NSLayoutConstraint.Relation,
-               to inOtherView : NSView,
-               _ inOtherAttribute : NSLayoutConstraint.Attribute,
-               plus inDistance : CGFloat = 0.0,
-               priority inPrority : Int = 1000) {
-    let c = NSLayoutConstraint (
-      item: self,
-      attribute: inViewAttribute,
-      relatedBy: inRelation,
-      toItem: inOtherView,
-      attribute: inOtherAttribute,
-      multiplier: 1.0,
-      constant: inDistance
-    )
-    c.priority = NSLayoutConstraint.Priority (rawValue: Float (inPrority))
-    self.superview?.addConstraint (c)
-  }
-
-  //····················································································································
-
-  func layout (_ inViewAttribute : NSLayoutConstraint.Attribute,
-               _ inRelation : NSLayoutConstraint.Relation,
-               _ inDistance : CGFloat) {
-    let c = NSLayoutConstraint (
-      item: self,
-      attribute: inViewAttribute,
-      relatedBy: inRelation,
-      toItem: nil,
-      attribute: .notAnAttribute,
-      multiplier: 0.0,
-      constant: inDistance
-    )
-    self.addConstraint (c)
-  }
-
-  //····················································································································
-
   func displayConstraints (_ inDisplayDictionary : [ObjectIdentifier : String]) {
     let name = self.objectString (self, inDisplayDictionary)
     Swift.print ("--- \(name) constraints \(self.hasAmbiguousLayout ? "(ambiguous)" : "(ok)")")
@@ -108,8 +50,6 @@ extension NSView {
     }else if inConstraint.constant < 0.0 {
       s += " - \(-inConstraint.constant)"
     }
-//    s += ", Anchors: " + self.objectString (inConstraint.firstAnchor, inDisplayDictionary)
-//    s += ", " + self.objectString (inConstraint.secondAnchor, inDisplayDictionary)
     Swift.print (s)
   }
 

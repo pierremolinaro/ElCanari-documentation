@@ -89,8 +89,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 //    contentView.superview?.displayConstraints(displayDictionary)
 //    contentView.displayConstraints(displayDictionary)
-//    self.myView.displayConstraints(displayDictionary)
-//    self.button.displayConstraints(displayDictionary)
+    self.myView.displayConstraints(displayDictionary)
+    self.button.displayConstraints(displayDictionary)
 
 
  //   self.window.visualizeConstraints (self.window.contentView!.constraintsAffectingLayout (for: .horizontal))
@@ -103,8 +103,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   @objc func autreButtonAction (_ inSender : Any?) {
     self.vueCachable.isHidden = !self.vueCachable.isHidden
-    for c in self.autreLabel.constraints {
-      if c.firstAttribute == .top {
+    for c in self.vueCachable.superview!.constraints {
+      if let f = c.firstItem as? NSView, f == self.autreLabel, c.firstAttribute == .top {
+        self.autreLabel.removeConstraint (c)
+        if self.vueCachable.isHidden {
+          self.autreLabel.layout (.top, .equal, to: self.autreButton, .bottom, plus: 8.0)
+        }else{
+          self.autreLabel.layout (.top, .equal, to: self.vueCachable, .bottom, plus: 8.0)
+        }
+      }else if let f = c.secondItem as? NSView, f == self.autreLabel, c.secondAttribute == .top {
         self.autreLabel.removeConstraint (c)
         if self.vueCachable.isHidden {
           self.autreLabel.layout (.top, .equal, to: self.autreButton, .bottom, plus: 8.0)
@@ -114,11 +121,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       }
 
     }
-    for c in self.vueCachable.constraints {
-      if c.firstAttribute == .height {
-        c.constant = self.vueCachable.isHidden ? self.autreButton.frame.size.height : 50.0
-      }
-    }
+//    for c in self.vueCachable.constraints {
+//      if c.firstAttribute == .height {
+//        c.constant = self.vueCachable.isHidden ? self.autreButton.frame.size.height : 50.0
+//      }
+//    }
   }
 
 

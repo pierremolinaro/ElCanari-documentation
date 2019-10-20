@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF86953323579F3E00E86914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86953223579F3E00E86914 /* AppDelegate.swift */; };
-		CF86953523579F3F00E86914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF86953423579F3F00E86914 /* Assets.xcassets */; };
-		CF86953823579F3F00E86914 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF86953623579F3F00E86914 /* MainMenu.xib */; };
-		CF86954223579F8800E86914 /* extension-NSView-layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86954023579F8800E86914 /* extension-NSView-layout.swift */; };
-		CF86954323579F8800E86914 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86954123579F8800E86914 /* MyView.swift */; };
+		CF17C325235A465400995C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF17C324235A465400995C56 /* AppDelegate.swift */; };
+		CF17C327235A465500995C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF17C326235A465500995C56 /* Assets.xcassets */; };
+		CF17C32A235A465500995C56 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF17C328235A465500995C56 /* MainMenu.xib */; };
+		CFF3B0C3235A469A00C918DE /* extension-NSView-layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3B0C1235A469A00C918DE /* extension-NSView-layout.swift */; };
+		CFF3B0C4235A469A00C918DE /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3B0C2235A469A00C918DE /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF86952F23579F3E00E86914 /* essai-contraintes-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "essai-contraintes-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF86953223579F3E00E86914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF86953423579F3F00E86914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF86953723579F3F00E86914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		CF86953923579F3F00E86914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF86953A23579F3F00E86914 /* essai_contraintes_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = essai_contraintes_2.entitlements; sourceTree = "<group>"; };
-		CF86954023579F8800E86914 /* extension-NSView-layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension-NSView-layout.swift"; sourceTree = "<group>"; };
-		CF86954123579F8800E86914 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		CF17C321235A465400995C56 /* essai-NSStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "essai-NSStackView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF17C324235A465400995C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF17C326235A465500995C56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF17C329235A465500995C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CF17C32B235A465500995C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF17C32C235A465500995C56 /* essai_NSStackView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = essai_NSStackView.entitlements; sourceTree = "<group>"; };
+		CFF3B0C1235A469A00C918DE /* extension-NSView-layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension-NSView-layout.swift"; sourceTree = "<group>"; };
+		CFF3B0C2235A469A00C918DE /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CF86952C23579F3E00E86914 /* Frameworks */ = {
+		CF17C31E235A465400995C56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,72 +36,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CF86952623579F3E00E86914 = {
+		CF17C318235A465400995C56 = {
 			isa = PBXGroup;
 			children = (
-				CF86953123579F3E00E86914 /* essai-contraintes-2 */,
-				CF86953023579F3E00E86914 /* Products */,
+				CF17C323235A465400995C56 /* essai-NSStackView */,
+				CF17C322235A465400995C56 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CF86953023579F3E00E86914 /* Products */ = {
+		CF17C322235A465400995C56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF86952F23579F3E00E86914 /* essai-contraintes-2.app */,
+				CF17C321235A465400995C56 /* essai-NSStackView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CF86953123579F3E00E86914 /* essai-contraintes-2 */ = {
+		CF17C323235A465400995C56 /* essai-NSStackView */ = {
 			isa = PBXGroup;
 			children = (
-				CF86954023579F8800E86914 /* extension-NSView-layout.swift */,
-				CF86954123579F8800E86914 /* MyView.swift */,
-				CF86953223579F3E00E86914 /* AppDelegate.swift */,
-				CF86953423579F3F00E86914 /* Assets.xcassets */,
-				CF86953623579F3F00E86914 /* MainMenu.xib */,
-				CF86953923579F3F00E86914 /* Info.plist */,
-				CF86953A23579F3F00E86914 /* essai_contraintes_2.entitlements */,
+				CFF3B0C1235A469A00C918DE /* extension-NSView-layout.swift */,
+				CFF3B0C2235A469A00C918DE /* MyView.swift */,
+				CF17C324235A465400995C56 /* AppDelegate.swift */,
+				CF17C326235A465500995C56 /* Assets.xcassets */,
+				CF17C328235A465500995C56 /* MainMenu.xib */,
+				CF17C32B235A465500995C56 /* Info.plist */,
+				CF17C32C235A465500995C56 /* essai_NSStackView.entitlements */,
 			);
-			path = "essai-contraintes-2";
+			path = "essai-NSStackView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF86952E23579F3E00E86914 /* essai-contraintes-2 */ = {
+		CF17C320235A465400995C56 /* essai-NSStackView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF86953D23579F3F00E86914 /* Build configuration list for PBXNativeTarget "essai-contraintes-2" */;
+			buildConfigurationList = CF17C32F235A465500995C56 /* Build configuration list for PBXNativeTarget "essai-NSStackView" */;
 			buildPhases = (
-				CF86952B23579F3E00E86914 /* Sources */,
-				CF86952C23579F3E00E86914 /* Frameworks */,
-				CF86952D23579F3E00E86914 /* Resources */,
+				CF17C31D235A465400995C56 /* Sources */,
+				CF17C31E235A465400995C56 /* Frameworks */,
+				CF17C31F235A465400995C56 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "essai-contraintes-2";
-			productName = "essai-contraintes-2";
-			productReference = CF86952F23579F3E00E86914 /* essai-contraintes-2.app */;
+			name = "essai-NSStackView";
+			productName = "essai-NSStackView";
+			productReference = CF17C321235A465400995C56 /* essai-NSStackView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CF86952723579F3E00E86914 /* Project object */ = {
+		CF17C319235A465400995C56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Pierre Molinaro";
 				TargetAttributes = {
-					CF86952E23579F3E00E86914 = {
+					CF17C320235A465400995C56 = {
 						CreatedOnToolsVersion = 11.2;
 					};
 				};
 			};
-			buildConfigurationList = CF86952A23579F3E00E86914 /* Build configuration list for PBXProject "essai-contraintes-2" */;
+			buildConfigurationList = CF17C31C235A465400995C56 /* Build configuration list for PBXProject "essai-NSStackView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,46 +109,46 @@
 				en,
 				Base,
 			);
-			mainGroup = CF86952623579F3E00E86914;
-			productRefGroup = CF86953023579F3E00E86914 /* Products */;
+			mainGroup = CF17C318235A465400995C56;
+			productRefGroup = CF17C322235A465400995C56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF86952E23579F3E00E86914 /* essai-contraintes-2 */,
+				CF17C320235A465400995C56 /* essai-NSStackView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CF86952D23579F3E00E86914 /* Resources */ = {
+		CF17C31F235A465400995C56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF86953523579F3F00E86914 /* Assets.xcassets in Resources */,
-				CF86953823579F3F00E86914 /* MainMenu.xib in Resources */,
+				CF17C327235A465500995C56 /* Assets.xcassets in Resources */,
+				CF17C32A235A465500995C56 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CF86952B23579F3E00E86914 /* Sources */ = {
+		CF17C31D235A465400995C56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF86954323579F8800E86914 /* MyView.swift in Sources */,
-				CF86953323579F3E00E86914 /* AppDelegate.swift in Sources */,
-				CF86954223579F8800E86914 /* extension-NSView-layout.swift in Sources */,
+				CFF3B0C4235A469A00C918DE /* MyView.swift in Sources */,
+				CF17C325235A465400995C56 /* AppDelegate.swift in Sources */,
+				CFF3B0C3235A469A00C918DE /* extension-NSView-layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CF86953623579F3F00E86914 /* MainMenu.xib */ = {
+		CF17C328235A465500995C56 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CF86953723579F3F00E86914 /* Base */,
+				CF17C329235A465500995C56 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CF86953B23579F3F00E86914 /* Debug */ = {
+		CF17C32D235A465500995C56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +216,7 @@
 			};
 			name = Debug;
 		};
-		CF86953C23579F3F00E86914 /* Release */ = {
+		CF17C32E235A465500995C56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,37 +269,37 @@
 			};
 			name = Release;
 		};
-		CF86953E23579F3F00E86914 /* Debug */ = {
+		CF17C330235A465500995C56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "essai-contraintes-2/essai_contraintes_2.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "essai-NSStackView/essai_NSStackView.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "essai-contraintes-2/Info.plist";
+				INFOPLIST_FILE = "essai-NSStackView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "name.pcmolinaro.pierre.essai-contraintes-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "name.pcmolinaro.pierre.essai-NSStackView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		CF86953F23579F3F00E86914 /* Release */ = {
+		CF17C331235A465500995C56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "essai-contraintes-2/essai_contraintes_2.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "essai-NSStackView/essai_NSStackView.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "essai-contraintes-2/Info.plist";
+				INFOPLIST_FILE = "essai-NSStackView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "name.pcmolinaro.pierre.essai-contraintes-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "name.pcmolinaro.pierre.essai-NSStackView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -308,25 +308,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF86952A23579F3E00E86914 /* Build configuration list for PBXProject "essai-contraintes-2" */ = {
+		CF17C31C235A465400995C56 /* Build configuration list for PBXProject "essai-NSStackView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF86953B23579F3F00E86914 /* Debug */,
-				CF86953C23579F3F00E86914 /* Release */,
+				CF17C32D235A465500995C56 /* Debug */,
+				CF17C32E235A465500995C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF86953D23579F3F00E86914 /* Build configuration list for PBXNativeTarget "essai-contraintes-2" */ = {
+		CF17C32F235A465500995C56 /* Build configuration list for PBXNativeTarget "essai-NSStackView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF86953E23579F3F00E86914 /* Debug */,
-				CF86953F23579F3F00E86914 /* Release */,
+				CF17C330235A465500995C56 /* Debug */,
+				CF17C331235A465500995C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CF86952723579F3E00E86914 /* Project object */;
+	rootObject = CF17C319235A465400995C56 /* Project object */;
 }
