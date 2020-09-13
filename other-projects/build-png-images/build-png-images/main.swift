@@ -68,3 +68,7 @@ view = AlignmentMiddleView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 6
 buildImage (view: view, fileName: "alignmentMiddle")
 view = AlignmentBaselineView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
 buildImage (view: view, fileName: "alignmentBaseline")
+view = UpDownRightLeftCursor (frame: NSRect (x: 0.0, y:0.0, width: 16.0, height: 16.0))
+buildImage (view: view, fileName: "upDownRightLeftCursor")
+view = RotationCursor (frame: NSRect (x: 0.0, y:0.0, width: 16.0, height: 16.0))
+buildImage (view: view, fileName: "rotationCursor")

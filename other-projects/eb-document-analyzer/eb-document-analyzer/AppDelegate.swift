@@ -28,7 +28,7 @@ import Cocoa
     op.begin (completionHandler: { (inReturnCode : NSApplication.ModalResponse) in
       if inReturnCode == NSApplication.ModalResponse.OK {
         let URLToAdd : URL = op.urls [0]
-        NSDocumentController.shared .noteNewRecentDocumentURL (URLToAdd)
+        NSDocumentController.shared.noteNewRecentDocumentURL (URLToAdd)
         if let textView = self.mResultTextView {
           let pathToAdd = URLToAdd.path
           do{
@@ -46,6 +46,7 @@ import Cocoa
   //····················································································································
 
   func application (_ sender: NSApplication, openFile filename: String) -> Bool {
+
     if let textView = self.mResultTextView {
       do{
         try analyze (filename, textView:textView)
