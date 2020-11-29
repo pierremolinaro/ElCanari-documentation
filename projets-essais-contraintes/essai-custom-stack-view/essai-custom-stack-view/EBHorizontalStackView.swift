@@ -29,10 +29,10 @@ let SEPARATOR_WIDTH : CGFloat = 5.0
 
   //····················································································································
 
-  override init (frame inFrame : NSRect) {
-    super.init (frame: inFrame)
-    self.customInit ()
-  }
+//  override init (frame inFrame : NSRect) {
+//    super.init (frame: inFrame)
+//    self.customInit ()
+//  }
 
   //····················································································································
 
