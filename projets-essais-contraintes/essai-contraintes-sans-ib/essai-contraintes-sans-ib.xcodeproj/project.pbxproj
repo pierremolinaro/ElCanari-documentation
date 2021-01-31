@@ -88,6 +88,7 @@
 				CF308EA4257162DE0034B68E /* EBHorizontalStackView.swift */,
 				CF308EA2257162DE0034B68E /* EBLabel.swift */,
 				CFE9900A2573D5260092A957 /* EBLabelledSeparator.swift */,
+				CFE99010257401A10092A957 /* EBLabelledTextField.swift */,
 				CF308EA6257162DE0034B68E /* EBSwitchForAutoLayout.swift */,
 				CF308EA5257162DE0034B68E /* EBTextField.swift */,
 				CF308EA1257162DE0034B68E /* EBVerticalStackView.swift */,
@@ -97,7 +98,6 @@
 				CF308EA3257162DE0034B68E /* extension-NSView-layout.swift */,
 				CF308E7425715BCA0034B68E /* Info.plist */,
 				CF308E7125715BCA0034B68E /* MainMenu.xib */,
-				CFE99010257401A10092A957 /* EBLabelledTextField.swift */,
 			);
 			path = "essai-contraintes-sans-ib";
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					CF308E6425715BCA0034B68E = {
 						CreatedOnToolsVersion = 12.3;
@@ -324,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "essai-contraintes-sans-ib/essai_contraintes_sans_ib.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YW8QY74J2A;
@@ -345,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "essai-contraintes-sans-ib/essai_contraintes_sans_ib.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YW8QY74J2A;

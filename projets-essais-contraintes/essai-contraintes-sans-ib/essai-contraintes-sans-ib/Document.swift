@@ -21,8 +21,17 @@ class Document: NSDocument {
 
   //····················································································································
 
-  override class var autosavesInPlace: Bool {
+  override class var autosavesInPlace : Bool {
     return false
+  }
+
+  //····················································································································
+
+  override func read (from data: Data, ofType typeName: String) throws {
+    // Insert code here to read your document from the given data of the specified type, throwing an error in case of failure.
+    // Alternatively, you could remove this method and override read(from:ofType:) instead.
+    // If you do, you should also override isEntireFileLoaded to return false if the contents are lazily loaded.
+    throw NSError (domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
   }
 
   //····················································································································
@@ -41,7 +50,26 @@ class Document: NSDocument {
     let windowController = NSWindowController (window: window)
     self.addWindowController (windowController)
   //--- Build user interface
-    let view = self.buildUserInterface ()
+    let deadline = DispatchTime.now () + DispatchTimeInterval.seconds (3)
+    DispatchQueue.main.asyncAfter (deadline: deadline) {
+      let view = self.buildUserInterface ()
+      window.contentView = view
+    }
+//    DispatchQueue.main.async {
+//      let view = self.buildUserInterface ()
+//      window.contentView = view
+//    }
+    let progressIndicator = NSProgressIndicator (frame: NSRect ())
+    progressIndicator.isIndeterminate = true
+    progressIndicator.style = .spinning
+    progressIndicator.usesThreadedAnimation = true
+    progressIndicator.startAnimation (nil)
+    let view = EBVerticalStackView ()
+    view.setLeftMargin ((window.frame.size.width - 32.0) / 2.0)
+    view.setRightMargin ((window.frame.size.width - 32.0) / 2.0)
+    view.setTopMargin ((window.frame.size.height - 32.0) / 2.0)
+    view.setBottomMargin ((window.frame.size.height - 32.0) / 2.0)
+    view.addSubview (progressIndicator)
     window.contentView = view
   }
 
@@ -55,33 +83,27 @@ class Document: NSDocument {
 
   //····················································································································
 
-  override func read (from data: Data, ofType typeName: String) throws {
-    // Insert code here to read your document from the given data of the specified type, throwing an error in case of failure.
-    // Alternatively, you could remove this method and override read(from:ofType:) instead.
-    // If you do, you should also override isEntireFileLoaded to return false if the contents are lazily loaded.
-    throw NSError (domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
-  }
-
-  //····················································································································
+  private var mEBButton : EBButton? = nil
 
   func buildUserInterface () -> NSView {
   //  showDebugBackground ()
     return vStack {
       space ()
-      labelledSeparator ("Réglage").setTextColor (.darkGray)
-      labelledTextField ("titre", 100.0)
-      labelledTextField ("titre long", 100.0)
+      EBLabelledSeparator.make ("Réglage").setTextColor (.darkGray)
+      EBLabelledTextField.make ("Titre", 100.0)
+      EBLabelledTextField.make ("Titre long", 100.0)
+      EBLabelledSeparator.make ("Autre réglage").setTextColor (.darkGray)
+      EBLabelledTextField.make ("Autre titre", 100.0)
+      EBLabelledTextField.make ("Autre titre long", 100.0)
       space ()
-       button ("bouton 4")
-     hStack {
-        button ("bn1")
-        button ("bouton2g")
+      self.mEBButton = EBButton.make ("bouton 4")
+      hStack {
         vStack {
-          button ("v bt1")
-          button ("v bt2")
+          EBButton.make ("v bt1")
+          EBButton.make ("v bt2")
         }
-        button ("bouton long 3")
-        label ("Hello")
+        EBButton.make ("bouton long 3")
+        EBLabel.make ("Hello")
         space ()
       } // .sameWidth (true)
       space ()
@@ -90,72 +112,6 @@ class Document: NSDocument {
 
   //····················································································································
 
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-
-var gCurrentStack : EBAbstractStackView? = nil
-
-//----------------------------------------------------------------------------------------------------------------------
-
-@discardableResult func hStack (_ inContents : () -> Void) -> EBHorizontalStackView {
-  let savedCurrentStack = gCurrentStack
-  let h = EBHorizontalStackView ()
-  savedCurrentStack?.addSubview (h)
-  gCurrentStack = h
-  inContents ()
-  gCurrentStack = savedCurrentStack
-  return h
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-
-@discardableResult func vStack (_ inContents : () -> Void) -> EBVerticalStackView {
-  let savedCurrentStack = gCurrentStack
-  let v = EBVerticalStackView ()
-  savedCurrentStack?.addSubview (v)
-  gCurrentStack = v
-  inContents ()
-  gCurrentStack = savedCurrentStack
-  return v
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-
-@discardableResult func button (_ title : String) -> EBButton {
-  let b = EBButton (title)
-  gCurrentStack?.addSubview (b)
-  return b
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-
-func space () {
-  gCurrentStack?.addSubview (EBFlexibleSpaceView ())
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-
-@discardableResult func label (_ title : String, bold inBold : Bool = false) -> EBLabel {
-  let b = EBLabel (title, bold: inBold)
-  gCurrentStack?.addSubview (b)
-  return b
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-
-@discardableResult func labelledSeparator (_ title : String) -> EBLabelledSeparator {
-  let b = EBLabelledSeparator (title)
-  gCurrentStack?.addSubview (b)
-  return b
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-
-@discardableResult func labelledTextField (_ inTitle : String, _ inTextFieldWidth : CGFloat) -> EBLabelledTextField {
-  let b = EBLabelledTextField (inTitle, inTextFieldWidth)
-  gCurrentStack?.addSubview (b)
-  return b
 }
 
 //----------------------------------------------------------------------------------------------------------------------

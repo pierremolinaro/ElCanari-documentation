@@ -25,19 +25,6 @@ import Cocoa
 
   //····················································································································
 
-//  var cocoaValue : NSLayoutConstraint.Attribute {
-//    switch self {
-//    case .top : return .top
-//    case .center : return .centerY
-//    case .height : return .height
-//    case .firstBaseline : return .firstBaseline
-//    case .lastBaseline : return .lastBaseline
-//    case .bottom : return .bottom
-//    }
-//  }
-
-  //····················································································································
-
 }
 
 //----------------------------------------------------------------------------------------------------------------------

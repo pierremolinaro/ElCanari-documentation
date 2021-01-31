@@ -29,6 +29,15 @@ class EBLabelledTextField : EBHorizontalStackView {
   }
 
   //····················································································································
+
+  @discardableResult static func make (_ inTitle : String, _ inTextFieldWidth : CGFloat) -> EBLabelledTextField {
+    let b = EBLabelledTextField (inTitle, inTextFieldWidth)
+    gCurrentStack?.addSubview (b)
+    return b
+  }
+
+
+  //····················································································································
   // SET TEXT color
   //····················································································································
 

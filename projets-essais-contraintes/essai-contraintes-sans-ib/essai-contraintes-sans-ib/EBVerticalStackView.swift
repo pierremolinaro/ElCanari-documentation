@@ -11,6 +11,18 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
+@discardableResult func vStack (_ inContents : () -> Void) -> EBVerticalStackView {
+  let savedCurrentStack = gCurrentStack
+  let v = EBVerticalStackView ()
+  savedCurrentStack?.addSubview (v)
+  gCurrentStack = v
+  inContents ()
+  gCurrentStack = savedCurrentStack
+  return v
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+
 class EBVerticalStackView : EBAbstractStackView {
 
   //····················································································································

@@ -11,13 +11,18 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
+@discardableResult func hStack (_ inContents : () -> Void) -> EBHorizontalStackView {
+  let savedCurrentStack = gCurrentStack
+  let h = EBHorizontalStackView ()
+  savedCurrentStack?.addSubview (h)
+  gCurrentStack = h
+  inContents ()
+  gCurrentStack = savedCurrentStack
+  return h
+}
+//----------------------------------------------------------------------------------------------------------------------
+
 class EBHorizontalStackView : EBAbstractStackView {
-
-  //····················································································································
-  //   Properties
-  //····················································································································
-
-  private var mAllItemsHaveSameWidth = false
 
   //····················································································································
   //   INIT
@@ -35,7 +40,11 @@ class EBHorizontalStackView : EBAbstractStackView {
   }
 
   //····················································································································
-  //   INIT
+  //   Properties
+  //····················································································································
+
+  private var mAllItemsHaveSameWidth = false
+
   //····················································································································
 
   @discardableResult func sameWidth (_ inFlag : Bool) -> Self {
@@ -111,32 +120,7 @@ class EBHorizontalStackView : EBAbstractStackView {
         self.layout (view, .top, .greaterThanOrEqual, superview: .top, plus: self.topMargin)
         self.layout (view, .bottom, .equal, superview: .bottom, plus: -self.bottomMargin)
       }
-//      if view is EBFlexibleSpaceView {
-//        self.layout (view, .top, .equal, superview: .top, plus: self.topMargin)
-//        self.layout (view, .bottom, .equal, superview: .bottom, plus: -self.bottomMargin)
-//      }else{
-//        self.layout (view, .top, .greaterThanOrEqual, superview: .top, plus: self.topMargin)
-//        self.layout (view, .bottom, .lessThanOrEqual, superview: .bottom, plus: -self.bottomMargin)
-//      }
     }
-  //--- Vertical alignment between subviews (but flexible space views)
-//    var visibleSubviewsWOFlexibleOnes = [NSView] ()
-//    for view in visibleViews {
-//      if !(view is EBFlexibleSpaceView) {
-//        visibleSubviewsWOFlexibleOnes.append (view)
-//      }
-//    }
-//    do{
-//      var allSubviews = visibleSubviewsWOFlexibleOnes
-//      if let lastView = allSubviews.popLast () {
-//        let lastViewAlignment = lastView.verticalAlignment ().cocoaValue
-//        for view in allSubviews {
-//          if !(view is EBFlexibleSpaceView) {
-//            self.layout (view, view.verticalAlignment ().cocoaValue, .equal, to: lastView, lastViewAlignment)
-//          }
-//        }
-//      }
-//    }
   //--- Equal width constraint ?
     if mAllItemsHaveSameWidth {
       var allSubviews = visibleViews

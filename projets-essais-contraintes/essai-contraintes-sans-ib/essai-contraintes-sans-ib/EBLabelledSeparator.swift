@@ -30,6 +30,14 @@ class EBLabelledSeparator : EBHorizontalStackView {
   }
 
   //····················································································································
+
+  @discardableResult static func make (_ title : String) -> EBLabelledSeparator {
+    let b = EBLabelledSeparator (title)
+    gCurrentStack?.addSubview (b)
+    return b
+  }
+
+  //····················································································································
   // SET TEXT color
   //····················································································································
 

@@ -36,6 +36,14 @@ class EBLabel : NSTextField {
     fatalError ("init(coder:) has not been implemented")
   }
 
+  //----------------------------------------------------------------------------------------------------------------------
+
+  @discardableResult static func make (_ title : String, bold inBold : Bool = false) -> EBLabel {
+    let b = EBLabel (title, bold: inBold)
+    gCurrentStack?.addSubview (b)
+    return b
+  }
+
   //····················································································································
   // VERTICAL ALIGNMENT
   //····················································································································

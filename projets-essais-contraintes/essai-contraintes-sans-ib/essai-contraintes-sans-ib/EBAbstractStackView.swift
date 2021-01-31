@@ -11,7 +11,17 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-@IBDesignable class EBAbstractStackView : NSView {
+var gCurrentStack : EBAbstractStackView? = nil
+
+//----------------------------------------------------------------------------------------------------------------------
+
+func space () {
+  gCurrentStack?.addSubview (EBFlexibleSpaceView ())
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+
+class EBAbstractStackView : NSView {
 
   //····················································································································
   //   DRAW BACKGROUND
@@ -180,6 +190,34 @@ import Cocoa
     self.mTopMargin    = inValue
     self.mRightMargin  = inValue
     self.mBottomMargin = inValue
+    return self
+  }
+
+  //····················································································································
+
+  @discardableResult func setTopMargin (_ inValue : CGFloat) -> Self {
+    self.mTopMargin    = inValue
+    return self
+  }
+
+  //····················································································································
+
+  @discardableResult func setBottomMargin (_ inValue : CGFloat) -> Self {
+    self.mBottomMargin = inValue
+    return self
+  }
+
+  //····················································································································
+
+  @discardableResult func setLeftMargin (_ inValue : CGFloat) -> Self {
+    self.mLeftMargin   = inValue
+    return self
+  }
+
+  //····················································································································
+
+  @discardableResult func setRightMargin (_ inValue : CGFloat) -> Self {
+    self.mRightMargin  = inValue
     return self
   }
 

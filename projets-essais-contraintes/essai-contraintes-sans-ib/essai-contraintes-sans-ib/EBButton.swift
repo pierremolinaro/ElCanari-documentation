@@ -25,7 +25,15 @@ class EBButton : NSButton {
   //····················································································································
 
   required init? (coder inCoder : NSCoder) {
-    super.init (coder: inCoder)
+    fatalError ("init(coder:) has not been implemented")
+  }
+
+  //····················································································································
+
+  @discardableResult static func make (_ title : String) -> EBButton {
+    let b = EBButton (title)
+    gCurrentStack?.addSubview (b)
+    return b
   }
 
   //····················································································································
