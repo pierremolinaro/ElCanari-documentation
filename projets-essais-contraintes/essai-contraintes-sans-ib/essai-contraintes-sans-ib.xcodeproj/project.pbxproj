@@ -11,19 +11,19 @@
 		CF308E6B25715BCA0034B68E /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308E6A25715BCA0034B68E /* Document.swift */; };
 		CF308E7025715BCA0034B68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF308E6F25715BCA0034B68E /* Assets.xcassets */; };
 		CF308E7325715BCA0034B68E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF308E7125715BCA0034B68E /* MainMenu.xib */; };
-		CF308EAA257162DE0034B68E /* EBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA0257162DE0034B68E /* EBButton.swift */; };
-		CF308EAB257162DE0034B68E /* EBVerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA1257162DE0034B68E /* EBVerticalStackView.swift */; };
-		CF308EAC257162DE0034B68E /* EBLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA2257162DE0034B68E /* EBLabel.swift */; };
+		CF308EAA257162DE0034B68E /* ALButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA0257162DE0034B68E /* ALButton.swift */; };
+		CF308EAB257162DE0034B68E /* ALVerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA1257162DE0034B68E /* ALVerticalStackView.swift */; };
+		CF308EAC257162DE0034B68E /* ALLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA2257162DE0034B68E /* ALLabel.swift */; };
 		CF308EAD257162DE0034B68E /* extension-NSView-layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA3257162DE0034B68E /* extension-NSView-layout.swift */; };
-		CF308EAE257162DE0034B68E /* EBHorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA4257162DE0034B68E /* EBHorizontalStackView.swift */; };
-		CF308EAF257162DE0034B68E /* EBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA5257162DE0034B68E /* EBTextField.swift */; };
-		CF308EB0257162DE0034B68E /* EBSwitchForAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA6257162DE0034B68E /* EBSwitchForAutoLayout.swift */; };
-		CF308EB1257162DE0034B68E /* EBAbstractStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA7257162DE0034B68E /* EBAbstractStackView.swift */; };
-		CF92B8C625725DCE00B4190E /* EBViewWithBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF92B8C525725DCE00B4190E /* EBViewWithBackground.swift */; };
-		CF92B8C92572857A00B4190E /* EBFlexibleSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF92B8C82572857A00B4190E /* EBFlexibleSpaceView.swift */; };
+		CF308EAE257162DE0034B68E /* ALHorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA4257162DE0034B68E /* ALHorizontalStackView.swift */; };
+		CF308EAF257162DE0034B68E /* ALTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA5257162DE0034B68E /* ALTextField.swift */; };
+		CF308EB1257162DE0034B68E /* ALAbstractStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA7257162DE0034B68E /* ALAbstractStackView.swift */; };
+		CF7862CB25C7178400AB93CF /* ALPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7862CA25C7178400AB93CF /* ALPageView.swift */; };
+		CF7862CF25C7270400AB93CF /* ALSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7862CE25C7270400AB93CF /* ALSeparator.swift */; };
+		CF92B8C92572857A00B4190E /* ALFlexibleSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF92B8C82572857A00B4190E /* ALFlexibleSpaceView.swift */; };
 		CFE990072573B4FE0092A957 /* extension-NSView-alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE990062573B4FE0092A957 /* extension-NSView-alignment.swift */; };
-		CFE9900B2573D5260092A957 /* EBLabelledSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9900A2573D5260092A957 /* EBLabelledSeparator.swift */; };
-		CFE99011257401A10092A957 /* EBLabelledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE99010257401A10092A957 /* EBLabelledTextField.swift */; };
+		CFE9900B2573D5260092A957 /* ALLabelledSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9900A2573D5260092A957 /* ALLabelledSeparator.swift */; };
+		CFE99011257401A10092A957 /* ALLabelledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE99010257401A10092A957 /* ALLabelledTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,19 +34,19 @@
 		CF308E7225715BCA0034B68E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CF308E7425715BCA0034B68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF308E7525715BCA0034B68E /* essai_contraintes_sans_ib.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = essai_contraintes_sans_ib.entitlements; sourceTree = "<group>"; };
-		CF308EA0257162DE0034B68E /* EBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBButton.swift; sourceTree = "<group>"; };
-		CF308EA1257162DE0034B68E /* EBVerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBVerticalStackView.swift; sourceTree = "<group>"; };
-		CF308EA2257162DE0034B68E /* EBLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBLabel.swift; sourceTree = "<group>"; };
+		CF308EA0257162DE0034B68E /* ALButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALButton.swift; sourceTree = "<group>"; };
+		CF308EA1257162DE0034B68E /* ALVerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALVerticalStackView.swift; sourceTree = "<group>"; };
+		CF308EA2257162DE0034B68E /* ALLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALLabel.swift; sourceTree = "<group>"; };
 		CF308EA3257162DE0034B68E /* extension-NSView-layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension-NSView-layout.swift"; sourceTree = "<group>"; };
-		CF308EA4257162DE0034B68E /* EBHorizontalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBHorizontalStackView.swift; sourceTree = "<group>"; };
-		CF308EA5257162DE0034B68E /* EBTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBTextField.swift; sourceTree = "<group>"; };
-		CF308EA6257162DE0034B68E /* EBSwitchForAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBSwitchForAutoLayout.swift; sourceTree = "<group>"; };
-		CF308EA7257162DE0034B68E /* EBAbstractStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBAbstractStackView.swift; sourceTree = "<group>"; };
-		CF92B8C525725DCE00B4190E /* EBViewWithBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBViewWithBackground.swift; sourceTree = "<group>"; };
-		CF92B8C82572857A00B4190E /* EBFlexibleSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBFlexibleSpaceView.swift; sourceTree = "<group>"; };
+		CF308EA4257162DE0034B68E /* ALHorizontalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALHorizontalStackView.swift; sourceTree = "<group>"; };
+		CF308EA5257162DE0034B68E /* ALTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTextField.swift; sourceTree = "<group>"; };
+		CF308EA7257162DE0034B68E /* ALAbstractStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALAbstractStackView.swift; sourceTree = "<group>"; };
+		CF7862CA25C7178400AB93CF /* ALPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALPageView.swift; sourceTree = "<group>"; };
+		CF7862CE25C7270400AB93CF /* ALSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALSeparator.swift; sourceTree = "<group>"; };
+		CF92B8C82572857A00B4190E /* ALFlexibleSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALFlexibleSpaceView.swift; sourceTree = "<group>"; };
 		CFE990062573B4FE0092A957 /* extension-NSView-alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension-NSView-alignment.swift"; sourceTree = "<group>"; };
-		CFE9900A2573D5260092A957 /* EBLabelledSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBLabelledSeparator.swift; sourceTree = "<group>"; };
-		CFE99010257401A10092A957 /* EBLabelledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBLabelledTextField.swift; sourceTree = "<group>"; };
+		CFE9900A2573D5260092A957 /* ALLabelledSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALLabelledSeparator.swift; sourceTree = "<group>"; };
+		CFE99010257401A10092A957 /* ALLabelledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALLabelledTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,25 +79,25 @@
 		CF308E6725715BCA0034B68E /* essai-contraintes-sans-ib */ = {
 			isa = PBXGroup;
 			children = (
+				CF308EA7257162DE0034B68E /* ALAbstractStackView.swift */,
+				CF308EA0257162DE0034B68E /* ALButton.swift */,
+				CF92B8C82572857A00B4190E /* ALFlexibleSpaceView.swift */,
+				CF308EA4257162DE0034B68E /* ALHorizontalStackView.swift */,
+				CF308EA2257162DE0034B68E /* ALLabel.swift */,
+				CFE9900A2573D5260092A957 /* ALLabelledSeparator.swift */,
+				CFE99010257401A10092A957 /* ALLabelledTextField.swift */,
+				CF308EA5257162DE0034B68E /* ALTextField.swift */,
+				CF308EA1257162DE0034B68E /* ALVerticalStackView.swift */,
 				CF308E6825715BCA0034B68E /* AppDelegate.swift */,
 				CF308E6F25715BCA0034B68E /* Assets.xcassets */,
 				CF308E6A25715BCA0034B68E /* Document.swift */,
-				CF308EA7257162DE0034B68E /* EBAbstractStackView.swift */,
-				CF308EA0257162DE0034B68E /* EBButton.swift */,
-				CF92B8C82572857A00B4190E /* EBFlexibleSpaceView.swift */,
-				CF308EA4257162DE0034B68E /* EBHorizontalStackView.swift */,
-				CF308EA2257162DE0034B68E /* EBLabel.swift */,
-				CFE9900A2573D5260092A957 /* EBLabelledSeparator.swift */,
-				CFE99010257401A10092A957 /* EBLabelledTextField.swift */,
-				CF308EA6257162DE0034B68E /* EBSwitchForAutoLayout.swift */,
-				CF308EA5257162DE0034B68E /* EBTextField.swift */,
-				CF308EA1257162DE0034B68E /* EBVerticalStackView.swift */,
-				CF92B8C525725DCE00B4190E /* EBViewWithBackground.swift */,
 				CF308E7525715BCA0034B68E /* essai_contraintes_sans_ib.entitlements */,
 				CFE990062573B4FE0092A957 /* extension-NSView-alignment.swift */,
 				CF308EA3257162DE0034B68E /* extension-NSView-layout.swift */,
 				CF308E7425715BCA0034B68E /* Info.plist */,
 				CF308E7125715BCA0034B68E /* MainMenu.xib */,
+				CF7862CA25C7178400AB93CF /* ALPageView.swift */,
+				CF7862CE25C7270400AB93CF /* ALSeparator.swift */,
 			);
 			path = "essai-contraintes-sans-ib";
 			sourceTree = "<group>";
@@ -171,21 +171,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE9900B2573D5260092A957 /* EBLabelledSeparator.swift in Sources */,
-				CF308EB0257162DE0034B68E /* EBSwitchForAutoLayout.swift in Sources */,
-				CF92B8C625725DCE00B4190E /* EBViewWithBackground.swift in Sources */,
-				CF308EAC257162DE0034B68E /* EBLabel.swift in Sources */,
-				CF308EAE257162DE0034B68E /* EBHorizontalStackView.swift in Sources */,
-				CF308EAA257162DE0034B68E /* EBButton.swift in Sources */,
+				CFE9900B2573D5260092A957 /* ALLabelledSeparator.swift in Sources */,
+				CF308EAC257162DE0034B68E /* ALLabel.swift in Sources */,
+				CF308EAE257162DE0034B68E /* ALHorizontalStackView.swift in Sources */,
+				CF308EAA257162DE0034B68E /* ALButton.swift in Sources */,
 				CF308E6B25715BCA0034B68E /* Document.swift in Sources */,
 				CF308EAD257162DE0034B68E /* extension-NSView-layout.swift in Sources */,
-				CF308EB1257162DE0034B68E /* EBAbstractStackView.swift in Sources */,
-				CFE99011257401A10092A957 /* EBLabelledTextField.swift in Sources */,
-				CF92B8C92572857A00B4190E /* EBFlexibleSpaceView.swift in Sources */,
-				CF308EAB257162DE0034B68E /* EBVerticalStackView.swift in Sources */,
+				CF7862CF25C7270400AB93CF /* ALSeparator.swift in Sources */,
+				CF308EB1257162DE0034B68E /* ALAbstractStackView.swift in Sources */,
+				CFE99011257401A10092A957 /* ALLabelledTextField.swift in Sources */,
+				CF92B8C92572857A00B4190E /* ALFlexibleSpaceView.swift in Sources */,
+				CF308EAB257162DE0034B68E /* ALVerticalStackView.swift in Sources */,
+				CF7862CB25C7178400AB93CF /* ALPageView.swift in Sources */,
 				CFE990072573B4FE0092A957 /* extension-NSView-alignment.swift in Sources */,
 				CF308E6925715BCA0034B68E /* AppDelegate.swift in Sources */,
-				CF308EAF257162DE0034B68E /* EBTextField.swift in Sources */,
+				CF308EAF257162DE0034B68E /* ALTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -309,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

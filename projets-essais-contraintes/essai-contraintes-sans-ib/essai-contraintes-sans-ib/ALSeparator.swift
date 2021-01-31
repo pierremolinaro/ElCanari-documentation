@@ -1,43 +1,48 @@
 //
-//  EBFlexibleSpaceView.swift
+//  ALSeparator.swift
 //  essai-contraintes-sans-ib
 //
-//  Created by Pierre Molinaro on 28/11/2020.
+//  Created by Pierre Molinaro on 31/01/2021.
 //
 //----------------------------------------------------------------------------------------------------------------------
 
 import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
-//   EBFlexibleSpaceView
-//----------------------------------------------------------------------------------------------------------------------
 
-class EBFlexibleSpaceView : NSView {
+class ALSeparator : NSBox {
 
   //····················································································································
 
   init () {
     super.init (frame: NSRect ())
+    self.boxType = .separator
   }
 
   //····················································································································
 
-  required init? (coder: NSCoder) {
-    fatalError ("init(coder:) has not been implemented")
+  required init? (coder inCoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
   }
 
   //····················································································································
 
-  override func draw (_ inDirtyRect : NSRect) {
-    if let color = debugBackgroundColor () {
-      color.setFill ()
-      NSBezierPath.fill (inDirtyRect)
+  @discardableResult static func make () -> ALSeparator {
+    let b = ALSeparator ()
+    gCurrentStack?.addSubview (b)
+    return b
+  }
+
+  //····················································································································
+  // SET TEXT color
+  //····················································································································
+
+  @discardableResult func setTextColor (_ inTextColor : NSColor) -> Self {
+    if self.subviews.count > 0, let textfield = self.subviews [0] as? ALLabel {
+      textfield.textColor = inTextColor
     }
+    return self
   }
-
-  //····················································································································
-
-  @objc override func verticalAlignment () -> VerticalAlignment { return .height }
 
   //····················································································································
 

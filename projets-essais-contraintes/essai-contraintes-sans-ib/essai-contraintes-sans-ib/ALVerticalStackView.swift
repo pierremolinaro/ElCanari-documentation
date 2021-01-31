@@ -1,5 +1,5 @@
 //
-//  EBVerticalStackView.swift
+//  ALVerticalStackView.swift
 //  essai-custom-stack-view
 //
 //  Created by Pierre Molinaro on 19/10/2019.
@@ -11,9 +11,9 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-@discardableResult func vStack (_ inContents : () -> Void) -> EBVerticalStackView {
+@discardableResult func vStack (_ inContents : () -> Void) -> ALVerticalStackView {
   let savedCurrentStack = gCurrentStack
-  let v = EBVerticalStackView ()
+  let v = ALVerticalStackView ()
   savedCurrentStack?.addSubview (v)
   gCurrentStack = v
   inContents ()
@@ -23,7 +23,7 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-class EBVerticalStackView : EBAbstractStackView {
+class ALVerticalStackView : ALAbstractStackView {
 
   //····················································································································
   //   INIT
@@ -47,11 +47,11 @@ class EBVerticalStackView : EBAbstractStackView {
   //--- Remove all constraints, all separators
     super.computeViewConstraints ()
   //--- Build constraints
-    var flexibleSpaces = [EBFlexibleSpaceView] ()
+    var flexibleSpaces = [ALFlexibleSpaceView] ()
     var optionalPreviousView : NSView? = nil
     for view in self.subviews {
       if !view.isHidden {
-        if let v = view as? EBAbstractStackView {
+        if let v = view as? ALAbstractStackView {
           v.computeViewConstraints ()
         }
         if let previousView = optionalPreviousView {
@@ -61,7 +61,7 @@ class EBVerticalStackView : EBAbstractStackView {
         }
         self.layout (view, .left, .equal, superview: .left, plus: self.leftMargin)
         self.layout (view, .right, .equal, superview: .right, plus: -self.rightMargin)
-        if let flexibleSpaceView = view as? EBFlexibleSpaceView {
+        if let flexibleSpaceView = view as? ALFlexibleSpaceView {
           flexibleSpaces.append (flexibleSpaceView)
         }
         optionalPreviousView = view

@@ -1,5 +1,5 @@
 //
-//  EBViewWithBackground.swift
+//  ALFlexibleSpaceView.swift
 //  essai-contraintes-sans-ib
 //
 //  Created by Pierre Molinaro on 28/11/2020.
@@ -9,15 +9,14 @@
 import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
-//   EBViewWithBackground
+//   ALFlexibleSpaceView
 //----------------------------------------------------------------------------------------------------------------------
 
-class EBViewWithBackground : NSView {
+class ALFlexibleSpaceView : NSView {
 
   //····················································································································
 
-  init (backgroundColor inBackgroundColor : NSColor) {
-    self.mBackgroundColor = inBackgroundColor
+  init () {
     super.init (frame: NSRect ())
   }
 
@@ -29,22 +28,16 @@ class EBViewWithBackground : NSView {
 
   //····················································································································
 
-  var mBackgroundColor : NSColor {
-    didSet {
-      self.needsDisplay = true
+  override func draw (_ inDirtyRect : NSRect) {
+    if let color = debugBackgroundColor () {
+      color.setFill ()
+      NSBezierPath.fill (inDirtyRect)
     }
   }
 
   //····················································································································
 
-  override func draw (_ inDirtyRect : NSRect) {
-    self.mBackgroundColor.setFill ()
-    NSBezierPath.fill (inDirtyRect)
-  }
-
-  //····················································································································
-
-  override var isOpaque : Bool { return true }
+  @objc override func verticalAlignment () -> VerticalAlignment { return .height }
 
   //····················································································································
 

@@ -11,17 +11,17 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-var gCurrentStack : EBAbstractStackView? = nil
+var gCurrentStack : ALAbstractStackView? = nil
 
 //----------------------------------------------------------------------------------------------------------------------
 
 func space () {
-  gCurrentStack?.addSubview (EBFlexibleSpaceView ())
+  gCurrentStack?.addSubview (ALFlexibleSpaceView ())
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 
-class EBAbstractStackView : NSView {
+class ALAbstractStackView : NSView {
 
   //····················································································································
   //   DRAW BACKGROUND
@@ -103,7 +103,7 @@ class EBAbstractStackView : NSView {
   override final func invalidateIntrinsicContentSize () {
     super.invalidateIntrinsicContentSize ()
     self.computeViewConstraints ()
-    if let superview = self.superview as? EBAbstractStackView {
+    if let superview = self.superview as? ALAbstractStackView {
       superview.invalidateIntrinsicContentSize ()
     }
   }
@@ -117,6 +117,7 @@ class EBAbstractStackView : NSView {
   //····················································································································
 
   override func addSubview (_ inView : NSView) {
+//    Swift.print ("addSubview \(inView)")
     inView.translatesAutoresizingMaskIntoConstraints = false
     super.addSubview (inView)
     inView.addObserver (self, forKeyPath: "hidden", options: .new, context: nil)
@@ -126,6 +127,7 @@ class EBAbstractStackView : NSView {
   //····················································································································
 
   override func willRemoveSubview (_ inSubview : NSView) {
+//    Swift.print ("willRemoveSubview \(inSubview)")
     super.willRemoveSubview (inSubview)
     if self.subviews.contains (inSubview) {
       inSubview.removeObserver (self, forKeyPath: "hidden")

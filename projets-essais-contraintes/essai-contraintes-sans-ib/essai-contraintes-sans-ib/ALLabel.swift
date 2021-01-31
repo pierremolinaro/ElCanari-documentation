@@ -1,8 +1,8 @@
 //
-//  EBSwitchForAutoLayout.swift
+//  ALLabel.swift
 //  essai-custom-stack-view
 //
-//  Created by Pierre Molinaro on 20/10/2019.
+//  Created by Pierre Molinaro on 19/10/2019.
 //  Copyright © 2019 Pierre Molinaro. All rights reserved.
 //
 //----------------------------------------------------------------------------------------------------------------------
@@ -11,46 +11,73 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-class EBSwitchForAutoLayout : NSButton {
+class ALLabel : NSTextField {
 
   //····················································································································
+  // INIT
+  //····················································································································
 
-  init (title inTitle : String) {
+  init (_ inTitle : String, bold inBold : Bool = false) {
     super.init (frame: NSRect ())
-    self.translatesAutoresizingMaskIntoConstraints = false
-    self.title = inTitle
-    self.setButtonType (.switch)
+    self.stringValue = inTitle
+    self.isBezeled = false
+    self.isBordered = false
+    self.backgroundColor = debugBackgroundColor ()
+    self.drawsBackground = self.backgroundColor != nil
+    self.textColor = .black
+    self.isEnabled = true
+    self.isEditable = false
+    self.font = inBold ? NSFont.boldSystemFont (ofSize: NSFont.systemFontSize) : NSFont.systemFont (ofSize: NSFont.systemFontSize)
   }
 
   //····················································································································
 
-  required init? (coder : NSCoder) {
+  required init? (coder: NSCoder) {
     fatalError ("init(coder:) has not been implemented")
   }
 
-  //····················································································································
-  // HAS PRECEEDING SEPARATOR
-  //····················································································································
+  //----------------------------------------------------------------------------------------------------------------------
 
-//  var mHasPreceedingSeparator : Bool = false
-//
-//  override var hasPreceedingSeparator : Bool { return mHasPreceedingSeparator }
-
-  //····················································································································
-  // HORIZONTAL ALIGNMENT
-  //····················································································································
-
-//  var mStackHorizontalAlignment : StackHorizontalAlignment = .center
-//
-//  override var horizontalAlignment : StackHorizontalAlignment { return self.mStackHorizontalAlignment }
+  @discardableResult static func make (_ title : String, bold inBold : Bool = false) -> ALLabel {
+    let b = ALLabel (title, bold: inBold)
+    gCurrentStack?.addSubview (b)
+    return b
+  }
 
   //····················································································································
   // VERTICAL ALIGNMENT
   //····················································································································
 
-//  var mStackVerticalAlignment : StackVerticalAlignment = .center
-//
-//  override var verticalAlignment : StackVerticalAlignment { return self.mStackVerticalAlignment }
+  fileprivate var mVerticalAlignment = VerticalAlignment.lastBaseline
+
+  //····················································································································
+
+  @discardableResult func setVerticalAlignment (_ inAlignment : VerticalAlignment) -> Self {
+    self.mVerticalAlignment = inAlignment
+    return self
+  }
+
+  //····················································································································
+
+  override func verticalAlignment () -> VerticalAlignment { return self.mVerticalAlignment }
+
+  //····················································································································
+  // SET TEXT color
+  //····················································································································
+
+  @discardableResult func setTextColor (_ inTextColor : NSColor) -> Self {
+    self.textColor = inTextColor
+    return self
+  }
+
+  //····················································································································
+  // SET TITLE ALIGNMENT
+  //····················································································································
+
+  @discardableResult func setTitleAlignment (_ inAlignment : NSTextAlignment) -> Self {
+    self.alignment = inAlignment
+    return self
+  }
 
   //····················································································································
 

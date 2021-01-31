@@ -1,9 +1,13 @@
 //
-//  EBLabel.swift
+//  ALTextField.swift
 //  essai-custom-stack-view
 //
-//  Created by Pierre Molinaro on 19/10/2019.
+//  Created by Pierre Molinaro on 20/10/2019.
 //  Copyright © 2019 Pierre Molinaro. All rights reserved.
+//
+// https://stackoverflow.com/questions/14643180/nstextfield-width-and-autolayout
+// https://stackoverflow.com/questions/1992950/nsstring-sizewithattributes-content-rect/1993376#1993376
+// https://stackoverflow.com/questions/35356225/nstextfieldcells-cellsizeforbounds-doesnt-match-wrapping-behavior
 //
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -11,37 +15,53 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-class EBLabel : NSTextField {
+class ALTextField : NSTextField, NSTextFieldDelegate {
 
   //····················································································································
-  // INIT
+
+  private var mWidth : CGFloat
+
   //····················································································································
 
-  init (_ inTitle : String, bold inBold : Bool = false) {
+  init (_ inWidth : CGFloat) {
+    self.mWidth = inWidth
     super.init (frame: NSRect ())
-    self.stringValue = inTitle
-    self.isBezeled = false
-    self.isBordered = false
-    self.backgroundColor = debugBackgroundColor ()
-    self.drawsBackground = self.backgroundColor != nil
-    self.textColor = .black
-    self.isEnabled = true
-    self.isEditable = false
-    self.font = inBold ? NSFont.boldSystemFont (ofSize: NSFont.systemFontSize) : NSFont.systemFont (ofSize: NSFont.systemFontSize)
+    self.delegate = self
+    self.translatesAutoresizingMaskIntoConstraints = false
+    self.stringValue = "textfield"
+    self.usesSingleLineMode =  false
+    self.lineBreakMode = .byCharWrapping
+    self.cell?.wraps = true
+    self.cell?.isScrollable = false
+    self.maximumNumberOfLines = 10
   }
 
   //····················································································································
 
-  required init? (coder: NSCoder) {
+  required init? (coder : NSCoder) {
     fatalError ("init(coder:) has not been implemented")
   }
 
-  //----------------------------------------------------------------------------------------------------------------------
+  //····················································································································
+  // INTRINSIC CONTENT SIZE
+  //····················································································································
 
-  @discardableResult static func make (_ title : String, bold inBold : Bool = false) -> EBLabel {
-    let b = EBLabel (title, bold: inBold)
-    gCurrentStack?.addSubview (b)
-    return b
+   override var intrinsicContentSize : NSSize {
+   //--- Forces updating from the field editor
+     self.validateEditing ()
+   //--- Compute size that fits
+     let preferredSize = NSSize (width: 10000.0, height: 10_000.0)
+     var s = self.sizeThatFits (preferredSize)
+     s.width = self.mWidth
+   //---
+     return s
+   }
+
+  //····················································································································
+
+  func controlTextDidChange (_ inNotification : Notification) {
+    // Swift.print ("controlTextDidChange")
+    self.invalidateIntrinsicContentSize ()
   }
 
   //····················································································································
@@ -60,24 +80,6 @@ class EBLabel : NSTextField {
   //····················································································································
 
   override func verticalAlignment () -> VerticalAlignment { return self.mVerticalAlignment }
-
-  //····················································································································
-  // SET TEXT color
-  //····················································································································
-
-  @discardableResult func setTextColor (_ inTextColor : NSColor) -> Self {
-    self.textColor = inTextColor
-    return self
-  }
-
-  //····················································································································
-  // SET TITLE ALIGNMENT
-  //····················································································································
-
-  @discardableResult func setTitleAlignment (_ inAlignment : NSTextAlignment) -> Self {
-    self.alignment = inAlignment
-    return self
-  }
 
   //····················································································································
 

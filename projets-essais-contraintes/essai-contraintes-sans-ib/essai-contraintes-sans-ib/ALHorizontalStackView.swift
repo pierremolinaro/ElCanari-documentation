@@ -1,5 +1,5 @@
 //
-//  EBHorizontalStackView.swift
+//  ALHorizontalStackView.swift
 //  essai-custom-stack-view
 //
 //  Created by Pierre Molinaro on 19/10/2019.
@@ -11,18 +11,19 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-@discardableResult func hStack (_ inContents : () -> Void) -> EBHorizontalStackView {
+@discardableResult func hStack (_ inContents : () -> Void) -> ALHorizontalStackView {
   let savedCurrentStack = gCurrentStack
-  let h = EBHorizontalStackView ()
+  let h = ALHorizontalStackView ()
   savedCurrentStack?.addSubview (h)
   gCurrentStack = h
   inContents ()
   gCurrentStack = savedCurrentStack
   return h
 }
+
 //----------------------------------------------------------------------------------------------------------------------
 
-class EBHorizontalStackView : EBAbstractStackView {
+class ALHorizontalStackView : ALAbstractStackView {
 
   //····················································································································
   //   INIT
@@ -62,9 +63,9 @@ class EBHorizontalStackView : EBAbstractStackView {
     let visibleViews = self.visibleViews ()
   //--- Compute view constraints
     var optionalPreviousView : NSView? = nil
-    var flexibleSpaces = [EBFlexibleSpaceView] ()
+    var flexibleSpaces = [ALFlexibleSpaceView] ()
     for view in visibleViews {
-      if let v = view as? EBAbstractStackView {
+      if let v = view as? ALAbstractStackView {
         v.computeViewConstraints ()
       }
       if let previousView = optionalPreviousView {
@@ -72,7 +73,7 @@ class EBHorizontalStackView : EBAbstractStackView {
       }else{
         self.layout (view, .left, .equal, superview: .left, plus: self.leftMargin)
       }
-      if let flexibleSpaceView = view as? EBFlexibleSpaceView {
+      if let flexibleSpaceView = view as? ALFlexibleSpaceView {
         flexibleSpaces.append (flexibleSpaceView)
       }
       optionalPreviousView = view

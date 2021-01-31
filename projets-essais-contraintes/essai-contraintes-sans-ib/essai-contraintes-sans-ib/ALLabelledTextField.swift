@@ -1,5 +1,5 @@
 //
-//  EBLabelledSeparator.swift
+//  ALLabelledTextField.swift
 //  essai-contraintes-sans-ib
 //
 //  Created by Pierre Molinaro on 29/11/2020.
@@ -10,17 +10,16 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-class EBLabelledSeparator : EBHorizontalStackView {
+class ALLabelledTextField : ALHorizontalStackView {
 
   //····················································································································
 
-  init (_ inTitle : String) {
+  init (_ inTitle : String, _ inTextfieldWidth : CGFloat) {
     super.init ()
-    let label = EBLabel (inTitle, bold: true)
+    let label = ALLabel (inTitle).setTitleAlignment (.right)
     self.addSubview (label)
-    let box = NSBox (frame: NSRect ())
-    box.boxType = .separator
-    self.addSubview (box)
+    let textfield = ALTextField (inTextfieldWidth)
+    self.addSubview (textfield)
   }
 
   //····················································································································
@@ -31,18 +30,19 @@ class EBLabelledSeparator : EBHorizontalStackView {
 
   //····················································································································
 
-  @discardableResult static func make (_ title : String) -> EBLabelledSeparator {
-    let b = EBLabelledSeparator (title)
+  @discardableResult static func make (_ inTitle : String, _ inTextFieldWidth : CGFloat) -> ALLabelledTextField {
+    let b = ALLabelledTextField (inTitle, inTextFieldWidth)
     gCurrentStack?.addSubview (b)
     return b
   }
+
 
   //····················································································································
   // SET TEXT color
   //····················································································································
 
   @discardableResult func setTextColor (_ inTextColor : NSColor) -> Self {
-    if self.subviews.count > 0, let textfield = self.subviews [0] as? EBLabel {
+    if self.subviews.count > 0, let textfield = self.subviews [0] as? ALTextField {
       textfield.textColor = inTextColor
     }
     return self
