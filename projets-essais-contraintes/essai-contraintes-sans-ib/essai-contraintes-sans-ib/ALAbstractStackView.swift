@@ -102,7 +102,7 @@ class ALAbstractStackView : NSView {
 
   override final func invalidateIntrinsicContentSize () {
     super.invalidateIntrinsicContentSize ()
-    self.computeViewConstraints ()
+    self.ebComputeViewConstraints ()
     if let superview = self.superview as? ALAbstractStackView {
       superview.invalidateIntrinsicContentSize ()
     }
@@ -110,7 +110,7 @@ class ALAbstractStackView : NSView {
 
   //····················································································································
 
-  func computeViewConstraints () {
+  func ebComputeViewConstraints () {
     self.removeConstraints (self.constraints)
   }
 

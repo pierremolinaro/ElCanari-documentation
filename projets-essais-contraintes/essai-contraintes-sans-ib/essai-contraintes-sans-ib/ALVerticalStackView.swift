@@ -43,10 +43,10 @@ class ALVerticalStackView : ALAbstractStackView {
 
   //····················································································································
 
-  override func computeViewConstraints () {
+  override func ebComputeViewConstraints () {
 //    Swift.print ("computeViewConstraints, vertical")
   //--- Remove all constraints, all separators
-    super.computeViewConstraints ()
+    super.ebComputeViewConstraints ()
   //--- Set Hugging priority
 //    var hHuggingPriority = NSLayoutConstraint.Priority.defaultLow
 //    var vHuggingPriority = NSLayoutConstraint.Priority.defaultLow
@@ -62,7 +62,7 @@ class ALVerticalStackView : ALAbstractStackView {
     for view in self.subviews {
       if !view.isHidden {
         if let v = view as? ALAbstractStackView {
-          v.computeViewConstraints ()
+          v.ebComputeViewConstraints ()
         }
         if let previousView = optionalPreviousView {
           self.layout (view, .top, .equal, to: previousView, .bottom, plus: self.separator)

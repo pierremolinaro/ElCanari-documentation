@@ -86,6 +86,8 @@
 				CF308EA2257162DE0034B68E /* ALLabel.swift */,
 				CFE9900A2573D5260092A957 /* ALLabelledSeparator.swift */,
 				CFE99010257401A10092A957 /* ALLabelledTextField.swift */,
+				CF7862CA25C7178400AB93CF /* ALPageView.swift */,
+				CF7862CE25C7270400AB93CF /* ALSeparator.swift */,
 				CF308EA5257162DE0034B68E /* ALTextField.swift */,
 				CF308EA1257162DE0034B68E /* ALVerticalStackView.swift */,
 				CF308E6825715BCA0034B68E /* AppDelegate.swift */,
@@ -96,8 +98,6 @@
 				CF308EA3257162DE0034B68E /* extension-NSView-layout.swift */,
 				CF308E7425715BCA0034B68E /* Info.plist */,
 				CF308E7125715BCA0034B68E /* MainMenu.xib */,
-				CF7862CA25C7178400AB93CF /* ALPageView.swift */,
-				CF7862CE25C7270400AB93CF /* ALSeparator.swift */,
 			);
 			path = "essai-contraintes-sans-ib";
 			sourceTree = "<group>";

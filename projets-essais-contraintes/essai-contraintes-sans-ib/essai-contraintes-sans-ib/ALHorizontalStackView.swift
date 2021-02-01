@@ -56,10 +56,10 @@ class ALHorizontalStackView : ALAbstractStackView {
   
   //····················································································································
 
-  override func computeViewConstraints () {
+  override func ebComputeViewConstraints () {
 //  Swift.print ("computeViewConstraints, horizontal")
   //--- Remove all constraints, all separators
-    super.computeViewConstraints ()
+    super.ebComputeViewConstraints ()
   //--- Get array of visible views
     let visibleViews = self.visibleViews ()
   //--- Compute view constraints
@@ -67,7 +67,7 @@ class ALHorizontalStackView : ALAbstractStackView {
     var flexibleSpaces = [ALFlexibleSpaceView] ()
     for view in visibleViews {
       if let v = view as? ALAbstractStackView {
-        v.computeViewConstraints ()
+        v.ebComputeViewConstraints ()
       }
       if let previousView = optionalPreviousView {
         self.layout (view, .left, .equal, to: previousView, .right, plus: self.separator)
