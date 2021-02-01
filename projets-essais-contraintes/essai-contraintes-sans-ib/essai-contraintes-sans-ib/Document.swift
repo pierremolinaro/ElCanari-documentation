@@ -57,8 +57,6 @@ class Document : NSDocument {
 //    }
     DispatchQueue.main.async {
       let view = self.buildUserInterface ()
-//      view.autoresizingMask = [.width, .height]
-//      view.translatesAutoresizingMaskIntoConstraints = true
       window.contentView = view
     }
     let progressIndicator = NSProgressIndicator (frame: NSRect ())
@@ -71,7 +69,7 @@ class Document : NSDocument {
     view.setRightMargin ((window.frame.size.width - 32.0) / 2.0)
     view.setTopMargin ((window.frame.size.height - 32.0) / 2.0)
     view.setBottomMargin ((window.frame.size.height - 32.0) / 2.0)
-    view.addSubview (progressIndicator)
+    view.addView (progressIndicator, in: .leading)
     window.contentView = view
   }
 
@@ -86,13 +84,14 @@ class Document : NSDocument {
   //····················································································································
 
   func buildUserInterface () -> NSView {
-    showDebugBackground ()
+  //  showDebugBackground ()
     return ALPageView { ALButton.make ("Avant") ; ALButton.make ("Droite") }
       .addPage ("First") {
-         ALLabelledTextField.make ("First page", 100.0)
-         ALLabelledTextField.make ("Below", 100.0)
+         ALLabelledTextField.make ("First page", 100.0, spaceBefore: true)
          space ()
-         ALLabelledTextField.make ("Bottom", 100.0)
+         ALLabelledTextField.make ("Below", 100.0, spaceBefore: true)
+         space ()
+         ALLabelledTextField.make ("Bottom", 100.0, spaceBefore: true)
       }
       .addPage ("Second") {
         self.buildSecondPage ()
@@ -103,23 +102,28 @@ class Document : NSDocument {
   //····················································································································
 
   func buildSecondPage () {
-    ALLabelledSeparator.make ("Réglage").setTextColor (.darkGray)
-    ALLabelledTextField.make ("Titre", 100.0)
-    ALLabelledTextField.make ("Titre long", 100.0)
+    ALLabelledSeparator.make ("Un Point").setTextColor (.darkGray)
+    hStack {
+      ALLabel.make ("P") ; space () ; vStack { ALLabelledTextField.make ("X", 100.0, spaceBefore: false) ; ALLabelledTextField.make ("Y", 100.0, spaceBefore: false)}
+    }
     ALLabelledSeparator.make ("Autre réglage").setTextColor (.darkGray)
-    ALLabelledTextField.make ("Autre titre", 100.0)
-    ALLabelledTextField.make ("Autre titre long", 100.0)
+    ALLabelledTextField.make ("Titre", 100.0, spaceBefore: true)
+    ALLabelledTextField.make ("Titre long", 100.0, spaceBefore: true)
+    ALLabelledTextField.make ("Autre titre", 100.0, spaceBefore: true)
+    ALLabelledTextField.make ("Autre titre long", 100.0, spaceBefore: true)
 //    space ()
-    ALButton.make ("bouton 4")
+    ALButton.make ("bouton 4").setFlexibleWidth ()
     hStack {
       vStack {
         ALButton.make ("v bt1")
         ALButton.make ("v bt2")
       }
-      ALButton.make ("bouton long 3")
+  //    space ()
+      ALLabel.make ("Hello left")
+      ALButton.make ("bouton long 3").setFlexibleWidth ()
+ //     space ()
       ALLabel.make ("Hello")
-      space ()
-    }
+    }.setFlexibleWidth ()
     space ()
   }
 
@@ -130,11 +134,11 @@ class Document : NSDocument {
     return vStack {
       space ()
       ALLabelledSeparator.make ("Réglage").setTextColor (.darkGray)
-      ALLabelledTextField.make ("Titre", 100.0)
-      ALLabelledTextField.make ("Titre long", 100.0)
+      ALLabelledTextField.make ("Titre", 100.0, spaceBefore: true)
+      ALLabelledTextField.make ("Titre long", 100.0, spaceBefore: true)
       ALLabelledSeparator.make ("Autre réglage").setTextColor (.darkGray)
-      ALLabelledTextField.make ("Autre titre", 100.0)
-      ALLabelledTextField.make ("Autre titre long", 100.0)
+      ALLabelledTextField.make ("Autre titre", 100.0, spaceBefore: true)
+      ALLabelledTextField.make ("Autre titre long", 100.0, spaceBefore: true)
       space ()
       ALButton.make ("bouton 4")
       hStack {
@@ -147,7 +151,7 @@ class Document : NSDocument {
         space ()
       } // .sameWidth (true)
       space ()
-    }.setMargins (5.0)
+    }// .setMargins (5.0)
   }
 
   //····················································································································

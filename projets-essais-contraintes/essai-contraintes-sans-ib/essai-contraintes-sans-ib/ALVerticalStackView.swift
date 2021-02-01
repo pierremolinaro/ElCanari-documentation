@@ -14,7 +14,7 @@ import Cocoa
 @discardableResult func vStack (_ inContents : () -> Void) -> ALVerticalStackView {
   let savedCurrentStack = gCurrentStack
   let v = ALVerticalStackView ()
-  savedCurrentStack?.addSubview (v)
+  savedCurrentStack?.addView (v, in: .leading)
   gCurrentStack = v
   inContents ()
   gCurrentStack = savedCurrentStack
@@ -23,16 +23,16 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-class ALVerticalStackView : ALAbstractStackView {
+class ALVerticalStackView : ALStackView {
 
   //····················································································································
   //   INIT
   //····················································································································
 
   init () {
-    super.init (frame: NSRect ())
-    self.setContentCompressionResistancePriority (.required, for: .horizontal)
-    self.translatesAutoresizingMaskIntoConstraints = false
+    super.init (orientation: .vertical)
+//    self.setContentCompressionResistancePriority (.required, for: .horizontal)
+//    self.translatesAutoresizingMaskIntoConstraints = false
   }
 
   //····················································································································
@@ -40,116 +40,6 @@ class ALVerticalStackView : ALAbstractStackView {
   required init? (coder inCoder : NSCoder) {
     fatalError ("init(coder:) has not been implemented")
   }
-
-  //····················································································································
-
-  override func ebComputeViewConstraints () {
-//    Swift.print ("computeViewConstraints, vertical")
-  //--- Remove all constraints, all separators
-    super.ebComputeViewConstraints ()
-  //--- Set Hugging priority
-//    var hHuggingPriority = NSLayoutConstraint.Priority.defaultLow
-//    var vHuggingPriority = NSLayoutConstraint.Priority.defaultLow
-//    for view in self.subviews {
-//      hHuggingPriority = max (hHuggingPriority, view.contentHuggingPriority(for: .horizontal))
-//      vHuggingPriority = max (vHuggingPriority, view.contentHuggingPriority(for: .vertical))
-//    }
-////    self.setContentHuggingPriority (hHuggingPriority, for: .horizontal)
-//    self.setContentHuggingPriority (vHuggingPriority, for: .vertical)
-  //--- Build constraints
-    var flexibleSpaces = [ALFlexibleSpaceView] ()
-    var optionalPreviousView : NSView? = nil
-    for view in self.subviews {
-      if !view.isHidden {
-        if let v = view as? ALAbstractStackView {
-          v.ebComputeViewConstraints ()
-        }
-        if let previousView = optionalPreviousView {
-          self.layout (view, .top, .equal, to: previousView, .bottom, plus: self.separator)
-        }else{
-          self.layout (view, .top, .equal, superview: .top, plus: self.topMargin)
-        }
-        self.layout (view, .left, .equal, superview: .left, plus: self.leftMargin)
-        self.layout (view, .right, .equal, superview: .right, plus: -self.rightMargin)
-        if let flexibleSpaceView = view as? ALFlexibleSpaceView {
-          flexibleSpaces.append (flexibleSpaceView)
-        }
-        optionalPreviousView = view
-      }
-    }
-  //--- Last view is bottom view
-    if let bottomView = optionalPreviousView {
-      self.layout (bottomView, .bottom, .equal, superview: .bottom, plus: -self.bottomMargin)
-    }
-  //--- Flexible spaces
-    if let firstFlexibleSpaceView = flexibleSpaces.popLast () {
-      for flexibleSpaceView in flexibleSpaces {
-        self.layout (flexibleSpaceView, .height, .equal, to: firstFlexibleSpaceView, .height)
-      }
-    }
-  }
-
-  //····················································································································
-
-  override var intrinsicContentSize : NSSize {
-    var w : CGFloat = 0.0
-    var h : CGFloat = self.topMargin + self.bottomMargin
-    var visibleViewCount = 0
-    for view in self.subviews {
-      if !view.isHidden {
-        let s = view.intrinsicContentSize
-        if s.height > 0.0 {
-          h += s.height
-        }
-        w = max (w, s.width)
-        visibleViewCount += 1
-      }
-    }
-    if visibleViewCount > 1 {
-      h += self.separator * CGFloat (visibleViewCount - 1)
-    }
-    w += self.leftMargin + self.rightMargin
-    return NSSize (width: w, height: h)
-  }
-
-  //····················································································································
-
-  override var lastBaselineOffsetFromBottom : CGFloat {
-    for view in self.subviews.reversed () {
-      if !view.isHidden {
-        return view.lastBaselineOffsetFromBottom
-      }
-    }
-    return 0.0
-  }
-
-  //····················································································································
-
-  override var firstBaselineOffsetFromTop : CGFloat {
-    for view in self.subviews {
-      if !view.isHidden {
-        return view.firstBaselineOffsetFromTop
-      }
-    }
-    return 0.0
-  }
-
-  //····················································································································
-  // VERTICAL ALIGNMENT
-  //····················································································································
-
-  fileprivate var mVerticalAlignment = VerticalAlignment.lastBaseline
-
-  //····················································································································
-
-  @discardableResult func setVerticalAlignment (_ inAlignment : VerticalAlignment) -> Self {
-    self.mVerticalAlignment = inAlignment
-    return self
-  }
-
-  //····················································································································
-
-  override func verticalAlignment () -> VerticalAlignment { return self.mVerticalAlignment }
 
   //····················································································································
 

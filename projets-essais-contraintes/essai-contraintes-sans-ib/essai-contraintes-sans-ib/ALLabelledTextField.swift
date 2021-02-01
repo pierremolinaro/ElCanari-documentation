@@ -14,14 +14,16 @@ class ALLabelledTextField : ALHorizontalStackView {
 
   //····················································································································
 
-  init (_ inTitle : String, _ inTextfieldWidth : CGFloat) {
+  init (_ inTitle : String, _ inTextfieldWidth : CGFloat, spaceBefore inSpaceBefore : Bool) {
     super.init ()
     self.translatesAutoresizingMaskIntoConstraints = false
-    self.addSubview (ALFlexibleSpaceView ())
+    if inSpaceBefore {
+      self.addView (ALFlexibleSpaceView (), in: .leading)
+    }
     let label = ALLabel (inTitle).setTitleAlignment (.right)
-    self.addSubview (label)
+    self.addView (label, in: .leading)
     let textfield = ALTextField (inTextfieldWidth)
-    self.addSubview (textfield)
+    self.addView (textfield, in: .leading)
   }
 
   //····················································································································
@@ -32,12 +34,11 @@ class ALLabelledTextField : ALHorizontalStackView {
 
   //····················································································································
 
-  @discardableResult static func make (_ inTitle : String, _ inTextFieldWidth : CGFloat) -> ALLabelledTextField {
-    let b = ALLabelledTextField (inTitle, inTextFieldWidth)
-    gCurrentStack?.addSubview (b)
+  @discardableResult static func make (_ inTitle : String, _ inTextFieldWidth : CGFloat, spaceBefore inSpaceBefore : Bool) -> ALLabelledTextField {
+    let b = ALLabelledTextField (inTitle, inTextFieldWidth, spaceBefore: inSpaceBefore)
+    gCurrentStack?.addView (b, in: .leading)
     return b
   }
-
 
   //····················································································································
   // SET TEXT color

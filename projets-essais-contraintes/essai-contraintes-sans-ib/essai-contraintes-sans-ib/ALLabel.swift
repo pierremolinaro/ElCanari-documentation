@@ -41,7 +41,7 @@ class ALLabel : NSTextField {
 
   @discardableResult static func make (_ title : String, bold inBold : Bool = false) -> ALLabel {
     let b = ALLabel (title, bold: inBold)
-    gCurrentStack?.addSubview (b)
+    gCurrentStack?.addView (b, in: .leading)
     return b
   }
 
@@ -49,18 +49,18 @@ class ALLabel : NSTextField {
   // VERTICAL ALIGNMENT
   //····················································································································
 
-  fileprivate var mVerticalAlignment = VerticalAlignment.lastBaseline
+//  fileprivate var mVerticalAlignment = VerticalAlignment.lastBaseline
+//
+//  //····················································································································
+//
+//  @discardableResult func setVerticalAlignment (_ inAlignment : VerticalAlignment) -> Self {
+//    self.mVerticalAlignment = inAlignment
+//    return self
+//  }
 
   //····················································································································
 
-  @discardableResult func setVerticalAlignment (_ inAlignment : VerticalAlignment) -> Self {
-    self.mVerticalAlignment = inAlignment
-    return self
-  }
-
-  //····················································································································
-
-  override func verticalAlignment () -> VerticalAlignment { return self.mVerticalAlignment }
+//  override func verticalAlignment () -> VerticalAlignment { return self.mVerticalAlignment }
 
   //····················································································································
   // SET TEXT color

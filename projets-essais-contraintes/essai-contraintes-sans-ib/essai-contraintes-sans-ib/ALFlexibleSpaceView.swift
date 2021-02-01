@@ -9,6 +9,12 @@
 import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
+
+func space () {
+  gCurrentStack?.addView (ALFlexibleSpaceView (), in: .leading)
+}
+
+//----------------------------------------------------------------------------------------------------------------------
 //   ALFlexibleSpaceView
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -19,6 +25,8 @@ class ALFlexibleSpaceView : NSView {
   init () {
     super.init (frame: NSRect ())
     self.translatesAutoresizingMaskIntoConstraints = false
+    self.setContentHuggingPriority (.init (rawValue: 1.0), for: .horizontal)
+    self.setContentHuggingPriority (.init (rawValue: 1.0), for: .vertical)
   }
 
   //····················································································································
@@ -35,18 +43,6 @@ class ALFlexibleSpaceView : NSView {
       NSBezierPath.fill (inDirtyRect)
     }
   }
-
-  //····················································································································
-
-  @objc override func verticalAlignment () -> VerticalAlignment { return .height }
-
-  //····················································································································
-
-//  override var intrinsicContentSize : NSSize {
-//    let s = super.intrinsicContentSize
-//    Swift.print ("intrinsicContentSize \(s), NSViewNoIntrinsicMetric \(NSView.noIntrinsicMetric)")
-//    return s
-//  }
 
   //····················································································································
 

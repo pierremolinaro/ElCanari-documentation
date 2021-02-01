@@ -18,11 +18,11 @@ class ALLabelledSeparator : ALHorizontalStackView {
     super.init ()
     self.translatesAutoresizingMaskIntoConstraints = false
     let label = ALLabel (inTitle, bold: true)
-    self.addSubview (label)
+    self.addView (label, in: .leading)
     let box = NSBox (frame: NSRect ())
     box.translatesAutoresizingMaskIntoConstraints = false
     box.boxType = .separator
-    self.addSubview (box)
+    self.addView (box, in: .leading)
   }
 
   //····················································································································
@@ -35,7 +35,7 @@ class ALLabelledSeparator : ALHorizontalStackView {
 
   @discardableResult static func make (_ title : String) -> ALLabelledSeparator {
     let b = ALLabelledSeparator (title)
-    gCurrentStack?.addSubview (b)
+    gCurrentStack?.addView (b, in: .leading)
     return b
   }
 

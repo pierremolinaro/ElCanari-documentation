@@ -1,13 +1,8 @@
 //
-//  ALTextField.swift
-//  essai-custom-stack-view
+//  ALStackView.swift
+//  essai-contraintes-sans-ib
 //
-//  Created by Pierre Molinaro on 20/10/2019.
-//  Copyright © 2019 Pierre Molinaro. All rights reserved.
-//
-// https://stackoverflow.com/questions/14643180/nstextfield-width-and-autolayout
-// https://stackoverflow.com/questions/1992950/nsstring-sizewithattributes-content-rect/1993376#1993376
-// https://stackoverflow.com/questions/35356225/nstextfieldcells-cellsizeforbounds-doesnt-match-wrapping-behavior
+//  Created by Pierre Molinaro on 01/02/2021.
 //
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -15,75 +10,80 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-class ALTextField : NSTextField, NSTextFieldDelegate {
+var gCurrentStack : ALStackView? = nil
+
+//----------------------------------------------------------------------------------------------------------------------
+
+class ALStackView : NSStackView {
 
   //····················································································································
-
-  private var mWidth : CGFloat
-
+  //   INIT
   //····················································································································
 
-  init (_ inWidth : CGFloat) {
-    self.mWidth = inWidth
+  init (orientation inOrientation : NSUserInterfaceLayoutOrientation) {
     super.init (frame: NSRect ())
+    self.orientation = inOrientation
     self.translatesAutoresizingMaskIntoConstraints = false
-    self.delegate = self
-    self.stringValue = "textfield"
-    self.usesSingleLineMode =  false
-    self.lineBreakMode = .byCharWrapping
-    self.cell?.wraps = true
-    self.cell?.isScrollable = false
-    self.maximumNumberOfLines = 10
   }
 
   //····················································································································
 
-  required init? (coder : NSCoder) {
+  required init? (coder: NSCoder) {
     fatalError ("init(coder:) has not been implemented")
   }
 
   //····················································································································
-  // INTRINSIC CONTENT SIZE
+  //  MARGINS
   //····················································································································
 
-   override var intrinsicContentSize : NSSize {
-   //--- Forces updating from the field editor
-     self.validateEditing ()
-   //--- Compute size that fits
-     let preferredSize = NSSize (width: 10_000.0, height: 10_000.0)
-     var s = self.sizeThatFits (preferredSize)
-     s.width = self.mWidth
-   //---
-     return s
-   }
-
-  //····················································································································
-
-  func controlTextDidChange (_ inNotification : Notification) {
-    // Swift.print ("controlTextDidChange")
-    self.invalidateIntrinsicContentSize ()
+  @discardableResult func noMargin () -> Self {
+    self.edgeInsets.left   = 0.0
+    self.edgeInsets.top    = 0.0
+    self.edgeInsets.right  = 0.0
+    self.edgeInsets.bottom = 0.0
+    return self
   }
 
   //····················································································································
-  // VERTICAL ALIGNMENT
-  //····················································································································
 
-//  fileprivate var mVerticalAlignment = VerticalAlignment.lastBaseline
-//
-//  //····················································································································
-//
-//  @discardableResult func setVerticalAlignment (_ inAlignment : VerticalAlignment) -> Self {
-//    self.mVerticalAlignment = inAlignment
-//    return self
-//  }
+  @discardableResult func setMargins (_ inValue : CGFloat) -> Self {
+    self.edgeInsets.left   = inValue
+    self.edgeInsets.top    = inValue
+    self.edgeInsets.right  = inValue
+    self.edgeInsets.bottom = inValue
+    return self
+  }
 
   //····················································································································
 
-//  override func verticalAlignment () -> VerticalAlignment { return self.mVerticalAlignment }
+  @discardableResult func setTopMargin (_ inValue : CGFloat) -> Self {
+    self.edgeInsets.top = inValue
+    return self
+  }
+
+  //····················································································································
+
+  @discardableResult func setBottomMargin (_ inValue : CGFloat) -> Self {
+    self.edgeInsets.bottom = inValue
+    return self
+  }
+
+  //····················································································································
+
+  @discardableResult func setLeftMargin (_ inValue : CGFloat) -> Self {
+    self.edgeInsets.left = inValue
+    return self
+  }
+
+  //····················································································································
+
+  @discardableResult func setRightMargin (_ inValue : CGFloat) -> Self {
+    self.edgeInsets.right = inValue
+    return self
+  }
 
   //····················································································································
 
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-

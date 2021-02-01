@@ -26,17 +26,17 @@ class ALPageView : ALVerticalStackView {
     self.mSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
 
     let hStack = ALHorizontalStackView ()
-    hStack.addSubview (self.mSegmentedControl)
-    hStack.addSubview (ALFlexibleSpaceView ())
+    hStack.addView (self.mSegmentedControl, in: .leading)
+    hStack.addView (ALFlexibleSpaceView (), in: .leading)
 
     let savedCurrentStack = gCurrentStack
     gCurrentStack = hStack
     inPlacardContents ()
     gCurrentStack = savedCurrentStack
 
-    self.addSubview (hStack)
-    self.addSubview (ALSeparator ())
-    self.addSubview (self.mDocumentView)
+    self.addView (hStack, in: .leading)
+    self.addView (ALSeparator (), in: .leading)
+    self.addView (self.mDocumentView, in: .leading)
 
     self.mSegmentedControl.target = self
     self.mSegmentedControl.action = #selector (Self.selectedSegmentDidChange (_:))
@@ -52,7 +52,7 @@ class ALPageView : ALVerticalStackView {
 
   @discardableResult static func make (_ inPlacardContents : () -> Void) -> ALPageView {
     let b = ALPageView (inPlacardContents)
-    gCurrentStack?.addSubview (b)
+    gCurrentStack?.addView (b, in: .leading)
     return b
   }
 

@@ -19,7 +19,7 @@ class ALButton : NSButton {
     super.init (frame: NSRect ())
     self.title = inTitle
     self.font = NSFont.systemFont (ofSize: NSFont.systemFontSize)
-    self.bezelStyle = .roundRect
+    self.bezelStyle = .regularSquare
     self.translatesAutoresizingMaskIntoConstraints = false
   }
 
@@ -33,26 +33,20 @@ class ALButton : NSButton {
 
   @discardableResult static func make (_ title : String) -> ALButton {
     let b = ALButton (title)
-    gCurrentStack?.addSubview (b)
+    gCurrentStack?.addView (b, in: .leading)
     return b
   }
 
   //····················································································································
-  // VERTICAL ALIGNMENT
+  // SET FLEXIBLE WIDTH
   //····················································································································
 
-  fileprivate var mVerticalAlignment = VerticalAlignment.lastBaseline
-
-  //····················································································································
-
-  @discardableResult func setVerticalAlignment (_ inAlignment : VerticalAlignment) -> Self {
-    self.mVerticalAlignment = inAlignment
+  @discardableResult func setFlexibleWidth () -> Self {
+    // Swift.print ("\(self.contentHuggingPriority (for: .horizontal))")
+    self.setContentHuggingPriority (.init (rawValue: 1.0), for: .horizontal)
+    self.needsUpdateConstraints = true
     return self
   }
-
-  //····················································································································
-
-  override func verticalAlignment () -> VerticalAlignment { return self.mVerticalAlignment }
 
   //····················································································································
 
