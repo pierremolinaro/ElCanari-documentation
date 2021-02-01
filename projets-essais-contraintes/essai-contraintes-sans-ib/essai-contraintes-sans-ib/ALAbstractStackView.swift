@@ -118,6 +118,12 @@ class ALAbstractStackView : NSView {
 
   override func addSubview (_ inView : NSView) {
 //    Swift.print ("addSubview \(inView)")
+//    if inView is ALFlexibleSpaceView {
+//     inView.autoresizingMask = [.width]
+//     inView.translatesAutoresizingMaskIntoConstraints = true
+//    }else{
+//     inView.translatesAutoresizingMaskIntoConstraints = false
+//    }
     inView.translatesAutoresizingMaskIntoConstraints = false
     super.addSubview (inView)
     inView.addObserver (self, forKeyPath: "hidden", options: .new, context: nil)

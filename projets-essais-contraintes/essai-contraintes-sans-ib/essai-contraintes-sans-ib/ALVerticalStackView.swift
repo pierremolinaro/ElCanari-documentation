@@ -32,6 +32,7 @@ class ALVerticalStackView : ALAbstractStackView {
   init () {
     super.init (frame: NSRect ())
     self.setContentCompressionResistancePriority (.required, for: .horizontal)
+    self.translatesAutoresizingMaskIntoConstraints = false
   }
 
   //····················································································································
@@ -46,6 +47,15 @@ class ALVerticalStackView : ALAbstractStackView {
 //    Swift.print ("computeViewConstraints, vertical")
   //--- Remove all constraints, all separators
     super.computeViewConstraints ()
+  //--- Set Hugging priority
+//    var hHuggingPriority = NSLayoutConstraint.Priority.defaultLow
+//    var vHuggingPriority = NSLayoutConstraint.Priority.defaultLow
+//    for view in self.subviews {
+//      hHuggingPriority = max (hHuggingPriority, view.contentHuggingPriority(for: .horizontal))
+//      vHuggingPriority = max (vHuggingPriority, view.contentHuggingPriority(for: .vertical))
+//    }
+////    self.setContentHuggingPriority (hHuggingPriority, for: .horizontal)
+//    self.setContentHuggingPriority (vHuggingPriority, for: .vertical)
   //--- Build constraints
     var flexibleSpaces = [ALFlexibleSpaceView] ()
     var optionalPreviousView : NSView? = nil
@@ -88,7 +98,9 @@ class ALVerticalStackView : ALAbstractStackView {
     for view in self.subviews {
       if !view.isHidden {
         let s = view.intrinsicContentSize
-        h += s.height
+        if s.height > 0.0 {
+          h += s.height
+        }
         w = max (w, s.width)
         visibleViewCount += 1
       }

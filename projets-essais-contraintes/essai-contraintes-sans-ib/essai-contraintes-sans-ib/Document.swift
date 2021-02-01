@@ -57,6 +57,8 @@ class Document : NSDocument {
 //    }
     DispatchQueue.main.async {
       let view = self.buildUserInterface ()
+//      view.autoresizingMask = [.width, .height]
+//      view.translatesAutoresizingMaskIntoConstraints = true
       window.contentView = view
     }
     let progressIndicator = NSProgressIndicator (frame: NSRect ())
@@ -87,21 +89,38 @@ class Document : NSDocument {
     showDebugBackground ()
     return ALPageView { ALButton.make ("Avant") ; ALButton.make ("Droite") }
       .addPage ("First") {
-         hStack {
-           space () ; ALLabelledTextField.make ("First page", 100.0)
-         }
-         hStack {
-           space () ; ALLabelledTextField.make ("Below", 100.0)
-         }
+         ALLabelledTextField.make ("First page", 100.0)
+         ALLabelledTextField.make ("Below", 100.0)
          space ()
+         ALLabelledTextField.make ("Bottom", 100.0)
       }
       .addPage ("Second") {
-        hStack {
-           ALLabelledTextField.make ("Second page", 100.0) ; space ()
-        }
-        space ()
+        self.buildSecondPage ()
       }
       .setMargins (5.0)
+  }
+
+  //····················································································································
+
+  func buildSecondPage () {
+    ALLabelledSeparator.make ("Réglage").setTextColor (.darkGray)
+    ALLabelledTextField.make ("Titre", 100.0)
+    ALLabelledTextField.make ("Titre long", 100.0)
+    ALLabelledSeparator.make ("Autre réglage").setTextColor (.darkGray)
+    ALLabelledTextField.make ("Autre titre", 100.0)
+    ALLabelledTextField.make ("Autre titre long", 100.0)
+//    space ()
+    ALButton.make ("bouton 4")
+    hStack {
+      vStack {
+        ALButton.make ("v bt1")
+        ALButton.make ("v bt2")
+      }
+      ALButton.make ("bouton long 3")
+      ALLabel.make ("Hello")
+      space ()
+    }
+    space ()
   }
 
   //····················································································································

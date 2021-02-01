@@ -18,6 +18,7 @@ class ALFlexibleSpaceView : NSView {
 
   init () {
     super.init (frame: NSRect ())
+    self.translatesAutoresizingMaskIntoConstraints = false
   }
 
   //····················································································································
@@ -38,6 +39,14 @@ class ALFlexibleSpaceView : NSView {
   //····················································································································
 
   @objc override func verticalAlignment () -> VerticalAlignment { return .height }
+
+  //····················································································································
+
+//  override var intrinsicContentSize : NSSize {
+//    let s = super.intrinsicContentSize
+//    Swift.print ("intrinsicContentSize \(s), NSViewNoIntrinsicMetric \(NSView.noIntrinsicMetric)")
+//    return s
+//  }
 
   //····················································································································
 

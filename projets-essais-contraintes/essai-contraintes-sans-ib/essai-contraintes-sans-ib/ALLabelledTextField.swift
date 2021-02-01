@@ -16,6 +16,8 @@ class ALLabelledTextField : ALHorizontalStackView {
 
   init (_ inTitle : String, _ inTextfieldWidth : CGFloat) {
     super.init ()
+    self.translatesAutoresizingMaskIntoConstraints = false
+    self.addSubview (ALFlexibleSpaceView ())
     let label = ALLabel (inTitle).setTitleAlignment (.right)
     self.addSubview (label)
     let textfield = ALTextField (inTextfieldWidth)

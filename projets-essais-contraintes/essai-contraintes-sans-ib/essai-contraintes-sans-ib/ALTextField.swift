@@ -26,8 +26,8 @@ class ALTextField : NSTextField, NSTextFieldDelegate {
   init (_ inWidth : CGFloat) {
     self.mWidth = inWidth
     super.init (frame: NSRect ())
-    self.delegate = self
     self.translatesAutoresizingMaskIntoConstraints = false
+    self.delegate = self
     self.stringValue = "textfield"
     self.usesSingleLineMode =  false
     self.lineBreakMode = .byCharWrapping
@@ -50,7 +50,7 @@ class ALTextField : NSTextField, NSTextFieldDelegate {
    //--- Forces updating from the field editor
      self.validateEditing ()
    //--- Compute size that fits
-     let preferredSize = NSSize (width: 10000.0, height: 10_000.0)
+     let preferredSize = NSSize (width: 10_000.0, height: 10_000.0)
      var s = self.sizeThatFits (preferredSize)
      s.width = self.mWidth
    //---

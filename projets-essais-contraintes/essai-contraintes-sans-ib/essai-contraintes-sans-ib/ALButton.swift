@@ -20,6 +20,7 @@ class ALButton : NSButton {
     self.title = inTitle
     self.font = NSFont.systemFont (ofSize: NSFont.systemFontSize)
     self.bezelStyle = .roundRect
+    self.translatesAutoresizingMaskIntoConstraints = false
   }
 
   //····················································································································

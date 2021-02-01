@@ -22,6 +22,9 @@ class ALPageView : ALVerticalStackView {
 
   init (_ inPlacardContents : () -> Void) {
     super.init ()
+    self.translatesAutoresizingMaskIntoConstraints = false
+    self.mSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
+
     let hStack = ALHorizontalStackView ()
     hStack.addSubview (self.mSegmentedControl)
     hStack.addSubview (ALFlexibleSpaceView ())
@@ -84,6 +87,14 @@ class ALPageView : ALVerticalStackView {
 //    Swift.print ("END replaceSubview")
     self.mDocumentView = newPage
   }
+
+  //····················································································································
+
+//  override var intrinsicContentSize : NSSize {
+//    let s = super.intrinsicContentSize
+//    Swift.print ("ALPageView.intrinsicContentSize \(s)")
+//    return s
+//  }
 
   //····················································································································
 

@@ -19,6 +19,7 @@ class ALLabel : NSTextField {
 
   init (_ inTitle : String, bold inBold : Bool = false) {
     super.init (frame: NSRect ())
+    self.translatesAutoresizingMaskIntoConstraints = false
     self.stringValue = inTitle
     self.isBezeled = false
     self.isBordered = false

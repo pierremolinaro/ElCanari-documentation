@@ -32,6 +32,7 @@ class ALHorizontalStackView : ALAbstractStackView {
   init () {
     super.init (frame: NSRect ())
     self.setContentCompressionResistancePriority (.required, for: .vertical)
+    self.translatesAutoresizingMaskIntoConstraints = false
   }
 
   //····················································································································
@@ -150,7 +151,9 @@ class ALHorizontalStackView : ALAbstractStackView {
         let firstBaseLineOffset = view.firstBaselineOffsetFromTop
         let s = view.intrinsicContentSize
         // Swift.print ("\(String (describing:type (of: view))) \(s), \(firstBaseLineOffset) \(lastBaseLineOffset)")
-        w += s.width
+        if s.width > 0.0 {
+          w += s.width
+        }
         heightUnderLastBaseLine = max (heightUnderLastBaseLine, lastBaseLineOffset)
         heightOverFirstBaseLine = max (heightOverFirstBaseLine, s.height - firstBaseLineOffset)
         heightBetweenFirstAndLastBaseLines = max (heightBetweenFirstAndLastBaseLines, s.height - firstBaseLineOffset - lastBaseLineOffset)
