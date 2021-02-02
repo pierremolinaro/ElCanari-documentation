@@ -16,11 +16,9 @@ class ALLabelledSeparator : ALHorizontalStackView {
 
   init (_ inTitle : String) {
     super.init ()
-    self.translatesAutoresizingMaskIntoConstraints = false
     let label = ALLabel (inTitle, bold: true)
     self.addView (label, in: .leading)
     let box = NSBox (frame: NSRect ())
-    box.translatesAutoresizingMaskIntoConstraints = false
     box.boxType = .separator
     self.addView (box, in: .leading)
   }

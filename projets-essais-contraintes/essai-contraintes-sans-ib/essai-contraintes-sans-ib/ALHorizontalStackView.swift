@@ -31,8 +31,6 @@ class ALHorizontalStackView : ALStackView {
 
   init () {
     super.init (orientation: .horizontal)
-//    self.autoresizingMask = [.width]
-//    self.translatesAutoresizingMaskIntoConstraints = true
   }
 
   //····················································································································
@@ -45,9 +43,33 @@ class ALHorizontalStackView : ALStackView {
   // SET FLEXIBLE WIDTH
   //····················································································································
 
-  @discardableResult func setFlexibleWidth () -> Self {
-//    self.distribution = .gravityAreas
+  @discardableResult func fillEqualy () -> Self {
+    self.distribution = .fillEqually
     return self
+  }
+
+  //····················································································································
+
+  private var mConstraints = [NSLayoutConstraint] ()
+
+  override func updateConstraints () {
+    // Swift.print ("H STACK \(self)")
+    self.removeConstraints (self.mConstraints)
+    self.mConstraints.removeAll ()
+    var spaceViewArray = [ALFlexibleSpaceView] ()
+    for view in self.subviews {
+      if let spaceView = view as? ALFlexibleSpaceView {
+        spaceViewArray.append (spaceView)
+      }
+    }
+    if let oneSpaceView = spaceViewArray.popLast () {
+      for spaceView in spaceViewArray {
+        let c = NSLayoutConstraint (item: oneSpaceView, attribute: .width, relatedBy: .equal, toItem: spaceView, attribute: .width, multiplier: 1.0, constant: 0.0)
+        self.mConstraints.append (c)
+      }
+      self.addConstraints (self.mConstraints)
+    }
+    super.updateConstraints ()
   }
 
   //····················································································································

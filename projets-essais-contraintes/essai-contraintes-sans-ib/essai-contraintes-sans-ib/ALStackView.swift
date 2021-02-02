@@ -23,7 +23,6 @@ class ALStackView : NSStackView {
   init (orientation inOrientation : NSUserInterfaceLayoutOrientation) {
     super.init (frame: NSRect ())
     self.orientation = inOrientation
-    self.translatesAutoresizingMaskIntoConstraints = false
   }
 
   //····················································································································
@@ -79,6 +78,13 @@ class ALStackView : NSStackView {
 
   @discardableResult func setRightMargin (_ inValue : CGFloat) -> Self {
     self.edgeInsets.right = inValue
+    return self
+  }
+
+  //····················································································································
+
+  @discardableResult func setSpacing (_ inValue : CGFloat) -> Self {
+    self.spacing = inValue
     return self
   }
 

@@ -22,11 +22,12 @@ class ALPageView : ALVerticalStackView {
 
   init (_ inPlacardContents : () -> Void) {
     super.init ()
-    self.translatesAutoresizingMaskIntoConstraints = false
-    self.mSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
 
     let hStack = ALHorizontalStackView ()
-    hStack.addView (self.mSegmentedControl, in: .leading)
+    let vStack = ALVerticalStackView ().setSpacing (0.0)
+    vStack.addView (self.mSegmentedControl, in: .leading)
+    vStack.addView (ALLabel ("Page"), in: .leading)
+    hStack.addView (vStack, in: .leading)
     hStack.addView (ALFlexibleSpaceView (), in: .leading)
 
     let savedCurrentStack = gCurrentStack

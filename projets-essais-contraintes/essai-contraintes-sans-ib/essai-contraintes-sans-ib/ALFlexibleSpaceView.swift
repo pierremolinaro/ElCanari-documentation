@@ -11,7 +11,9 @@ import Cocoa
 //----------------------------------------------------------------------------------------------------------------------
 
 func space () {
-  gCurrentStack?.addView (ALFlexibleSpaceView (), in: .leading)
+  let v = ALFlexibleSpaceView ()
+  gCurrentStack?.addView (v, in: .leading)
+//  Swift.print ("ADDED \(v) to \(gCurrentStack!)")
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -24,7 +26,6 @@ class ALFlexibleSpaceView : NSView {
 
   init () {
     super.init (frame: NSRect ())
-    self.translatesAutoresizingMaskIntoConstraints = false
     self.setContentHuggingPriority (.init (rawValue: 1.0), for: .horizontal)
     self.setContentHuggingPriority (.init (rawValue: 1.0), for: .vertical)
   }

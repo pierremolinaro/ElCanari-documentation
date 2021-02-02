@@ -16,7 +16,6 @@ class ALSeparator : NSBox {
 
   init () {
     super.init (frame: NSRect ())
-    self.translatesAutoresizingMaskIntoConstraints = false
     self.boxType = .separator
   }
 

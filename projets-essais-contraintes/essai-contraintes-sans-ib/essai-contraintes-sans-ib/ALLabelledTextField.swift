@@ -16,7 +16,6 @@ class ALLabelledTextField : ALHorizontalStackView {
 
   init (_ inTitle : String, _ inTextfieldWidth : CGFloat, spaceBefore inSpaceBefore : Bool) {
     super.init ()
-    self.translatesAutoresizingMaskIntoConstraints = false
     if inSpaceBefore {
       self.addView (ALFlexibleSpaceView (), in: .leading)
     }

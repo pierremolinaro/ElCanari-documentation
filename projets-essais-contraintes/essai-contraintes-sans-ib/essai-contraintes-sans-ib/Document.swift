@@ -57,6 +57,7 @@ class Document : NSDocument {
 //    }
     DispatchQueue.main.async {
       let view = self.buildUserInterface ()
+//      view.needsUpdateConstraints = true
       window.contentView = view
     }
     let progressIndicator = NSProgressIndicator (frame: NSRect ())
@@ -85,7 +86,12 @@ class Document : NSDocument {
 
   func buildUserInterface () -> NSView {
   //  showDebugBackground ()
-    return ALPageView { ALButton.make ("Avant") ; ALButton.make ("Droite") }
+    return ALPageView {
+      vStack { ALButton.make ("Avant") ; ALLabel.make ("Sous") } .setSpacing (0.0)
+
+      vStack { ALButton.make ("Droite") ; ALLabel.make ("Titre") } .setSpacing (0.0)
+
+      }
       .addPage ("First") {
          ALLabelledTextField.make ("First page", 100.0, spaceBefore: true)
          space ()
@@ -102,28 +108,30 @@ class Document : NSDocument {
   //····················································································································
 
   func buildSecondPage () {
-    ALLabelledSeparator.make ("Un Point").setTextColor (.darkGray)
+    ALLabelledSeparator.make ("Un Point")
     hStack {
       ALLabel.make ("P") ; space () ; vStack { ALLabelledTextField.make ("X", 100.0, spaceBefore: false) ; ALLabelledTextField.make ("Y", 100.0, spaceBefore: false)}
     }
     ALLabelledSeparator.make ("Autre réglage").setTextColor (.darkGray)
     ALLabelledTextField.make ("Titre", 100.0, spaceBefore: true)
-    ALLabelledTextField.make ("Titre long", 100.0, spaceBefore: true)
-    ALLabelledTextField.make ("Autre titre", 100.0, spaceBefore: true)
     ALLabelledTextField.make ("Autre titre long", 100.0, spaceBefore: true)
-//    space ()
     ALButton.make ("bouton 4").setFlexibleWidth ()
+    hStack {
+      ALButton.make ("bouton gauche").setFlexibleWidth ()
+      ALButton.make ("bouton droit").setFlexibleWidth ()
+    }.fillEqualy ()
     hStack {
       vStack {
         ALButton.make ("v bt1")
         ALButton.make ("v bt2")
       }
-  //    space ()
+      space ()
       ALLabel.make ("Hello left")
-      ALButton.make ("bouton long 3").setFlexibleWidth ()
- //     space ()
+      space ()
+      ALButton.make ("bouton long 3") // .setFlexibleWidth ()
+      space ()
       ALLabel.make ("Hello")
-    }.setFlexibleWidth ()
+    }
     space ()
   }
 

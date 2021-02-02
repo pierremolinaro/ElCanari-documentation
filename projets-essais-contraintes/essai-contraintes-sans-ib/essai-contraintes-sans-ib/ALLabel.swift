@@ -19,7 +19,6 @@ class ALLabel : NSTextField {
 
   init (_ inTitle : String, bold inBold : Bool = false) {
     super.init (frame: NSRect ())
-    self.translatesAutoresizingMaskIntoConstraints = false
     self.stringValue = inTitle
     self.isBezeled = false
     self.isBordered = false
@@ -28,7 +27,7 @@ class ALLabel : NSTextField {
     self.textColor = .black
     self.isEnabled = true
     self.isEditable = false
-    self.font = inBold ? NSFont.boldSystemFont (ofSize: NSFont.systemFontSize) : NSFont.systemFont (ofSize: NSFont.systemFontSize)
+    self.font = inBold ? NSFont.boldSystemFont (ofSize: NSFont.smallSystemFontSize) : NSFont.systemFont (ofSize: NSFont.smallSystemFontSize)
   }
 
   //····················································································································
@@ -44,23 +43,6 @@ class ALLabel : NSTextField {
     gCurrentStack?.addView (b, in: .leading)
     return b
   }
-
-  //····················································································································
-  // VERTICAL ALIGNMENT
-  //····················································································································
-
-//  fileprivate var mVerticalAlignment = VerticalAlignment.lastBaseline
-//
-//  //····················································································································
-//
-//  @discardableResult func setVerticalAlignment (_ inAlignment : VerticalAlignment) -> Self {
-//    self.mVerticalAlignment = inAlignment
-//    return self
-//  }
-
-  //····················································································································
-
-//  override func verticalAlignment () -> VerticalAlignment { return self.mVerticalAlignment }
 
   //····················································································································
   // SET TEXT color

@@ -26,7 +26,6 @@ class ALTextField : NSTextField, NSTextFieldDelegate {
   init (_ inWidth : CGFloat) {
     self.mWidth = inWidth
     super.init (frame: NSRect ())
-    self.translatesAutoresizingMaskIntoConstraints = false
     self.delegate = self
     self.stringValue = "textfield"
     self.usesSingleLineMode =  false
