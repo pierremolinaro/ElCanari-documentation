@@ -13,7 +13,7 @@ import Cocoa
 
 @discardableResult func hStack (_ inContents : () -> Void) -> ALHorizontalStackView {
   let h = ALHorizontalStackView ()
-  gCurrentStack?.addView (h, in: .leading)
+  gCurrentStack?.addSubview (h)
   let savedCurrentStack = gCurrentStack
   gCurrentStack = h
   inContents ()
@@ -44,33 +44,33 @@ class ALHorizontalStackView : ALStackView {
   //····················································································································
 
   @discardableResult func fillEqualy () -> Self {
-    self.distribution = .fillEqually
+//    self.distribution = .fillEqually
     return self
   }
 
   //····················································································································
 
-  private var mConstraints = [NSLayoutConstraint] ()
-
-  override func updateConstraints () {
-    // Swift.print ("H STACK \(self)")
-    self.removeConstraints (self.mConstraints)
-    self.mConstraints.removeAll ()
-    var spaceViewArray = [ALFlexibleSpaceView] ()
-    for view in self.subviews {
-      if let spaceView = view as? ALFlexibleSpaceView {
-        spaceViewArray.append (spaceView)
-      }
-    }
-    if let oneSpaceView = spaceViewArray.popLast () {
-      for spaceView in spaceViewArray {
-        let c = NSLayoutConstraint (item: oneSpaceView, attribute: .width, relatedBy: .equal, toItem: spaceView, attribute: .width, multiplier: 1.0, constant: 0.0)
-        self.mConstraints.append (c)
-      }
-      self.addConstraints (self.mConstraints)
-    }
-    super.updateConstraints ()
-  }
+//  private var mConstraints = [NSLayoutConstraint] ()
+//
+//  override func updateConstraints () {
+//    // Swift.print ("H STACK \(self)")
+//    self.removeConstraints (self.mConstraints)
+//    self.mConstraints.removeAll ()
+//    var spaceViewArray = [ALFlexibleSpaceView] ()
+//    for view in self.subviews {
+//      if let spaceView = view as? ALFlexibleSpaceView {
+//        spaceViewArray.append (spaceView)
+//      }
+//    }
+//    if let oneSpaceView = spaceViewArray.popLast () {
+//      for spaceView in spaceViewArray {
+//        let c = NSLayoutConstraint (item: oneSpaceView, attribute: .width, relatedBy: .equal, toItem: spaceView, attribute: .width, multiplier: 1.0, constant: 0.0)
+//        self.mConstraints.append (c)
+//      }
+//      self.addConstraints (self.mConstraints)
+//    }
+//    super.updateConstraints ()
+//  }
 
   //····················································································································
 

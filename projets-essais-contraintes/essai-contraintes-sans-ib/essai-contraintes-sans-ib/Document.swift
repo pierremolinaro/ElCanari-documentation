@@ -49,29 +49,27 @@ class Document : NSDocument {
   //---
     let windowController = NSWindowController (window: window)
     self.addWindowController (windowController)
+    let view = vStack {
+      space ()
+      hStack { space () ; ALSpinningProgressIndicator.make () ; space () }
+      space ()
+    }
+    window.contentView = view
+    Swift.print ("view.bounds.size \(view.bounds.size)")
+//    showDebugBackground ()
+//    view.ebUpdateLayout ()
   //--- Build user interface
 //    let deadline = DispatchTime.now () + DispatchTimeInterval.seconds (3)
 //    DispatchQueue.main.asyncAfter (deadline: deadline) {
 //      let view = self.buildUserInterface ()
 //      window.contentView = view
+//      view.ebUpdateLayout ()
 //    }
     DispatchQueue.main.async {
       let view = self.buildUserInterface ()
-//      view.needsUpdateConstraints = true
       window.contentView = view
+//      view.ebUpdateLayout ()
     }
-    let progressIndicator = NSProgressIndicator (frame: NSRect ())
-    progressIndicator.isIndeterminate = true
-    progressIndicator.style = .spinning
-    progressIndicator.usesThreadedAnimation = true
-    progressIndicator.startAnimation (nil)
-    let view = ALVerticalStackView ()
-    view.setLeftMargin ((window.frame.size.width - 32.0) / 2.0)
-    view.setRightMargin ((window.frame.size.width - 32.0) / 2.0)
-    view.setTopMargin ((window.frame.size.height - 32.0) / 2.0)
-    view.setBottomMargin ((window.frame.size.height - 32.0) / 2.0)
-    view.addView (progressIndicator, in: .leading)
-    window.contentView = view
   }
 
   //····················································································································
@@ -84,13 +82,11 @@ class Document : NSDocument {
 
   //····················································································································
 
-  func buildUserInterface () -> NSView {
-  //  showDebugBackground ()
+  func buildUserInterface () -> ALStackView {
+    showDebugBackground ()
     return ALPageView {
-      vStack { ALButton.make ("Avant") ; ALLabel.make ("Sous") } .setSpacing (0.0)
-
-      vStack { ALButton.make ("Droite") ; ALLabel.make ("Titre") } .setSpacing (0.0)
-
+        vStack { ALButton.make ("Avant") ; ALLabel.make ("Sous") } .setSpacing (0.0)
+        vStack { ALButton.make ("Droite") ; ALLabel.make ("Titre") } .setSpacing (0.0)
       }
       .addPage ("First") {
          ALLabelledTextField.make ("First page", 100.0, spaceBefore: true)

@@ -27,6 +27,7 @@ class ALLabel : NSTextField {
     self.textColor = .black
     self.isEnabled = true
     self.isEditable = false
+    self.alignment = .center
     self.font = inBold ? NSFont.boldSystemFont (ofSize: NSFont.smallSystemFontSize) : NSFont.systemFont (ofSize: NSFont.smallSystemFontSize)
   }
 
@@ -40,7 +41,7 @@ class ALLabel : NSTextField {
 
   @discardableResult static func make (_ title : String, bold inBold : Bool = false) -> ALLabel {
     let b = ALLabel (title, bold: inBold)
-    gCurrentStack?.addView (b, in: .leading)
+    gCurrentStack?.addSubview (b)
     return b
   }
 

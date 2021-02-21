@@ -17,12 +17,12 @@ class ALLabelledTextField : ALHorizontalStackView {
   init (_ inTitle : String, _ inTextfieldWidth : CGFloat, spaceBefore inSpaceBefore : Bool) {
     super.init ()
     if inSpaceBefore {
-      self.addView (ALFlexibleSpaceView (), in: .leading)
+      self.addSubview (ALFlexibleSpaceView ())
     }
     let label = ALLabel (inTitle).setTitleAlignment (.right)
-    self.addView (label, in: .leading)
+    self.addSubview (label)
     let textfield = ALTextField (inTextfieldWidth)
-    self.addView (textfield, in: .leading)
+    self.addSubview (textfield)
   }
 
   //····················································································································
@@ -35,7 +35,7 @@ class ALLabelledTextField : ALHorizontalStackView {
 
   @discardableResult static func make (_ inTitle : String, _ inTextFieldWidth : CGFloat, spaceBefore inSpaceBefore : Bool) -> ALLabelledTextField {
     let b = ALLabelledTextField (inTitle, inTextFieldWidth, spaceBefore: inSpaceBefore)
-    gCurrentStack?.addView (b, in: .leading)
+    gCurrentStack?.addSubview (b)
     return b
   }
 

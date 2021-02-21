@@ -29,7 +29,7 @@ class ALSeparator : NSBox {
 
   @discardableResult static func make () -> ALSeparator {
     let b = ALSeparator ()
-    gCurrentStack?.addView (b, in: .leading)
+    gCurrentStack?.addSubview (b)
     return b
   }
 

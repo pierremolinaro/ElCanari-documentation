@@ -18,6 +18,7 @@
 		CF308EAF257162DE0034B68E /* ALTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA5257162DE0034B68E /* ALTextField.swift */; };
 		CF7862CB25C7178400AB93CF /* ALPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7862CA25C7178400AB93CF /* ALPageView.swift */; };
 		CF7862CF25C7270400AB93CF /* ALSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7862CE25C7270400AB93CF /* ALSeparator.swift */; };
+		CF89698225CAA8D40010E191 /* ALSpinningProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89698125CAA8D40010E191 /* ALSpinningProgressIndicator.swift */; };
 		CF92B8C92572857A00B4190E /* ALFlexibleSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF92B8C82572857A00B4190E /* ALFlexibleSpaceView.swift */; };
 		CF97493D25C83E2D009CDA5F /* ALStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97493C25C83E2D009CDA5F /* ALStackView.swift */; };
 		CF97494125C84516009CDA5F /* extension-NSView-layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF308EA3257162DE0034B68E /* extension-NSView-layout.swift */; };
@@ -41,6 +42,7 @@
 		CF308EA5257162DE0034B68E /* ALTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTextField.swift; sourceTree = "<group>"; };
 		CF7862CA25C7178400AB93CF /* ALPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALPageView.swift; sourceTree = "<group>"; };
 		CF7862CE25C7270400AB93CF /* ALSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALSeparator.swift; sourceTree = "<group>"; };
+		CF89698125CAA8D40010E191 /* ALSpinningProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALSpinningProgressIndicator.swift; sourceTree = "<group>"; };
 		CF92B8C82572857A00B4190E /* ALFlexibleSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALFlexibleSpaceView.swift; sourceTree = "<group>"; };
 		CF97493C25C83E2D009CDA5F /* ALStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALStackView.swift; sourceTree = "<group>"; };
 		CFE9900A2573D5260092A957 /* ALLabelledSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALLabelledSeparator.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				CF308EA3257162DE0034B68E /* extension-NSView-layout.swift */,
 				CF308E7425715BCA0034B68E /* Info.plist */,
 				CF308E7125715BCA0034B68E /* MainMenu.xib */,
+				CF89698125CAA8D40010E191 /* ALSpinningProgressIndicator.swift */,
 			);
 			path = "essai-contraintes-sans-ib";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				CF97493D25C83E2D009CDA5F /* ALStackView.swift in Sources */,
 				CF308E6925715BCA0034B68E /* AppDelegate.swift in Sources */,
 				CF308EAF257162DE0034B68E /* ALTextField.swift in Sources */,
+				CF89698225CAA8D40010E191 /* ALSpinningProgressIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -305,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

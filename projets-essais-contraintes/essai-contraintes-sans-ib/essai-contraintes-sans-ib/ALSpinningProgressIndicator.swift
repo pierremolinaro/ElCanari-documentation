@@ -1,8 +1,8 @@
 //
-//  ALFlexibleSpaceView.swift
+//  ALSpinningProgressIndicator.swift
 //  essai-contraintes-sans-ib
 //
-//  Created by Pierre Molinaro on 28/11/2020.
+//  Created by Pierre Molinaro on 03/02/2021.
 //
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -10,43 +10,35 @@ import Cocoa
 
 //----------------------------------------------------------------------------------------------------------------------
 
-func space () {
-  let v = ALFlexibleSpaceView ()
-  gCurrentStack?.addSubview (v)
-//  Swift.print ("ADDED \(v) to \(gCurrentStack!)")
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-//   ALFlexibleSpaceView
-//----------------------------------------------------------------------------------------------------------------------
-
-class ALFlexibleSpaceView : NSView {
+class ALSpinningProgressIndicator : NSProgressIndicator {
 
   //····················································································································
 
   init () {
     super.init (frame: NSRect ())
-    self.setContentHuggingPriority (.init (rawValue: 1.0), for: .horizontal)
-    self.setContentHuggingPriority (.init (rawValue: 1.0), for: .vertical)
+    self.isIndeterminate = true
+    self.style = .spinning
+    self.usesThreadedAnimation = true
+    self.startAnimation (nil)
   }
 
   //····················································································································
 
-  required init? (coder: NSCoder) {
+  required init? (coder : NSCoder) {
     fatalError ("init(coder:) has not been implemented")
   }
 
-  //····················································································································
+  //----------------------------------------------------------------------------------------------------------------------
 
-  override func draw (_ inDirtyRect : NSRect) {
-    if let color = debugBackgroundColor () {
-      color.setFill ()
-      NSBezierPath.fill (inDirtyRect)
-    }
+  @discardableResult static func make () -> ALSpinningProgressIndicator {
+    let b = ALSpinningProgressIndicator ()
+    gCurrentStack?.addSubview (b)
+    return b
   }
 
   //····················································································································
 
 }
+
 
 //----------------------------------------------------------------------------------------------------------------------
