@@ -1,0 +1,2694 @@
+(pcb routing_problem
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+  )
+  (resolution mm 1000)
+  (structure
+    (boundary
+      (rect pcb 1.0 1.0 99.0 99.0)
+    )
+    (boundary
+      (polygon signal 0
+        1.5 1.5
+        98.5 1.5
+        98.5 98.5
+        1.5 98.5
+        1.5 1.5
+      )
+    )
+    (snap_angle
+      fortyfive_degree
+    )
+    (via "viaForClassDefault" "viaForClassAlim")
+    (control (via_at_smd off))
+    (rule (clearance 0.2032))
+    (layer ComponentSide (type signal))
+    (layer InnerTop (type signal))
+    (layer InnerBack (type signal))
+    (layer SolderSide (type signal))
+    (autoroute_settings
+      (vias on)
+      (via_costs 50)
+      (plane_via_costs 5)
+      (start_ripup_costs 100)
+      (start_pass_no 1)
+      (layer_rule ComponentSide
+        (active on)
+        (prefered_direction vertical)
+        (prefered_direction_trace_costs 1.0)
+        (against_prefered_direction_trace_costs 2.7)
+      )
+      (layer_rule InnerTop
+        (active on)
+        (prefered_direction vertical)
+        (prefered_direction_trace_costs 1.0)
+        (against_prefered_direction_trace_costs 2.7)
+      )
+      (layer_rule InnerBack
+        (active on)
+        (prefered_direction horizontal)
+        (prefered_direction_trace_costs 1.0)
+        (against_prefered_direction_trace_costs 2.7)
+      )
+      (layer_rule SolderSide
+        (active on)
+        (prefered_direction horizontal)
+        (prefered_direction_trace_costs 1.0)
+        (against_prefered_direction_trace_costs 2.7)
+      )
+    )
+  )
+  (placement
+    (component "hole:hole-0-8mm"
+      (place
+        H5 97.79 96.52 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        H6 97.79 93.98 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-3mm"
+      (place
+        H3 95.885 4.445 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-3mm"
+      (place
+        H1 4.445 4.445 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "led:round-led-3mm"
+      (place
+        D1 5.08 9.525 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-3mm"
+      (place
+        H4 95.885 88.265 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-3mm"
+      (place
+        H2 4.445 88.265 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P21 97.79 83.82 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "1-dip-switch:dil02"
+      (place
+        S1 93.345 11.43 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "tact-4-pins:tact-6x6-1"
+      (place
+        B1 12.7 6.35 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P18 97.79 81.28 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "led:round-led-3mm"
+      (place
+        D11 96.52 19.05 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P22 97.79 78.74 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "tact-4-pins:tact-6x6-1"
+      (place
+        B4 83.26 6.06 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P20 97.79 76.2 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R33 87.63 88.9 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P19 97.79 73.66 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "6p4c-modular-jack:6p4c-right-angle-modular-jack-low-profile"
+      (place
+        K3 18.415 92.075 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin JP1:1 (clearance_class default))
+        (pin JP1:2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C20 78.74 93.98 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "1-dip-switch:dil02"
+      (place
+        S2 20.32 7.62 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "led:round-led-3mm"
+      (place
+        D3 26.035 4.445 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "rj45:rj45-small"
+      (place
+        K1 5.835 75.805 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+      )
+    )
+    (component "spox-2:spox-2-angled-2-50mm"
+      (place
+        K5 95.885 27.96 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "red-green-led:bicolor-round-led-3mm"
+      (place
+        D10 90.805 19.685 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R26 83.185 13.335 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "led:round-led-3mm"
+      (place
+        D4 31.115 4.445 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "1-dip-switch:dil02"
+      (place
+        S3 96.52 66.04 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P2 3.81 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C1 13.335 81.28 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R38 12.7 19.685 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "led:round-led-3mm"
+      (place
+        D5 36.195 4.445 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R27 83.185 15.875 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R9 27.305 8.255 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R7 29.21 92.71 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R36 97.155 45.085 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R37 87.63 78.74 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C8 33.02 93.98 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "terminal-block-2-way-3-5mm:terminal-block-2-3-5mm"
+      (place
+        K4 52.55 96.52 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R4 12.7 22.225 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "spox-2:spox-2-angled-2-50mm"
+      (place
+        K6 95.885 55.88 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P1 6.35 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R28 83.185 18.415 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "led:round-led-3mm"
+      (place
+        D7 50.8 4.445 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "red-green-led:bicolor-round-led-3mm"
+      (place
+        D6 43.815 5.08 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R10 27.305 10.795 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R5 12.7 24.765 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "zener:do35"
+      (place
+        Z1 94.615 45.085 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "rotary-encoder-ec11:square-encoder"
+      (place
+        SW1 71.08 10.425 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+      )
+    )
+    (component "tact-4-pins:tact-6x6-1"
+      (place
+        B2 57.86 6.06 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C22 83.82 20.955 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C2 17.145 80.01 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "mcp2562:dil08"
+      (place
+        IC7 41.275 93.345 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R29 85.09 23.495 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R11 37.465 8.255 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R1 8.89 63.5 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R6 13.335 72.39 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C12 52.705 92.71 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "1n400x:do41-long"
+      (place
+        D8 59.69 91.40825555555556 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R30 85.09 26.035 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "1n400x:do41-long"
+      (place
+        D2 8.858255555555555 40.005 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "1117-regulator:to220"
+      (place
+        IC13 78.994 80.772 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+      )
+    )
+    (component "adafruit-feather-huzzah32-esp32-no-fix-hole:adafruit-feather-huzzah32-esp32-no-fix-hole"
+      (place
+        MOD1 80.645 78.74 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+        (pin 15 (clearance_class default))
+        (pin 16 (clearance_class default))
+        (pin 17 (clearance_class default))
+        (pin 18 (clearance_class default))
+        (pin 19 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 20 (clearance_class default))
+        (pin 21 (clearance_class default))
+        (pin 22 (clearance_class default))
+        (pin 23 (clearance_class default))
+        (pin 24 (clearance_class default))
+        (pin 25 (clearance_class default))
+        (pin 26 (clearance_class default))
+        (pin 27 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R39 87.63 68.58 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R16 47.625 8.255 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "6p4c-modular-jack:6p4c-right-angle-modular-jack-low-profile"
+      (place
+        K2 8.255 48.895 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin JP1:1 (clearance_class default))
+        (pin JP1:2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C23 91.44 45.72 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R31 85.09 27.94 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P11 11.43 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R12 37.465 10.795 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R2 9.525 57.15 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "multiturn-cermet-trimmer:43p"
+      (place
+        R34 88.9 36.83 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R3 11.43 63.5 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R32 85.09 30.48 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R22 57.785 10.795 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R8 24.13 19.685 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C16 62.865 87.63 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C15 53.34 89.535 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R17 47.625 10.795 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P9 13.97 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "mcp2562:dil08"
+      (place
+        IC4 25.4 80.01 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C3 25.4 22.225 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P10 16.51 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C10 42.545 85.725 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R35 85.09 59.69 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "tact-4-pins:tact-6x6-1"
+      (place
+        B3 85.165 45.43 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C4 25.4 24.765 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C19 85.09 50.8 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P6 19.05 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "mcp2562:dil08"
+      (place
+        IC2 21.59 68.58 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+      )
+    )
+    (component "i2c-eeprom:dil08"
+      (place
+        IC11 73.025 25.4 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+      )
+    )
+    (component "teensy-3-6-with-back-side:teensy-3-6-with-back-side"
+      (place
+        TEEN1 31.75 22.225 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+        (pin 15 (clearance_class default))
+        (pin 16 (clearance_class default))
+        (pin 17 (clearance_class default))
+        (pin 18 (clearance_class default))
+        (pin 19 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 20 (clearance_class default))
+        (pin 21 (clearance_class default))
+        (pin 22 (clearance_class default))
+        (pin 23 (clearance_class default))
+        (pin 24 (clearance_class default))
+        (pin 25 (clearance_class default))
+        (pin 26 (clearance_class default))
+        (pin 27 (clearance_class default))
+        (pin 28 (clearance_class default))
+        (pin 29 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 30 (clearance_class default))
+        (pin 31 (clearance_class default))
+        (pin 32 (clearance_class default))
+        (pin 33 (clearance_class default))
+        (pin 34 (clearance_class default))
+        (pin 35 (clearance_class default))
+        (pin 36 (clearance_class default))
+        (pin 37 (clearance_class default))
+        (pin 38 (clearance_class default))
+        (pin 39 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 40 (clearance_class default))
+        (pin 41 (clearance_class default))
+        (pin 42 (clearance_class default))
+        (pin 43 (clearance_class default))
+        (pin 44 (clearance_class default))
+        (pin 45 (clearance_class default))
+        (pin 46 (clearance_class default))
+        (pin 47 (clearance_class default))
+        (pin 48 (clearance_class default))
+        (pin 49 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 50 (clearance_class default))
+        (pin 51 (clearance_class default))
+        (pin 52 (clearance_class default))
+        (pin 53 (clearance_class default))
+        (pin 54 (clearance_class default))
+        (pin 55 (clearance_class default))
+        (pin 56 (clearance_class default))
+        (pin 57 (clearance_class default))
+        (pin 58 (clearance_class default))
+        (pin 59 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 60 (clearance_class default))
+        (pin 61 (clearance_class default))
+        (pin 62 (clearance_class default))
+        (pin 63 (clearance_class default))
+        (pin 64 (clearance_class default))
+        (pin 65 (clearance_class default))
+        (pin 66 (clearance_class default))
+        (pin 67 (clearance_class default))
+        (pin 68 (clearance_class default))
+        (pin 69 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 70 (clearance_class default))
+        (pin 71 (clearance_class default))
+        (pin 72 (clearance_class default))
+        (pin 73 (clearance_class default))
+        (pin 74 (clearance_class default))
+        (pin 75 (clearance_class default))
+        (pin 76 (clearance_class default))
+        (pin 77 (clearance_class default))
+        (pin 78 (clearance_class default))
+        (pin 79 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 80 (clearance_class default))
+        (pin 81 (clearance_class default))
+        (pin 9 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C21 79.375 64.77 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "lcd-tft-2-2-elecfreaks-no-sd:lcd-tft-2-2-elecfreaks-no-sd"
+      (place
+        LCD1 35.194 78.74 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P7 21.59 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R13 39.37 19.685 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P8 24.13 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R14 39.37 22.225 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R25 55.245 20.955 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "mcp2562:dil08"
+      (place
+        IC1 21.59 56.515 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+      )
+    )
+    (component "mcp2517fd:mcp2517fd-100mils-adapter"
+      (place
+        IC6 40.005 76.835 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C18 65.405 26.035 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "mc-34064:to92-bent"
+      (place
+        IC12 78.105 45.72 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+      )
+    )
+    (component "mcp2562:dil08"
+      (place
+        IC3 22.225 44.45 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C7 30.48 69.85 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "lm78xx:to220"
+      (place
+        IC9 53.34 77.47 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+      )
+    )
+    (component "buzzer:buzzer-bmt0905xh05"
+      (place
+        BZ1 73.66 36.195 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R15 39.37 24.765 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R21 55.245 23.495 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R24 63.5 72.39 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P3 29.21 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R40 74.93 50.8 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R23 60.96 72.39 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P5 31.75 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "1n400x:do41-long"
+      (place
+        D9 70.485 61.62674444444445 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "bc547:to92"
+      (place
+        T2 71.755 44.45 front 90.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P12 34.29 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C5 29.845 57.15 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P16 64.77 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C17 63.5 66.04 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C9 40.005 67.945 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P4 36.83 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C6 30.48 45.72 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P17 62.23 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P13 39.37 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        H9 59.69 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        H8 44.45 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P15 54.61 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        H7 46.99 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "hole:hole-0-8mm"
+      (place
+        P14 52.07 34.925 front 0.0
+        (pin 1 (clearance_class default))
+      )
+    )
+    (component "sst26vf064b-sst26vf064ba:dil08"
+      (place
+        IC5 38.735 59.69 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C14 53.34 62.865 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "bc559:to92-bent"
+      (place
+        T1 60.96 57.15 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+      )
+    )
+    (component "mcp2517fd:mcp2517fd-100mils-adapter"
+      (place
+        IC10 60.96 45.72 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R20 53.975 59.69 front 180.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "mcp2517fd:mcp2517fd-100mils-adapter"
+      (place
+        IC8 40.64 45.72 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C11 46.99 59.055 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R19 53.975 57.15 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "resistor:mf12-rect"
+      (place
+        R18 53.975 54.61 front 0.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+    (component "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (place
+        C13 50.8 45.72 front 270.0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+      )
+    )
+  )
+  (library
+    (image "unpolarized-capacitor:metallized-polyester-capacitor-50"
+      (pin ps0 1 -2.54 0.0)
+      (pin ps0 2 2.54 0.0)
+    )
+    (image "resistor:mf12-rect"
+      (pin ps1 1 -3.81 0.0)
+      (pin ps0 2 3.81 0.0)
+    )
+    (image "1n400x:do41-long"
+      (pin ps2 1 -5.111744444444445 0.0)
+      (pin ps3 2 5.111755555555556 0.0)
+    )
+    (image "6p4c-modular-jack:6p4c-right-angle-modular-jack-low-profile"
+      (pin ps4 1 1.905 4.445)
+      (pin ps4 2 0.635 1.905)
+      (pin ps4 3 -0.635 4.445)
+      (pin ps4 4 -1.905 1.905)
+      (pin ps5 JP1:1 -5.08 -4.445)
+      (pin ps5 JP1:2 5.08 -4.445)
+    )
+    (image "led:round-led-3mm"
+      (pin ps1 1 -1.27 0.0)
+      (pin ps0 2 1.27 0.0)
+    )
+    (image "hole:hole-3mm"
+      (pin ps6 1 0.0 0.0)
+    )
+    (image "1-dip-switch:dil02"
+      (pin ps8 1 0.0 -3.81)
+      (pin ps7 2 0.0 3.81)
+    )
+    (image "sst26vf064b-sst26vf064ba:dil08"
+      (pin ps8 1 -3.81 -3.81)
+      (pin ps7 2 -1.27 -3.81)
+      (pin ps7 3 1.27 -3.81)
+      (pin ps7 4 3.81 -3.81)
+      (pin ps7 5 3.81 3.81)
+      (pin ps7 6 1.27 3.81)
+      (pin ps7 7 -1.27 3.81)
+      (pin ps7 8 -3.81 3.81)
+    )
+    (image "spox-2:spox-2-angled-2-50mm"
+      (pin ps9 1 -1.25 0.0)
+      (pin ps10 2 1.25 0.0)
+    )
+    (image "mcp2562:dil08"
+      (pin ps8 1 -3.81 -3.81)
+      (pin ps7 2 -1.27 -3.81)
+      (pin ps7 3 1.27 -3.81)
+      (pin ps7 4 3.81 -3.81)
+      (pin ps7 5 3.81 3.81)
+      (pin ps7 6 1.27 3.81)
+      (pin ps7 7 -1.27 3.81)
+      (pin ps7 8 -3.81 3.81)
+    )
+    (image "tact-4-pins:tact-6x6-1"
+      (pin ps11 1 -3.25 -2.25)
+      (pin ps11 2 -3.25 2.25)
+      (pin ps11 3 3.25 2.25)
+      (pin ps11 4 3.25 -2.25)
+    )
+    (image "rj45:rj45-small"
+      (pin ps12 1 0.12 3.57)
+      (pin ps13 10 2.42 -7.5)
+      (pin ps12 2 -2.42 2.57)
+      (pin ps12 3 0.12 1.55)
+      (pin ps12 4 -2.42 0.55)
+      (pin ps12 5 0.12 -0.47)
+      (pin ps12 6 -2.42 -1.49)
+      (pin ps12 7 0.12 -2.51)
+      (pin ps12 8 -2.42 -3.53)
+      (pin ps13 9 2.42 7.5)
+    )
+    (image "adafruit-feather-huzzah32-esp32-no-fix-hole:adafruit-feather-huzzah32-esp32-no-fix-hole"
+      (pin ps15 1 -19.05 -10.16)
+      (pin ps14 10 6.35 -10.16)
+      (pin ps14 11 8.89 -10.16)
+      (pin ps14 12 11.43 -10.16)
+      (pin ps14 13 13.97 -10.16)
+      (pin ps14 14 16.51 -10.16)
+      (pin ps14 15 19.05 -10.16)
+      (pin ps14 16 19.05 10.16)
+      (pin ps14 17 16.51 10.16)
+      (pin ps14 18 13.97 10.16)
+      (pin ps14 19 11.43 10.16)
+      (pin ps14 2 -16.51 -10.16)
+      (pin ps14 20 8.89 10.16)
+      (pin ps14 21 6.35 10.16)
+      (pin ps14 22 3.81 10.16)
+      (pin ps14 23 1.27 10.16)
+      (pin ps14 24 -1.27 10.16)
+      (pin ps14 25 -3.81 10.16)
+      (pin ps14 26 -6.35 10.16)
+      (pin ps14 27 -8.89 10.16)
+      (pin ps14 3 -11.43 -10.16)
+      (pin ps14 4 -8.89 -10.16)
+      (pin ps14 5 -6.35 -10.16)
+      (pin ps14 6 -3.81 -10.16)
+      (pin ps14 7 -1.27 -10.16)
+      (pin ps14 8 1.27 -10.16)
+      (pin ps14 9 3.81 -10.16)
+    )
+    (image "multiturn-cermet-trimmer:43p"
+      (pin ps8 1 -6.35 1.27)
+      (pin ps8 2 1.27 -1.27)
+      (pin ps8 3 6.35 1.27)
+    )
+    (image "lcd-tft-2-2-elecfreaks-no-sd:lcd-tft-2-2-elecfreaks-no-sd"
+      (pin ps18 1 -31.1 10.16)
+      (pin ps17 10 -30.1 -17.05)
+      (pin ps17 11 31.1 -17.05)
+      (pin ps17 12 31.1 17.05)
+      (pin ps17 13 -30.1 17.05)
+      (pin ps16 2 -31.1 7.62)
+      (pin ps16 3 -31.1 5.08)
+      (pin ps16 4 -31.1 2.54)
+      (pin ps16 5 -31.1 0.0)
+      (pin ps16 6 -31.1 -2.54)
+      (pin ps16 7 -31.1 -5.08)
+      (pin ps16 8 -31.1 -7.62)
+      (pin ps16 9 -31.1 -10.16)
+    )
+    (image "rotary-encoder-ec11:square-encoder"
+      (pin ps19 1 -2.5 -7.25)
+      (pin ps19 2 2.5 -7.25)
+      (pin ps5 3 6.5 0.25)
+      (pin ps19 4 2.5 7.25)
+      (pin ps19 5 0.0 7.25)
+      (pin ps19 6 -2.5 7.25)
+      (pin ps5 7 -6.5 0.25)
+    )
+    (image "lm78xx:to220"
+      (pin ps20 1 -2.54 -8.89)
+      (pin ps21 2 0.0 -8.89)
+      (pin ps22 2 0.0 1.27)
+      (pin ps23 2 0.0 8.89)
+      (pin ps21 3 2.54 -8.89)
+    )
+    (image "1117-regulator:to220"
+      (pin ps20 1 -2.54 -8.89)
+      (pin ps21 2 0.0 -8.89)
+      (pin ps22 2 0.0 1.27)
+      (pin ps23 2 0.0 8.89)
+      (pin ps21 3 2.54 -8.89)
+    )
+    (image "red-green-led:bicolor-round-led-3mm"
+      (pin ps1 1 -2.54 0.0)
+      (pin ps0 2 0.0 0.0)
+      (pin ps0 3 2.54 0.0)
+    )
+    (image "terminal-block-2-way-3-5mm:terminal-block-2-3-5mm"
+      (pin ps25 1 -1.75 0.0)
+      (pin ps24 2 1.75 0.0)
+    )
+    (image "teensy-3-6-with-back-side:teensy-3-6-with-back-side"
+      (pin ps1 1 -29.21 -7.62)
+      (pin ps0 10 -6.35 -7.62)
+      (pin ps0 11 -3.81 -7.62)
+      (pin ps0 12 -1.27 -7.62)
+      (pin ps0 13 1.27 -7.62)
+      (pin ps0 14 3.81 -7.62)
+      (pin ps0 15 6.35 -7.62)
+      (pin ps0 16 8.89 -7.62)
+      (pin ps0 17 11.43 -7.62)
+      (pin ps0 18 13.97 -7.62)
+      (pin ps0 19 16.51 -7.62)
+      (pin ps0 2 -26.67 -7.62)
+      (pin ps0 20 19.05 -7.62)
+      (pin ps0 21 21.59 -7.62)
+      (pin ps0 22 24.13 -7.62)
+      (pin ps0 23 26.67 -7.62)
+      (pin ps0 24 29.21 -7.62)
+      (pin ps0 25 -13.97 -5.08)
+      (pin ps0 26 -11.43 -5.08)
+      (pin ps0 27 -8.89 -5.08)
+      (pin ps0 28 -6.35 -5.08)
+      (pin ps0 29 8.89 -5.08)
+      (pin ps0 3 -24.13 -7.62)
+      (pin ps0 30 11.43 -5.08)
+      (pin ps0 31 13.97 -5.08)
+      (pin ps0 32 16.51 -5.08)
+      (pin ps0 33 19.05 -5.08)
+      (pin ps0 34 21.59 -5.08)
+      (pin ps0 35 24.13 -5.08)
+      (pin ps0 36 26.67 -5.08)
+      (pin ps0 37 29.21 -5.08)
+      (pin ps0 38 16.51 -2.54)
+      (pin ps0 39 16.51 0.0)
+      (pin ps0 4 -21.59 -7.62)
+      (pin ps0 40 16.51 2.54)
+      (pin ps0 41 -26.67 5.08)
+      (pin ps0 42 -21.59 5.08)
+      (pin ps0 43 -19.05 5.08)
+      (pin ps0 44 -16.51 5.08)
+      (pin ps0 45 -13.97 5.08)
+      (pin ps0 46 -11.43 5.08)
+      (pin ps0 47 -8.89 5.08)
+      (pin ps0 48 -6.35 5.08)
+      (pin ps0 49 8.89 5.08)
+      (pin ps0 5 -19.05 -7.62)
+      (pin ps0 50 11.43 5.08)
+      (pin ps0 51 13.97 5.08)
+      (pin ps0 52 16.51 5.08)
+      (pin ps0 53 19.05 5.08)
+      (pin ps0 54 21.59 5.08)
+      (pin ps0 55 24.13 5.08)
+      (pin ps0 56 26.67 5.08)
+      (pin ps0 57 29.21 5.08)
+      (pin ps0 58 -29.21 7.62)
+      (pin ps0 59 -26.67 7.62)
+      (pin ps0 6 -16.51 -7.62)
+      (pin ps0 60 -24.13 7.62)
+      (pin ps0 61 -21.59 7.62)
+      (pin ps0 62 -19.05 7.62)
+      (pin ps0 63 -16.51 7.62)
+      (pin ps0 64 -13.97 7.62)
+      (pin ps0 65 -11.43 7.62)
+      (pin ps0 66 -8.89 7.62)
+      (pin ps0 67 -6.35 7.62)
+      (pin ps0 68 -3.81 7.62)
+      (pin ps0 69 -1.27 7.62)
+      (pin ps0 7 -13.97 -7.62)
+      (pin ps0 70 1.27 7.62)
+      (pin ps0 71 3.81 7.62)
+      (pin ps0 72 6.35 7.62)
+      (pin ps0 73 8.89 7.62)
+      (pin ps0 74 11.43 7.62)
+      (pin ps0 75 13.97 7.62)
+      (pin ps0 76 16.51 7.62)
+      (pin ps0 77 19.05 7.62)
+      (pin ps0 78 21.59 7.62)
+      (pin ps0 79 24.13 7.62)
+      (pin ps0 8 -11.43 -7.62)
+      (pin ps0 80 26.67 7.62)
+      (pin ps0 81 29.21 7.62)
+      (pin ps0 9 -8.89 -7.62)
+    )
+    (image "mc-34064:to92-bent"
+      (pin ps12 1 0.0 -2.54)
+      (pin ps12 2 0.0 0.0)
+      (pin ps12 3 0.0 2.54)
+    )
+    (image "i2c-eeprom:dil08"
+      (pin ps8 1 -3.81 -3.81)
+      (pin ps7 2 -1.27 -3.81)
+      (pin ps7 3 1.27 -3.81)
+      (pin ps7 4 3.81 -3.81)
+      (pin ps7 5 3.81 3.81)
+      (pin ps7 6 1.27 3.81)
+      (pin ps7 7 -1.27 3.81)
+      (pin ps7 8 -3.81 3.81)
+    )
+    (image "bc559:to92-bent"
+      (pin ps12 1 0.0 -2.54)
+      (pin ps12 2 0.0 0.0)
+      (pin ps12 3 0.0 2.54)
+    )
+    (image "hole:hole-0-8mm"
+      (pin ps26 1 0.0 0.0)
+    )
+    (image "mcp2517fd:mcp2517fd-100mils-adapter"
+      (pin ps29 1 -6.35 -5.08)
+      (pin ps27 10 1.27 5.08)
+      (pin ps27 11 -1.27 5.08)
+      (pin ps28 12 -6.35 2.54)
+      (pin ps27 13 -3.81 5.08)
+      (pin ps27 14 -6.35 5.08)
+      (pin ps28 2 -6.35 0.0)
+      (pin ps27 3 -3.81 -5.08)
+      (pin ps27 4 -1.27 -5.08)
+      (pin ps27 5 1.27 -5.08)
+      (pin ps27 6 3.81 -5.08)
+      (pin ps27 7 6.35 -5.08)
+      (pin ps27 8 6.35 5.08)
+      (pin ps27 9 3.81 5.08)
+    )
+    (image "zener:do35"
+      (pin ps0 1 -3.81 0.0)
+      (pin ps0 2 3.81 0.0)
+    )
+    (image "buzzer:buzzer-bmt0905xh05"
+      (pin ps24 1 -2.5 0.0)
+      (pin ps24 2 2.5 0.0)
+    )
+    (image "bc547:to92"
+      (pin ps12 1 -0.635 -1.27)
+      (pin ps12 2 0.635 0.0)
+      (pin ps12 3 -0.635 1.27)
+    )
+    (padstack "viaForClassDefault"
+      (shape (circle SolderSide 0.762 0 0))
+      (shape (circle InnerTop 0.762 0 0))
+      (shape (circle InnerBack 0.762 0 0))
+      (shape (circle ComponentSide 0.762 0 0))
+    )
+    (padstack "viaForClassAlim"
+      (shape (circle SolderSide 1.016 0 0))
+      (shape (circle InnerTop 1.016 0 0))
+      (shape (circle InnerBack 1.016 0 0))
+      (shape (circle ComponentSide 1.016 0 0))
+    )
+    (padstack "ps0"
+      (shape (circle ComponentSide 1.3208 0 0))
+      (shape (circle InnerTop 1.3208 0 0))
+      (shape (circle InnerBack 1.3208 0 0))
+      (shape (circle SolderSide 1.3208 0 0))
+    )
+    (padstack "ps1"
+      (shape (rect ComponentSide -0.6604 -0.6604 0.6604 0.6604))
+      (shape (rect InnerTop -0.6604 -0.6604 0.6604 0.6604))
+      (shape (rect InnerBack -0.6604 -0.6604 0.6604 0.6604))
+      (shape (rect SolderSide -0.6604 -0.6604 0.6604 0.6604))
+    )
+    (padstack "ps2"
+      (shape (rect ComponentSide -0.9 -0.9 0.9 0.9))
+      (shape (rect InnerTop -0.9 -0.9 0.9 0.9))
+      (shape (rect InnerBack -0.9 -0.9 0.9 0.9))
+      (shape (rect SolderSide -0.9 -0.9 0.9 0.9))
+    )
+    (padstack "ps3"
+      (shape (circle ComponentSide 1.8 0 0))
+      (shape (circle InnerTop 1.8 0 0))
+      (shape (circle InnerBack 1.8 0 0))
+      (shape (circle SolderSide 1.8 0 0))
+    )
+    (padstack "ps4"
+      (shape (circle ComponentSide 1.4 0 0))
+      (shape (circle InnerTop 1.4 0 0))
+      (shape (circle InnerBack 1.4 0 0))
+      (shape (circle SolderSide 1.4 0 0))
+    )
+    (padstack "ps5"
+      (shape (circle ComponentSide 4.0 0 0))
+      (shape (circle InnerTop 4.0 0 0))
+      (shape (circle InnerBack 4.0 0 0))
+      (shape (circle SolderSide 4.0 0 0))
+    )
+    (padstack "ps6"
+      (shape (circle ComponentSide 6.0 0 0))
+      (shape (circle InnerTop 6.0 0 0))
+      (shape (circle InnerBack 6.0 0 0))
+      (shape (circle SolderSide 6.0 0 0))
+    )
+    (padstack "ps7"
+      (shape (polygon ComponentSide 0 -0.27354663659119194 1.27 0.27354663659119194 1.27 0.6604 0.883146636591192 0.6604 -0.883146636591192 0.27354663659119194 -1.27 -0.27354663659119194 -1.27 -0.6604 -0.883146636591192 -0.6604 0.883146636591192 -0.27354663659119194 1.27))
+      (shape (polygon InnerTop 0 -0.27354663659119194 1.27 0.27354663659119194 1.27 0.6604 0.883146636591192 0.6604 -0.883146636591192 0.27354663659119194 -1.27 -0.27354663659119194 -1.27 -0.6604 -0.883146636591192 -0.6604 0.883146636591192 -0.27354663659119194 1.27))
+      (shape (polygon InnerBack 0 -0.27354663659119194 1.27 0.27354663659119194 1.27 0.6604 0.883146636591192 0.6604 -0.883146636591192 0.27354663659119194 -1.27 -0.27354663659119194 -1.27 -0.6604 -0.883146636591192 -0.6604 0.883146636591192 -0.27354663659119194 1.27))
+      (shape (polygon SolderSide 0 -0.27354663659119194 1.27 0.27354663659119194 1.27 0.6604 0.883146636591192 0.6604 -0.883146636591192 0.27354663659119194 -1.27 -0.27354663659119194 -1.27 -0.6604 -0.883146636591192 -0.6604 0.883146636591192 -0.27354663659119194 1.27))
+    )
+    (padstack "ps8"
+      (shape (rect ComponentSide -0.6604 -1.27 0.6604 1.27))
+      (shape (rect InnerTop -0.6604 -1.27 0.6604 1.27))
+      (shape (rect InnerBack -0.6604 -1.27 0.6604 1.27))
+      (shape (rect SolderSide -0.6604 -1.27 0.6604 1.27))
+    )
+    (padstack "ps9"
+      (shape (rect ComponentSide -0.762 -1.27 0.762 1.27))
+      (shape (rect InnerTop -0.762 -1.27 0.762 1.27))
+      (shape (rect InnerBack -0.762 -1.27 0.762 1.27))
+      (shape (rect SolderSide -0.762 -1.27 0.762 1.27))
+    )
+    (padstack "ps10"
+      (shape (polygon ComponentSide 0 -0.3156307345282985 1.27 0.3156307345282985 1.27 0.762 0.8236307345282985 0.762 -0.8236307345282985 0.3156307345282985 -1.27 -0.3156307345282985 -1.27 -0.762 -0.8236307345282985 -0.762 0.8236307345282985 -0.3156307345282985 1.27))
+      (shape (polygon InnerTop 0 -0.3156307345282985 1.27 0.3156307345282985 1.27 0.762 0.8236307345282985 0.762 -0.8236307345282985 0.3156307345282985 -1.27 -0.3156307345282985 -1.27 -0.762 -0.8236307345282985 -0.762 0.8236307345282985 -0.3156307345282985 1.27))
+      (shape (polygon InnerBack 0 -0.3156307345282985 1.27 0.3156307345282985 1.27 0.762 0.8236307345282985 0.762 -0.8236307345282985 0.3156307345282985 -1.27 -0.3156307345282985 -1.27 -0.762 -0.8236307345282985 -0.762 0.8236307345282985 -0.3156307345282985 1.27))
+      (shape (polygon SolderSide 0 -0.3156307345282985 1.27 0.3156307345282985 1.27 0.762 0.8236307345282985 0.762 -0.8236307345282985 0.3156307345282985 -1.27 -0.3156307345282985 -1.27 -0.762 -0.8236307345282985 -0.762 0.8236307345282985 -0.3156307345282985 1.27))
+    )
+    (padstack "ps11"
+      (shape (polygon ComponentSide 0 -0.756146636591192 0.6604 0.756146636591192 0.6604 1.143 0.27354663659119194 1.143 -0.27354663659119194 0.756146636591192 -0.6604 -0.756146636591192 -0.6604 -1.143 -0.27354663659119194 -1.143 0.27354663659119194 -0.756146636591192 0.6604))
+      (shape (polygon InnerTop 0 -0.756146636591192 0.6604 0.756146636591192 0.6604 1.143 0.27354663659119194 1.143 -0.27354663659119194 0.756146636591192 -0.6604 -0.756146636591192 -0.6604 -1.143 -0.27354663659119194 -1.143 0.27354663659119194 -0.756146636591192 0.6604))
+      (shape (polygon InnerBack 0 -0.756146636591192 0.6604 0.756146636591192 0.6604 1.143 0.27354663659119194 1.143 -0.27354663659119194 0.756146636591192 -0.6604 -0.756146636591192 -0.6604 -1.143 -0.27354663659119194 -1.143 0.27354663659119194 -0.756146636591192 0.6604))
+      (shape (polygon SolderSide 0 -0.756146636591192 0.6604 0.756146636591192 0.6604 1.143 0.27354663659119194 1.143 -0.27354663659119194 0.756146636591192 -0.6604 -0.756146636591192 -0.6604 -1.143 -0.27354663659119194 -1.143 0.27354663659119194 -0.756146636591192 0.6604))
+    )
+    (padstack "ps12"
+      (shape (circle ComponentSide 1.27 0 0))
+      (shape (circle InnerTop 1.27 0 0))
+      (shape (circle InnerBack 1.27 0 0))
+      (shape (circle SolderSide 1.27 0 0))
+    )
+    (padstack "ps13"
+      (shape (circle ComponentSide 3.0 0 0))
+      (shape (circle InnerTop 3.0 0 0))
+      (shape (circle InnerBack 3.0 0 0))
+      (shape (circle SolderSide 3.0 0 0))
+    )
+    (padstack "ps14"
+      (shape (circle ComponentSide 1.524 0 0))
+      (shape (circle InnerTop 1.524 0 0))
+      (shape (circle InnerBack 1.524 0 0))
+      (shape (circle SolderSide 1.524 0 0))
+    )
+    (padstack "ps15"
+      (shape (rect ComponentSide -0.762 -0.762 0.762 0.762))
+      (shape (rect InnerTop -0.762 -0.762 0.762 0.762))
+      (shape (rect InnerBack -0.762 -0.762 0.762 0.762))
+      (shape (rect SolderSide -0.762 -0.762 0.762 0.762))
+    )
+    (padstack "ps16"
+      (shape (polygon ComponentSide 0 -0.8608281733176069 0.6985 0.8608281733176069 0.6985 1.27 0.2893281733176069 1.27 -0.2893281733176069 0.8608281733176069 -0.6985 -0.8608281733176069 -0.6985 -1.27 -0.2893281733176069 -1.27 0.2893281733176069 -0.8608281733176069 0.6985))
+      (shape (polygon InnerTop 0 -0.8608281733176069 0.6985 0.8608281733176069 0.6985 1.27 0.2893281733176069 1.27 -0.2893281733176069 0.8608281733176069 -0.6985 -0.8608281733176069 -0.6985 -1.27 -0.2893281733176069 -1.27 0.2893281733176069 -0.8608281733176069 0.6985))
+      (shape (polygon InnerBack 0 -0.8608281733176069 0.6985 0.8608281733176069 0.6985 1.27 0.2893281733176069 1.27 -0.2893281733176069 0.8608281733176069 -0.6985 -0.8608281733176069 -0.6985 -1.27 -0.2893281733176069 -1.27 0.2893281733176069 -0.8608281733176069 0.6985))
+      (shape (polygon SolderSide 0 -0.8608281733176069 0.6985 0.8608281733176069 0.6985 1.27 0.2893281733176069 1.27 -0.2893281733176069 0.8608281733176069 -0.6985 -0.8608281733176069 -0.6985 -1.27 -0.2893281733176069 -1.27 0.2893281733176069 -0.8608281733176069 0.6985))
+    )
+    (padstack "ps17"
+      (shape (circle ComponentSide 5.8 0 0))
+      (shape (circle InnerTop 5.8 0 0))
+      (shape (circle InnerBack 5.8 0 0))
+      (shape (circle SolderSide 5.8 0 0))
+    )
+    (padstack "ps18"
+      (shape (rect ComponentSide -1.27 -0.6985 1.27 0.6985))
+      (shape (rect InnerTop -1.27 -0.6985 1.27 0.6985))
+      (shape (rect InnerBack -1.27 -0.6985 1.27 0.6985))
+      (shape (rect SolderSide -1.27 -0.6985 1.27 0.6985))
+    )
+    (padstack "ps19"
+      (shape (polygon ComponentSide 0 -0.36823585694968153 1.27 0.36823585694968153 1.27 0.889 0.7492358569496815 0.889 -0.7492358569496815 0.36823585694968153 -1.27 -0.36823585694968153 -1.27 -0.889 -0.7492358569496815 -0.889 0.7492358569496815 -0.36823585694968153 1.27))
+      (shape (polygon InnerTop 0 -0.36823585694968153 1.27 0.36823585694968153 1.27 0.889 0.7492358569496815 0.889 -0.7492358569496815 0.36823585694968153 -1.27 -0.36823585694968153 -1.27 -0.889 -0.7492358569496815 -0.889 0.7492358569496815 -0.36823585694968153 1.27))
+      (shape (polygon InnerBack 0 -0.36823585694968153 1.27 0.36823585694968153 1.27 0.889 0.7492358569496815 0.889 -0.7492358569496815 0.36823585694968153 -1.27 -0.36823585694968153 -1.27 -0.889 -0.7492358569496815 -0.889 0.7492358569496815 -0.36823585694968153 1.27))
+      (shape (polygon SolderSide 0 -0.36823585694968153 1.27 0.36823585694968153 1.27 0.889 0.7492358569496815 0.889 -0.7492358569496815 0.36823585694968153 -1.27 -0.36823585694968153 -1.27 -0.889 -0.7492358569496815 -0.889 0.7492358569496815 -0.36823585694968153 1.27))
+    )
+    (padstack "ps20"
+      (shape (rect ComponentSide -0.9525 -1.27 0.9525 1.27))
+      (shape (rect InnerTop -0.9525 -1.27 0.9525 1.27))
+      (shape (rect InnerBack -0.9525 -1.27 0.9525 1.27))
+      (shape (rect SolderSide -0.9525 -1.27 0.9525 1.27))
+    )
+    (padstack "ps21"
+      (shape (polygon ComponentSide 0 -0.39453841816037305 1.27 0.39453841816037305 1.27 0.9525 0.712038418160373 0.9525 -0.712038418160373 0.39453841816037305 -1.27 -0.39453841816037305 -1.27 -0.9525 -0.712038418160373 -0.9525 0.712038418160373 -0.39453841816037305 1.27))
+      (shape (polygon InnerTop 0 -0.39453841816037305 1.27 0.39453841816037305 1.27 0.9525 0.712038418160373 0.9525 -0.712038418160373 0.39453841816037305 -1.27 -0.39453841816037305 -1.27 -0.9525 -0.712038418160373 -0.9525 0.712038418160373 -0.39453841816037305 1.27))
+      (shape (polygon InnerBack 0 -0.39453841816037305 1.27 0.39453841816037305 1.27 0.9525 0.712038418160373 0.9525 -0.712038418160373 0.39453841816037305 -1.27 -0.39453841816037305 -1.27 -0.9525 -0.712038418160373 -0.9525 0.712038418160373 -0.39453841816037305 1.27))
+      (shape (polygon SolderSide 0 -0.39453841816037305 1.27 0.39453841816037305 1.27 0.9525 0.712038418160373 0.9525 -0.712038418160373 0.39453841816037305 -1.27 -0.39453841816037305 -1.27 -0.9525 -0.712038418160373 -0.9525 0.712038418160373 -0.39453841816037305 1.27))
+    )
+    (padstack "ps22"
+      (shape (rect ComponentSide -5.08 -5.715 5.08 5.715))
+    )
+    (padstack "ps23"
+      (shape (rect ComponentSide -5.08 -3.048 5.08 3.048))
+      (shape (rect InnerTop -5.08 -3.048 5.08 3.048))
+      (shape (rect InnerBack -5.08 -3.048 5.08 3.048))
+      (shape (rect SolderSide -5.08 -3.048 5.08 3.048))
+    )
+    (padstack "ps24"
+      (shape (circle ComponentSide 2.0 0 0))
+      (shape (circle InnerTop 2.0 0 0))
+      (shape (circle InnerBack 2.0 0 0))
+      (shape (circle SolderSide 2.0 0 0))
+    )
+    (padstack "ps25"
+      (shape (rect ComponentSide -1.0 -1.0 1.0 1.0))
+      (shape (rect InnerTop -1.0 -1.0 1.0 1.0))
+      (shape (rect InnerBack -1.0 -1.0 1.0 1.0))
+      (shape (rect SolderSide -1.0 -1.0 1.0 1.0))
+    )
+    (padstack "ps26"
+      (shape (circle ComponentSide 1.7 0 0))
+      (shape (circle InnerTop 1.7 0 0))
+      (shape (circle InnerBack 1.7 0 0))
+      (shape (circle SolderSide 1.7 0 0))
+    )
+    (padstack "ps27"
+      (shape (polygon ComponentSide 0 -0.27354663659119194 1.016 0.27354663659119194 1.016 0.6604 0.629146636591192 0.6604 -0.629146636591192 0.27354663659119194 -1.016 -0.27354663659119194 -1.016 -0.6604 -0.629146636591192 -0.6604 0.629146636591192 -0.27354663659119194 1.016))
+      (shape (polygon InnerTop 0 -0.27354663659119194 1.016 0.27354663659119194 1.016 0.6604 0.629146636591192 0.6604 -0.629146636591192 0.27354663659119194 -1.016 -0.27354663659119194 -1.016 -0.6604 -0.629146636591192 -0.6604 0.629146636591192 -0.27354663659119194 1.016))
+      (shape (polygon InnerBack 0 -0.27354663659119194 1.016 0.27354663659119194 1.016 0.6604 0.629146636591192 0.6604 -0.629146636591192 0.27354663659119194 -1.016 -0.27354663659119194 -1.016 -0.6604 -0.629146636591192 -0.6604 0.629146636591192 -0.27354663659119194 1.016))
+      (shape (polygon SolderSide 0 -0.27354663659119194 1.016 0.27354663659119194 1.016 0.6604 0.629146636591192 0.6604 -0.629146636591192 0.27354663659119194 -1.016 -0.27354663659119194 -1.016 -0.6604 -0.629146636591192 -0.6604 0.629146636591192 -0.27354663659119194 1.016))
+    )
+    (padstack "ps28"
+      (shape (polygon ComponentSide 0 -0.629146636591192 0.6604 0.629146636591192 0.6604 1.016 0.27354663659119194 1.016 -0.27354663659119194 0.629146636591192 -0.6604 -0.629146636591192 -0.6604 -1.016 -0.27354663659119194 -1.016 0.27354663659119194 -0.629146636591192 0.6604))
+      (shape (polygon InnerTop 0 -0.629146636591192 0.6604 0.629146636591192 0.6604 1.016 0.27354663659119194 1.016 -0.27354663659119194 0.629146636591192 -0.6604 -0.629146636591192 -0.6604 -1.016 -0.27354663659119194 -1.016 0.27354663659119194 -0.629146636591192 0.6604))
+      (shape (polygon InnerBack 0 -0.629146636591192 0.6604 0.629146636591192 0.6604 1.016 0.27354663659119194 1.016 -0.27354663659119194 0.629146636591192 -0.6604 -0.629146636591192 -0.6604 -1.016 -0.27354663659119194 -1.016 0.27354663659119194 -0.629146636591192 0.6604))
+      (shape (polygon SolderSide 0 -0.629146636591192 0.6604 0.629146636591192 0.6604 1.016 0.27354663659119194 1.016 -0.27354663659119194 0.629146636591192 -0.6604 -0.629146636591192 -0.6604 -1.016 -0.27354663659119194 -1.016 0.27354663659119194 -0.629146636591192 0.6604))
+    )
+    (padstack "ps29"
+      (shape (rect ComponentSide -0.6604 -1.016 0.6604 1.016))
+      (shape (rect InnerTop -0.6604 -1.016 0.6604 1.016))
+      (shape (rect InnerBack -0.6604 -1.016 0.6604 1.016))
+      (shape (rect SolderSide -0.6604 -1.016 0.6604 1.016))
+    )
+  )
+  (network
+    (net "SYNCHRO_PWM"
+      (pins
+        IC2-1
+        TEEN1-68
+        P1-1
+      )
+    )
+    (net "$40"
+      (pins
+        R23-1
+        T1-3
+      )
+    )
+    (net "ENCODEUR-B"
+      (pins
+        R25-2
+        TEEN1-51
+      )
+    )
+    (net "nRESET"
+      (pins
+        B3-3
+        TEEN1-52
+        IC12-3
+      )
+    )
+    (net "+5V"
+      (pins
+        C14-1
+        C1-1
+        C8-1
+        D9-1
+        IC3-3
+        IC2-3
+        C19-1
+        IC7-3
+        C12-1
+        IC1-3
+        D2-1
+        IC9-3
+        IC4-3
+        IC12-2
+        BZ1-1
+      )
+    )
+    (net "$6"
+      (pins
+        IC10-1
+        IC10-2
+        IC8-1
+        IC8-2
+        R18-2
+      )
+    )
+    (net "$3"
+      (pins
+        R7-2
+        IC7-7
+        K3-2
+      )
+    )
+    (net "SPI2-CS-FLASH"
+      (pins
+        IC5-1
+        TEEN1-48
+        P8-1
+        R20-2
+      )
+    )
+    (net "ESP32-INT-MCP2518FD"
+      (pins
+        MOD1-18
+        IC10-4
+        P21-1
+      )
+    )
+    (net "LED-ARRÊT-URGENCE"
+      (pins
+        R5-2
+        TEEN1-49
+      )
+    )
+    (net "CANRX-ACCESSOIRES"
+      (pins
+        IC3-4
+        TEEN1-80
+      )
+    )
+    (net "ESP32-MOSI"
+      (pins
+        MOD1-11
+        IC10-11
+        P20-1
+      )
+    )
+    (net "SYNCHRO_PHASE_PWM_L"
+      (pins
+        R6-1
+        IC2-6
+        K1-3
+      )
+    )
+    (net "SPI1-MISO"
+      (pins
+        TEEN1-7
+        IC8-12
+        P5-1
+      )
+    )
+    (net "CANTX-ACCESSOIRES"
+      (pins
+        IC3-1
+        TEEN1-81
+      )
+    )
+    (net "$21"
+      (pins
+        R17-1
+        D7-1
+      )
+    )
+    (net "$23"
+      (pins
+        D6-3
+        R16-2
+      )
+    )
+    (net "ÉTAT-WIFI-VERTE"
+      (pins
+        R35-1
+        MOD1-9
+      )
+    )
+    (net "CANRX_CARTES_ALIM"
+      (pins
+        TEEN1-6
+        IC4-4
+      )
+    )
+    (net "$12"
+      (pins
+        S1-1
+        R27-2
+      )
+    )
+    (net "nRESET-FEATHER"
+      (pins
+        MOD1-1
+        TEEN1-55
+      )
+    )
+    (net "$29"
+      (pins
+        T2-2
+        R40-2
+      )
+    )
+    (net "$5"
+      (pins
+        R12-1
+        SW1-6
+      )
+    )
+    (net "I2C0-SDA"
+      (pins
+        TEEN1-66
+        IC11-5
+        P15-1
+        R31-2
+      )
+    )
+    (net "$9"
+      (pins
+        B1-1
+        R4-2
+      )
+    )
+    (net "$8"
+      (pins
+        K2-1
+        K2-4
+        IC3-6
+        R2-2
+      )
+    )
+    (net "LED-FLASHFS-GREEN"
+      (pins
+        TEEN1-18
+        R16-1
+      )
+    )
+    (net "3.3V"
+      (pins
+        C20-1
+        C23-1
+        IC5-3
+        IC5-7
+        IC5-8
+        C17-2
+        C5-1
+        C13-1
+        IC3-5
+        IC2-5
+        C7-1
+        C2-1
+        R29-2
+        C11-1
+        IC7-5
+        C10-1
+        LCD1-1
+        IC1-5
+        C6-1
+        R24-1
+        IC13-2
+        C9-1
+        IC4-5
+        C21-1
+        IC11-8
+        T1-1
+        IC6-14
+        IC10-14
+        IC8-14
+        R21-1
+        R33-1
+        C18-1
+        R18-1
+        R31-1
+        R30-1
+        R20-1
+      )
+    )
+    (net "$4"
+      (pins
+        R7-1
+        IC7-6
+        K3-3
+      )
+    )
+    (net "SYNC_VITESSE_L"
+      (pins
+        R1-2
+        K1-1
+        IC1-6
+      )
+    )
+    (net "$19"
+      (pins
+        R35-2
+        D10-3
+      )
+    )
+    (net "$16"
+      (pins
+        R32-1
+        R34-2
+      )
+    )
+    (net "$27"
+      (pins
+        BZ1-2
+        T2-3
+      )
+    )
+    (net "POWER"
+      (pins
+        D8-1
+        K4-2
+      )
+    )
+    (net "SPI1-MOSI"
+      (pins
+        TEEN1-63
+        IC8-11
+        P3-1
+      )
+    )
+    (net "$7"
+      (pins
+        K2-2
+        K2-3
+        IC3-7
+        R2-1
+      )
+    )
+    (net "nRESET-LCD"
+      (pins
+        LCD1-4
+        R24-2
+        TEEN1-62
+      )
+    )
+    (net "$36"
+      (pins
+        R9-1
+        D3-1
+      )
+    )
+    (net "SERIAL-TEENSY-TO-FEATHER"
+      (pins
+        MOD1-13
+        TEEN1-24
+        R33-2
+        H6-1
+      )
+    )
+    (net "$28"
+      (pins
+        R15-1
+        SW1-1
+      )
+    )
+    (net "LED-FLASHFS-RED"
+      (pins
+        TEEN1-17
+        R11-1
+      )
+    )
+    (net "SPI2-INT-MCP2518FD-AUX"
+      (pins
+        TEEN1-69
+        IC6-4
+        P7-1
+      )
+    )
+    (net "ACTIVITÉ"
+      (pins
+        R34-1
+        TEEN1-71
+      )
+    )
+    (net "PWM-RETRO-ECLAIRAGE-TFT"
+      (pins
+        TEEN1-61
+        R19-1
+      )
+    )
+    (net "CANTX-POSTES"
+      (pins
+        IC7-1
+        IC6-1
+      )
+    )
+    (net "SPI2-CS-MCP2518FD-AUX"
+      (pins
+        TEEN1-33
+        IC6-13
+        P6-1
+      )
+    )
+    (net "$30"
+      (pins
+        D9-2
+        MOD1-27
+      )
+    )
+    (net "$25"
+      (pins
+        S3-1
+        R39-2
+      )
+    )
+    (net "CANTX_CARTES_ALIM"
+      (pins
+        TEEN1-5
+        IC4-1
+      )
+    )
+    (net "CANRX-POSTES"
+      (pins
+        IC7-4
+        IC6-2
+      )
+    )
+    (net "SYNCHRO_PHASE_PWM_H"
+      (pins
+        R6-2
+        IC2-7
+        K1-4
+      )
+    )
+    (net "SPI1-SCK"
+      (pins
+        TEEN1-64
+        IC8-10
+        P4-1
+      )
+    )
+    (net "ESP32-MISO"
+      (pins
+        MOD1-12
+        IC10-12
+        P22-1
+      )
+    )
+    (net "$18"
+      (pins
+        R26-2
+        B4-2
+      )
+    )
+    (net "ESP32-SCK"
+      (pins
+        MOD1-10
+        IC10-10
+        P19-1
+      )
+    )
+    (net "SPI2-MOSI"
+      (pins
+        IC5-5
+        TEEN1-34
+        IC6-11
+        P10-1
+      )
+    )
+    (net "ARRÊT-URGENCE"
+      (pins
+        TEEN1-75
+        R36-1
+        Z1-2
+      )
+    )
+    (net "BUZZER"
+      (pins
+        TEEN1-67
+        H9-1
+        R40-1
+      )
+    )
+    (net "$41"
+      (pins
+        T1-2
+        R19-2
+      )
+    )
+    (net "LED-JAUNE"
+      (pins
+        R14-2
+        TEEN1-50
+      )
+    )
+    (net "PWR"
+      (pins
+        D8-2
+        C16-1
+        C15-1
+        IC9-1
+        IC13-3
+        K3-1
+      )
+    )
+    (net "SPI0-SCK"
+      (pins
+        LCD1-7
+        TEEN1-70
+      )
+    )
+    (net "$20"
+      (pins
+        LCD1-8
+        R23-2
+      )
+    )
+    (net "$15"
+      (pins
+        S2-2
+        R38-2
+      )
+    )
+    (net "ÉTAT-WIFI-ROUGE"
+      (pins
+        MOD1-15
+        R37-1
+      )
+    )
+    (net "$24"
+      (pins
+        MOD1-4
+        S3-2
+      )
+    )
+    (net "SPI1-INT-MCP2518FD-ESP32"
+      (pins
+        TEEN1-53
+        IC8-4
+        P12-1
+      )
+    )
+    (net "ENCODEUR-CLIC"
+      (pins
+        R8-2
+        TEEN1-4
+      )
+    )
+    (net "$13"
+      (pins
+        D11-1
+        R29-1
+      )
+    )
+    (net "SPI0-MISO"
+      (pins
+        LCD1-9
+        TEEN1-14
+      )
+    )
+    (net "CANH-ALIMENTATIONS"
+      (pins
+        R3-1
+        K1-6
+        IC4-7
+      )
+    )
+    (net "SPI0-MOSI"
+      (pins
+        LCD1-6
+        TEEN1-13
+      )
+    )
+    (net "SPI2-MISO"
+      (pins
+        IC5-2
+        TEEN1-35
+        IC6-12
+        P11-1
+      )
+    )
+    (net "$14"
+      (pins
+        K5-1
+        R32-2
+      )
+    )
+    (net "LCD-DATA/COMMAND"
+      (pins
+        LCD1-5
+        TEEN1-11
+      )
+    )
+    (net "$17"
+      (pins
+        R37-2
+        D10-1
+      )
+    )
+    (net "$1"
+      (pins
+        C22-2
+        R28-2
+        R25-1
+      )
+    )
+    (net "$10"
+      (pins
+        K6-1
+        R36-2
+      )
+    )
+    (net "SYNC_VITESSE_H"
+      (pins
+        R1-1
+        K1-2
+        IC1-7
+      )
+    )
+    (net "$11"
+      (pins
+        R12-2
+        C3-1
+        R10-1
+      )
+    )
+    (net "$38"
+      (pins
+        D5-1
+        R13-1
+      )
+    )
+    (net "$34"
+      (pins
+        R5-1
+        D1-1
+      )
+    )
+    (net "MODE-INITIAL"
+      (pins
+        TEEN1-9
+        R38-1
+      )
+    )
+    (net "$22"
+      (pins
+        D6-1
+        R11-2
+      )
+    )
+    (net "ESP32-CS-MCP2518FD"
+      (pins
+        MOD1-20
+        IC10-13
+        P18-1
+      )
+    )
+    (net "POUSSOIR-LCD"
+      (pins
+        R22-1
+        TEEN1-19
+      )
+    )
+    (net "$26"
+      (pins
+        D4-1
+        R14-1
+      )
+    )
+    (net "SERIAL-FEATHER-TO-TEENSY"
+      (pins
+        MOD1-14
+        TEEN1-23
+        R21-2
+        H5-1
+      )
+    )
+    (net "LED-ROUGE"
+      (pins
+        R13-2
+        TEEN1-30
+      )
+    )
+    (net "$37"
+      (pins
+        B2-4
+        R22-2
+      )
+    )
+    (net "GND"
+      (pins
+        C14-2
+        C20-2
+        C1-2
+        C23-2
+        C22-1
+        C3-2
+        C4-2
+        S1-2
+        C8-2
+        IC5-4
+        D5-2
+        D1-2
+        C17-1
+        D3-2
+        C5-2
+        C13-2
+        K5-2
+        IC3-2
+        IC3-8
+        C16-2
+        B3-4
+        D7-2
+        D4-2
+        IC2-2
+        IC2-8
+        C7-2
+        C2-2
+        B2-2
+        C19-2
+        C11-2
+        IC7-2
+        IC7-8
+        C15-2
+        C10-2
+        B4-1
+        C12-2
+        MOD1-3
+        R34-3
+        LCD1-2
+        SW1-2
+        SW1-5
+        IC1-2
+        IC1-8
+        C6-2
+        IC9-2
+        IC13-1
+        D10-2
+        K3-4
+        C9-2
+        K4-1
+        TEEN1-1
+        TEEN1-37
+        TEEN1-39
+        TEEN1-59
+        TEEN1-72
+        IC4-2
+        IC4-8
+        C21-2
+        IC12-1
+        IC11-1
+        IC11-2
+        IC11-3
+        IC11-4
+        IC6-7
+        IC10-7
+        IC8-7
+        B1-2
+        K6-2
+        Z1-1
+        D6-2
+        C18-2
+        P16-1
+        S2-1
+        R39-1
+        T2-1
+      )
+    )
+    (net "CANL-ALIMENTATIONS"
+      (pins
+        R3-2
+        K1-5
+        IC4-6
+      )
+    )
+    (net "PORT-38"
+      (pins
+        TEEN1-76
+        H8-1
+      )
+    )
+    (net "nLCD-CS"
+      (pins
+        LCD1-3
+        TEEN1-12
+      )
+    )
+    (net "$35"
+      (pins
+        C4-1
+        R15-2
+        R8-1
+      )
+    )
+    (net "LED-USB"
+      (pins
+        R17-2
+        TEEN1-31
+      )
+    )
+    (net "PORT-37"
+      (pins
+        TEEN1-77
+        H7-1
+      )
+    )
+    (net "LED-VERTE"
+      (pins
+        R9-2
+        TEEN1-54
+      )
+    )
+    (net "MESURE_VITESSE"
+      (pins
+        IC1-1
+        TEEN1-22
+        P2-1
+      )
+    )
+    (net "$2"
+      (pins
+        SW1-4
+        R28-1
+      )
+    )
+    (net "I2C0-SCL"
+      (pins
+        TEEN1-65
+        IC11-6
+        P14-1
+        R30-2
+      )
+    )
+    (net "SPI1-CS-MCP2518FD-ESP32"
+      (pins
+        TEEN1-8
+        IC8-13
+        P13-1
+      )
+    )
+    (net "$39"
+      (pins
+        D2-2
+        TEEN1-58
+      )
+    )
+    (net "RAZ-ARRÊT-URGENCE"
+      (pins
+        TEEN1-47
+        R4-1
+      )
+    )
+    (net "HORLOGE-4MHz"
+      (pins
+        TEEN1-78
+        P17-1
+        IC6-6
+        IC10-6
+        IC8-6
+      )
+    )
+    (net "EEPROM-WE"
+      (pins
+        D11-2
+        TEEN1-79
+        IC11-7
+      )
+    )
+    (net "WIFI-SEL"
+      (pins
+        MOD1-5
+        R27-1
+      )
+    )
+    (net "ENCODEUR-A"
+      (pins
+        R10-2
+        TEEN1-10
+      )
+    )
+    (net "POUSSOIR-ACTION"
+      (pins
+        R26-1
+        TEEN1-56
+      )
+    )
+    (net "SPI2-SCK"
+      (pins
+        IC5-6
+        TEEN1-36
+        IC6-10
+        P9-1
+      )
+    )
+    (via_rule
+      "viaRuleForClassDefault" "viaForClassDefault"
+    )
+    (via_rule
+      "viaRuleForClassAlim" "viaForClassAlim"
+    )
+    (class "class_Default"
+      "CANRX_CARTES_ALIM"
+      "CANL-ALIMENTATIONS"
+      "CANTX_CARTES_ALIM"
+      "CANTX-POSTES"
+      "SPI2-CS-FLASH"
+      "CANTX-ACCESSOIRES"
+      "SPI0-SCK"
+      "SPI1-SCK"
+      "SERIAL-TEENSY-TO-FEATHER"
+      "LED-ROUGE"
+      "$1"
+      "SPI2-MOSI"
+      "CANRX-ACCESSOIRES"
+      "ACTIVITÉ"
+      "EEPROM-WE"
+      "$38"
+      "nLCD-CS"
+      "SYNCHRO_PWM"
+      "ÉTAT-WIFI-ROUGE"
+      "$16"
+      "$4"
+      "$12"
+      "SPI2-CS-MCP2518FD-AUX"
+      "nRESET"
+      "ENCODEUR-CLIC"
+      "$36"
+      "LED-USB"
+      "SYNCHRO_PHASE_PWM_H"
+      "LCD-DATA/COMMAND"
+      "LED-VERTE"
+      "$35"
+      "$8"
+      "$30"
+      "$17"
+      "$2"
+      "POUSSOIR-ACTION"
+      "WIFI-SEL"
+      "$14"
+      "$28"
+      "SPI0-MISO"
+      "CANH-ALIMENTATIONS"
+      "$3"
+      "$37"
+      "SPI1-MISO"
+      "SYNC_VITESSE_L"
+      "SPI0-MOSI"
+      "SPI2-SCK"
+      "CANRX-POSTES"
+      "SYNC_VITESSE_H"
+      "SYNCHRO_PHASE_PWM_L"
+      "$34"
+      "$20"
+      "$5"
+      "SPI2-MISO"
+      "SPI1-MOSI"
+      "nRESET-LCD"
+      "$11"
+      "$26"
+      "SERIAL-FEATHER-TO-TEENSY"
+      "ENCODEUR-A"
+      "$7"
+      "ÉTAT-WIFI-VERTE"
+      "$19"
+      "SPI2-INT-MCP2518FD-AUX"
+      "LED-JAUNE"
+      "POUSSOIR-LCD"
+      "$21"
+      "ENCODEUR-B"
+      "MESURE_VITESSE"
+      "$13"
+      "I2C0-SCL"
+      "I2C0-SDA"
+      "HORLOGE-4MHz"
+      "PWM-RETRO-ECLAIRAGE-TFT"
+      "$40"
+      "$41"
+      "$6"
+      "SPI1-CS-MCP2518FD-ESP32"
+      "SPI1-INT-MCP2518FD-ESP32"
+      "ESP32-SCK"
+      "ESP32-MOSI"
+      "ESP32-MISO"
+      "ESP32-CS-MCP2518FD"
+      "ESP32-INT-MCP2518FD"
+      "RAZ-ARRÊT-URGENCE"
+      "ARRÊT-URGENCE"
+      "LED-ARRÊT-URGENCE"
+      "$9"
+      "$10"
+      "$22"
+      "$23"
+      "LED-FLASHFS-RED"
+      "LED-FLASHFS-GREEN"
+      "$18"
+      "nRESET-FEATHER"
+      "MODE-INITIAL"
+      "$15"
+      "$24"
+      "$25"
+      "PORT-38"
+      "PORT-37"
+      "$27"
+      "$29"
+      "BUZZER"
+      (clearance_class default)
+      (via_rule "viaRuleForClassDefault")
+      (rule
+        (width 0.2286)
+      )
+      (circuit
+        (use_layer ComponentSide InnerTop InnerBack SolderSide)
+      )
+    )
+    (class "class_Alim"
+      "PWR"
+      "POWER"
+      "GND"
+      "+5V"
+      "3.3V"
+      "$39"
+      (clearance_class default)
+      (via_rule "viaRuleForClassAlim")
+      (rule
+        (width 0.508)
+      )
+      (circuit
+        (use_layer ComponentSide InnerTop InnerBack SolderSide)
+      )
+    )
+  )
+)
