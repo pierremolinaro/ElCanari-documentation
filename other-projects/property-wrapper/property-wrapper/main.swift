@@ -17,6 +17,9 @@ enum EBSelection <T> : Equatable where T : Equatable {
   case empty
   case multiple
   case single (T)
+
+  //····················································································································
+
 }
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -42,7 +45,7 @@ class ReadFaçade <T> : EventProtocol where T : Equatable {
     while idx < self.mEvents.count {
       if self.mEvents [idx] === inObserver {
         self.mEvents.remove (at: idx)
-        idx = self.mEvents.count
+        idx = self.mEvents.count // For exiting loop
       }else{
         idx += 1
       }
