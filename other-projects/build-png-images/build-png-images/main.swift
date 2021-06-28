@@ -31,7 +31,7 @@ func writeCGImage(_ image: CGImage, to destinationURL: URL) {
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-func buildImage (view inView : NSView, fileName : String) {
+func buildImage_PNG (view inView : NSView, fileName : String) {
   let PDFdata : Data = inView.dataWithPDF (inside: inView.frame)
   let image = NSImage (data: PDFdata)!
   let url = URL (fileURLWithPath: fileName + ".png")
@@ -40,35 +40,45 @@ func buildImage (view inView : NSView, fileName : String) {
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+func buildImage_PDF (view inView : NSView, fileName : String) {
+  let PDFdata : Data = inView.dataWithPDF (inside: inView.frame)
+  let url = URL (fileURLWithPath: fileName + ".pdf")
+  try! PDFdata.write (to: url)
+}
+
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
 let r = NSRect (x: 0.0, y:0.0, width: 40.0, height: 100.0)
 var statusView = CanariStatusView (frame: r)
 statusView.mDrawRed = true
-buildImage (view: statusView, fileName: "canariErrorStatus")
+buildImage_PNG (view: statusView, fileName: "canariErrorStatus")
 statusView = CanariStatusView (frame: r)
 statusView.mDrawOrange = true
-buildImage (view: statusView, fileName: "canariWarningStatus")
+buildImage_PNG (view: statusView, fileName: "canariWarningStatus")
 statusView = CanariStatusView (frame: r)
 statusView.mDrawGreen = true
-buildImage (view: statusView, fileName: "canariOkStatus")
+buildImage_PNG (view: statusView, fileName: "canariOkStatus")
 var view : NSView = MagnifyingGlassView (frame: NSRect (x: 0.0, y:0.0, width: 40.0, height: 40.0))
-buildImage (view: view, fileName: "magnifyingGlass")
+buildImage_PNG (view: view, fileName: "magnifyingGlass")
 view = EditorInspectorView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
-buildImage (view: view, fileName: "editorInspector")
+buildImage_PNG (view: view, fileName: "editorInspector")
 view = AlignmentCenterView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
-buildImage (view: view, fileName: "alignmentCenter")
+buildImage_PNG (view: view, fileName: "alignmentCenter")
 view = AlignmentLeftView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
-buildImage (view: view, fileName: "alignmentLeft")
+buildImage_PNG (view: view, fileName: "alignmentLeft")
 view = AlignmentRightView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
-buildImage (view: view, fileName: "alignmentRight")
+buildImage_PNG (view: view, fileName: "alignmentRight")
 view = AlignmentBottomView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
-buildImage (view: view, fileName: "alignmentBottom")
+buildImage_PNG (view: view, fileName: "alignmentBottom")
 view = AlignmentTopView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
-buildImage (view: view, fileName: "alignmentTop")
+buildImage_PNG (view: view, fileName: "alignmentTop")
 view = AlignmentMiddleView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
-buildImage (view: view, fileName: "alignmentMiddle")
+buildImage_PNG (view: view, fileName: "alignmentMiddle")
 view = AlignmentBaselineView (frame: NSRect (x: 0.0, y:0.0, width: 60.0, height: 60.0))
-buildImage (view: view, fileName: "alignmentBaseline")
+buildImage_PNG (view: view, fileName: "alignmentBaseline")
 view = UpDownRightLeftCursor (frame: NSRect (x: 0.0, y:0.0, width: 32.0, height: 32.0))
-buildImage (view: view, fileName: "upDownRightLeftCursor")
+buildImage_PNG (view: view, fileName: "upDownRightLeftCursor")
 view = RotationCursor (frame: NSRect (x: 0.0, y:0.0, width: 32.0, height: 32.0))
-buildImage (view: view, fileName: "rotationCursor")
+buildImage_PNG (view: view, fileName: "rotationCursor")
+view = ArtworkView (frame: NSRect (x: 0.0, y:0.0, width: 300.0, height: 150.0))
+buildImage_PDF (view: view, fileName: "artwork")

@@ -15,6 +15,7 @@
 		CF7034B82353AA5A00F4D2C7 /* AlignmentMiddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7034B72353AA5A00F4D2C7 /* AlignmentMiddle.swift */; };
 		CF7034BA2353AAD400F4D2C7 /* AlignmentBaseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7034B92353AAD400F4D2C7 /* AlignmentBaseline.swift */; };
 		CF7B7E3424F2B6E000A12A46 /* RotationCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B7E3324F2B6E000A12A46 /* RotationCursor.swift */; };
+		CFBC78732688DFC700EE6FF4 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC78722688DFC700EE6FF4 /* Artwork.swift */; };
 		CFC2684D235240F4007C47F6 /* AlignmentCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC2684C235240F4007C47F6 /* AlignmentCenter.swift */; };
 		CFC2685223524D6B007C47F6 /* AlignmentLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC2685123524D6B007C47F6 /* AlignmentLeft.swift */; };
 		CFC2685423524D86007C47F6 /* AlignmentRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC2685323524D86007C47F6 /* AlignmentRight.swift */; };
@@ -43,6 +44,7 @@
 		CF7034B72353AA5A00F4D2C7 /* AlignmentMiddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentMiddle.swift; sourceTree = "<group>"; };
 		CF7034B92353AAD400F4D2C7 /* AlignmentBaseline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentBaseline.swift; sourceTree = "<group>"; };
 		CF7B7E3324F2B6E000A12A46 /* RotationCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationCursor.swift; sourceTree = "<group>"; };
+		CFBC78722688DFC700EE6FF4 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		CFC2684C235240F4007C47F6 /* AlignmentCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentCenter.swift; sourceTree = "<group>"; };
 		CFC2685123524D6B007C47F6 /* AlignmentLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentLeft.swift; sourceTree = "<group>"; };
 		CFC2685323524D86007C47F6 /* AlignmentRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentRight.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				CFD336B421AEAD3E0085D2AB /* main.swift */,
 				CF7B7E3324F2B6E000A12A46 /* RotationCursor.swift */,
 				CF6471FB24F2764700452009 /* UpDownRightLeftCursor.swift */,
+				CFBC78722688DFC700EE6FF4 /* Artwork.swift */,
 			);
 			path = "build-png-images";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				CFD336BC21AEAD6B0085D2AB /* CanariStatusView.swift in Sources */,
 				CFC2684D235240F4007C47F6 /* AlignmentCenter.swift in Sources */,
+				CFBC78732688DFC700EE6FF4 /* Artwork.swift in Sources */,
 				CF7B7E3424F2B6E000A12A46 /* RotationCursor.swift in Sources */,
 				CFC2685223524D6B007C47F6 /* AlignmentLeft.swift in Sources */,
 				CF2A42C121BE93D70023992F /* EditorInspectorView.swift in Sources */,

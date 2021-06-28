@@ -1,6 +1,6 @@
 PM-TEXT-FORMAT
 1
-{"PMArtworkVersion":7,"PMArtworkComment":"This artwork file corresponds to specification from Seeed Studio Fusion. See :\n\nhttps:\/\/www.seeedstudio.com\/fusion_pcb.html\n\nFusion PCB Specification:\nhttp:\/\/support.seeedstudio.com\/knowledgebase\/articles\/447362-fusion-pcb-specification\n"}
+{"PMArtworkComment":"This artwork file corresponds to specification from Seeed Studio Fusion. See :\n\nhttps:\/\/www.seeedstudio.com\/fusion_pcb.html\n\nFusion PCB Specification:\nhttp:\/\/support.seeedstudio.com\/knowledgebase\/articles\/447362-fusion-pcb-specification\n","PMArtworkVersion":11}
 $ArtworkRoot
 selectedTab
 comments
