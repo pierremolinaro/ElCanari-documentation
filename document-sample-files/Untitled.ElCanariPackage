@@ -1,6 +1,6 @@
 PM-TEXT-FORMAT
-1
-{"WindowHeight":1057,"PMPackageComment":"","PMPackageVersion":9,"WindowWidth":1162}
+2
+{"PMPackageVersion":9,"PMPackageComment":"","WindowHeight":1057,"WindowWidth":1162}
 $PackageRoot
 selectedPageIndex
 selectedInspector
@@ -196,7 +196,7 @@ master
 $ForbiddenPadNumber
 padNumber
 @0
-1
+0
 1
 
 segment 300 mil : 950 mil to 600 mil : 1250 mil;\nbezier 175 mil : 825 mil to 175 mil : 525 mil cp 475 mil : 825 mil cp 475 mil : 525 mil;\noval 225 mil : 350 mil size 300 mil : 300 mil;\narc 950 mil : 575 mil radius 150 mil start 90000 angle 270000 leading 0 mil training 0 mil;\nguide 600 mil : 925 mil to 900 mil : 1225 mil;\ndimension 600 mil : 800 mil to 700 mil : 900 mil label 0 mil : 0 mil unit mil;\nzone 50 mil : 1000 mil size 275 mil : 200 mil label 175 mil : 1050 mil name "Azerty" numbering noNumbering;\npad 125 mil : 1150 mil size 50 mil : 100 mil shape octo style traversing hole 25 mil : 25 mil number 4 id 792;\npad 275 mil : 1125 mil size 50 mil : 100 mil shape octo style traversing hole 25 mil : 25 mil number 5;\nslave 700 mil : 375 mil size 50 mil : 100 mil shape octo style traversing hole 25 mil : 25 mil id 792;\npad 600 mil : 600 mil size 50 mil : 100 mil shape octo style traversing hole 25 mil : 25 mil number 1;\nguide 400 mil : 1300 mil to 700 mil : 1600 mil;\ndimension 900 mil : 1000 mil to 1200 mil : 1000 mil label 0 mil : 0 mil unit mil;\nend\n
@@ -206,8 +206,8 @@ F
 Erm
 as
 4
-HG
-3fb999999999999a
+0
+3feaf6247cc36248
 F
 F
 0
