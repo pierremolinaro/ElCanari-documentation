@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF1CB87B2AED197C00258319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CB87A2AED197C00258319 /* AppDelegate.swift */; };
+		CF1CB87D2AED197D00258319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1CB87C2AED197D00258319 /* Assets.xcassets */; };
+		CF1CB8802AED197D00258319 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1CB87E2AED197D00258319 /* MainMenu.xib */; };
+		CF2B87922C6901FF00494A84 /* NSControl-autolayout-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B877E2C6901FF00494A84 /* NSControl-autolayout-extension.swift */; };
+		CF2B87932C6901FF00494A84 /* PMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B877F2C6901FF00494A84 /* PMTextView.swift */; };
+		CF2B87942C6901FF00494A84 /* PMHorizontalStackView-separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87802C6901FF00494A84 /* PMHorizontalStackView-separator.swift */; };
+		CF2B87952C6901FF00494A84 /* PMAbstractStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87812C6901FF00494A84 /* PMAbstractStackView.swift */; };
+		CF2B87962C6901FF00494A84 /* PMVerticalGridView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87822C6901FF00494A84 /* PMVerticalGridView2.swift */; };
+		CF2B87972C6901FF00494A84 /* NSView-autolayout-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87832C6901FF00494A84 /* NSView-autolayout-extension.swift */; };
+		CF2B87982C6901FF00494A84 /* PMLayoutConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87842C6901FF00494A84 /* PMLayoutConstraintPriority.swift */; };
+		CF2B87992C6901FF00494A84 /* NSLayoutConstraint-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87852C6901FF00494A84 /* NSLayoutConstraint-extensions.swift */; };
+		CF2B879A2C6901FF00494A84 /* PMHorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87862C6901FF00494A84 /* PMHorizontalStackView.swift */; };
+		CF2B879B2C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87872C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift */; };
+		CF2B879C2C6901FF00494A84 /* PMVerticalStackView-separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87882C6901FF00494A84 /* PMVerticalStackView-separator.swift */; };
+		CF2B879D2C6901FF00494A84 /* PMVerticalStackView-divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87892C6901FF00494A84 /* PMVerticalStackView-divider.swift */; };
+		CF2B879E2C6901FF00494A84 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878A2C6901FF00494A84 /* PMButton.swift */; };
+		CF2B879F2C6901FF00494A84 /* PMHorizontalStackView-divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878B2C6901FF00494A84 /* PMHorizontalStackView-divider.swift */; };
+		CF2B87A02C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878C2C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift */; };
+		CF2B87A12C6901FF00494A84 /* PMVerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878D2C6901FF00494A84 /* PMVerticalStackView.swift */; };
+		CF2B87A22C6901FF00494A84 /* PMMarginSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878E2C6901FF00494A84 /* PMMarginSize.swift */; };
+		CF2B87A32C6901FF00494A84 /* PMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878F2C6901FF00494A84 /* PMTableView.swift */; };
+		CF2B87A42C6901FF00494A84 /* PMViewLayoutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87902C6901FF00494A84 /* PMViewLayoutSettings.swift */; };
+		CF2B87A52C6901FF00494A84 /* PMTextViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87912C6901FF00494A84 /* PMTextViewBase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF1CB8772AED197C00258319 /* essai-gridview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "essai-gridview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1CB87A2AED197C00258319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF1CB87C2AED197D00258319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF1CB87F2AED197D00258319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CF1CB8812AED197D00258319 /* essai_gridview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = essai_gridview.entitlements; sourceTree = "<group>"; };
+		CF2B877E2C6901FF00494A84 /* NSControl-autolayout-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSControl-autolayout-extension.swift"; sourceTree = "<group>"; };
+		CF2B877F2C6901FF00494A84 /* PMTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextView.swift; sourceTree = "<group>"; };
+		CF2B87802C6901FF00494A84 /* PMHorizontalStackView-separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMHorizontalStackView-separator.swift"; sourceTree = "<group>"; };
+		CF2B87812C6901FF00494A84 /* PMAbstractStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAbstractStackView.swift; sourceTree = "<group>"; };
+		CF2B87822C6901FF00494A84 /* PMVerticalGridView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalGridView2.swift; sourceTree = "<group>"; };
+		CF2B87832C6901FF00494A84 /* NSView-autolayout-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView-autolayout-extension.swift"; sourceTree = "<group>"; };
+		CF2B87842C6901FF00494A84 /* PMLayoutConstraintPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLayoutConstraintPriority.swift; sourceTree = "<group>"; };
+		CF2B87852C6901FF00494A84 /* NSLayoutConstraint-extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint-extensions.swift"; sourceTree = "<group>"; };
+		CF2B87862C6901FF00494A84 /* PMHorizontalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHorizontalStackView.swift; sourceTree = "<group>"; };
+		CF2B87872C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalLayoutInHorizontalCollectionView.swift; sourceTree = "<group>"; };
+		CF2B87882C6901FF00494A84 /* PMVerticalStackView-separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMVerticalStackView-separator.swift"; sourceTree = "<group>"; };
+		CF2B87892C6901FF00494A84 /* PMVerticalStackView-divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMVerticalStackView-divider.swift"; sourceTree = "<group>"; };
+		CF2B878A2C6901FF00494A84 /* PMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
+		CF2B878B2C6901FF00494A84 /* PMHorizontalStackView-divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMHorizontalStackView-divider.swift"; sourceTree = "<group>"; };
+		CF2B878C2C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHorizontalLayoutInVerticalCollectionView.swift; sourceTree = "<group>"; };
+		CF2B878D2C6901FF00494A84 /* PMVerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalStackView.swift; sourceTree = "<group>"; };
+		CF2B878E2C6901FF00494A84 /* PMMarginSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMarginSize.swift; sourceTree = "<group>"; };
+		CF2B878F2C6901FF00494A84 /* PMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTableView.swift; sourceTree = "<group>"; };
+		CF2B87902C6901FF00494A84 /* PMViewLayoutSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewLayoutSettings.swift; sourceTree = "<group>"; };
+		CF2B87912C6901FF00494A84 /* PMTextViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextViewBase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF1CB8742AED197C00258319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF1CB86E2AED197C00258319 = {
+			isa = PBXGroup;
+			children = (
+				CF1CB8792AED197C00258319 /* essai-gridview */,
+				CF1CB8782AED197C00258319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF1CB8782AED197C00258319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF1CB8772AED197C00258319 /* essai-gridview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1CB8792AED197C00258319 /* essai-gridview */ = {
+			isa = PBXGroup;
+			children = (
+				CF2B877E2C6901FF00494A84 /* NSControl-autolayout-extension.swift */,
+				CF2B87852C6901FF00494A84 /* NSLayoutConstraint-extensions.swift */,
+				CF2B87832C6901FF00494A84 /* NSView-autolayout-extension.swift */,
+				CF2B87812C6901FF00494A84 /* PMAbstractStackView.swift */,
+				CF2B878A2C6901FF00494A84 /* PMButton.swift */,
+				CF2B878C2C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift */,
+				CF2B878B2C6901FF00494A84 /* PMHorizontalStackView-divider.swift */,
+				CF2B87802C6901FF00494A84 /* PMHorizontalStackView-separator.swift */,
+				CF2B87862C6901FF00494A84 /* PMHorizontalStackView.swift */,
+				CF2B87842C6901FF00494A84 /* PMLayoutConstraintPriority.swift */,
+				CF2B878E2C6901FF00494A84 /* PMMarginSize.swift */,
+				CF2B878F2C6901FF00494A84 /* PMTableView.swift */,
+				CF2B877F2C6901FF00494A84 /* PMTextView.swift */,
+				CF2B87912C6901FF00494A84 /* PMTextViewBase.swift */,
+				CF2B87822C6901FF00494A84 /* PMVerticalGridView2.swift */,
+				CF2B87872C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift */,
+				CF2B87892C6901FF00494A84 /* PMVerticalStackView-divider.swift */,
+				CF2B87882C6901FF00494A84 /* PMVerticalStackView-separator.swift */,
+				CF2B878D2C6901FF00494A84 /* PMVerticalStackView.swift */,
+				CF2B87902C6901FF00494A84 /* PMViewLayoutSettings.swift */,
+				CF1CB87A2AED197C00258319 /* AppDelegate.swift */,
+				CF1CB87C2AED197D00258319 /* Assets.xcassets */,
+				CF1CB8812AED197D00258319 /* essai_gridview.entitlements */,
+				CF1CB87E2AED197D00258319 /* MainMenu.xib */,
+			);
+			path = "essai-gridview";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF1CB8762AED197C00258319 /* essai-gridview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF1CB8842AED197D00258319 /* Build configuration list for PBXNativeTarget "essai-gridview" */;
+			buildPhases = (
+				CF1CB8732AED197C00258319 /* Sources */,
+				CF1CB8742AED197C00258319 /* Frameworks */,
+				CF1CB8752AED197C00258319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "essai-gridview";
+			packageProductDependencies = (
+			);
+			productName = "essai-gridview";
+			productReference = CF1CB8772AED197C00258319 /* essai-gridview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF1CB86F2AED197C00258319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CF1CB8762AED197C00258319 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = CF1CB8722AED197C00258319 /* Build configuration list for PBXProject "essai-gridview" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1CB86E2AED197C00258319;
+			packageReferences = (
+			);
+			productRefGroup = CF1CB8782AED197C00258319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF1CB8762AED197C00258319 /* essai-gridview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF1CB8752AED197C00258319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1CB87D2AED197D00258319 /* Assets.xcassets in Resources */,
+				CF1CB8802AED197D00258319 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF1CB8732AED197C00258319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1CB87B2AED197C00258319 /* AppDelegate.swift in Sources */,
+				CF2B879B2C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift in Sources */,
+				CF2B87922C6901FF00494A84 /* NSControl-autolayout-extension.swift in Sources */,
+				CF2B87A12C6901FF00494A84 /* PMVerticalStackView.swift in Sources */,
+				CF2B87A42C6901FF00494A84 /* PMViewLayoutSettings.swift in Sources */,
+				CF2B87982C6901FF00494A84 /* PMLayoutConstraintPriority.swift in Sources */,
+				CF2B87942C6901FF00494A84 /* PMHorizontalStackView-separator.swift in Sources */,
+				CF2B879D2C6901FF00494A84 /* PMVerticalStackView-divider.swift in Sources */,
+				CF2B87A32C6901FF00494A84 /* PMTableView.swift in Sources */,
+				CF2B879A2C6901FF00494A84 /* PMHorizontalStackView.swift in Sources */,
+				CF2B87952C6901FF00494A84 /* PMAbstractStackView.swift in Sources */,
+				CF2B87A02C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift in Sources */,
+				CF2B87962C6901FF00494A84 /* PMVerticalGridView2.swift in Sources */,
+				CF2B879C2C6901FF00494A84 /* PMVerticalStackView-separator.swift in Sources */,
+				CF2B87972C6901FF00494A84 /* NSView-autolayout-extension.swift in Sources */,
+				CF2B87932C6901FF00494A84 /* PMTextView.swift in Sources */,
+				CF2B879F2C6901FF00494A84 /* PMHorizontalStackView-divider.swift in Sources */,
+				CF2B87A22C6901FF00494A84 /* PMMarginSize.swift in Sources */,
+				CF2B879E2C6901FF00494A84 /* PMButton.swift in Sources */,
+				CF2B87992C6901FF00494A84 /* NSLayoutConstraint-extensions.swift in Sources */,
+				CF2B87A52C6901FF00494A84 /* PMTextViewBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF1CB87E2AED197D00258319 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1CB87F2AED197D00258319 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF1CB8822AED197D00258319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CF1CB8832AED197D00258319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CF1CB8852AED197D00258319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "essai-gridview/essai_gridview.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = YW8QY74J2A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.pcmolinaro.pierre.essai-gridview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CF1CB8862AED197D00258319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "essai-gridview/essai_gridview.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = YW8QY74J2A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.pcmolinaro.pierre.essai-gridview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF1CB8722AED197C00258319 /* Build configuration list for PBXProject "essai-gridview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1CB8822AED197D00258319 /* Debug */,
+				CF1CB8832AED197D00258319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF1CB8842AED197D00258319 /* Build configuration list for PBXNativeTarget "essai-gridview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1CB8852AED197D00258319 /* Debug */,
+				CF1CB8862AED197D00258319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF1CB86F2AED197C00258319 /* Project object */;
+}
