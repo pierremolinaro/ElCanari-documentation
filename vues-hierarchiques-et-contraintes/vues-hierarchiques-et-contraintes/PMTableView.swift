@@ -36,14 +36,14 @@ class PMTableView : NSTableView {
 
   //--------------------------------------------------------------------------------------------------------------------
 
-  private let mDefaultControlLayoutSettings = AutoLayoutViewSettings (
+  private let mDefaultControlLayoutSettings = PMViewLayoutSettings (
     vLayoutInHorizontalContainer: .lastBaseline,
     hLayoutInVerticalContainer: .fill
   )
 
   //--------------------------------------------------------------------------------------------------------------------
 
-  override var pmLayoutSettings : AutoLayoutViewSettings { self.mDefaultControlLayoutSettings }
+  override var pmLayoutSettings : PMViewLayoutSettings { self.mDefaultControlLayoutSettings }
 
   //--------------------------------------------------------------------------------------------------------------------
 

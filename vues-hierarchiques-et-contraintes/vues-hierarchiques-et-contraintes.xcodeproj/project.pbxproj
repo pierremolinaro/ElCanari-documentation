@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF4A8C622C6949D800D898D3 /* AutoLayoutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A8C612C6949D800D898D3 /* AutoLayoutWindow.swift */; };
+		CF4A8C642C69504900D898D3 /* AutoLayoutVerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A8C632C69504900D898D3 /* AutoLayoutVerticalStackView.swift */; };
+		CF4A8C662C69531800D898D3 /* AutoLayoutAbstractStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A8C652C69531800D898D3 /* AutoLayoutAbstractStackView.swift */; };
+		CF62C3832C693EE80038D4B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3822C693EE80038D4B0 /* AppDelegate.swift */; };
+		CF62C3852C693EE90038D4B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF62C3842C693EE90038D4B0 /* Assets.xcassets */; };
+		CF62C3882C693EE90038D4B0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CF62C3872C693EE90038D4B0 /* Base */; };
+		CF62C3A32C693F2B0038D4B0 /* PMTextViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C38F2C693F2B0038D4B0 /* PMTextViewBase.swift */; };
+		CF62C3A42C693F2B0038D4B0 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3902C693F2B0038D4B0 /* PMButton.swift */; };
+		CF62C3A52C693F2B0038D4B0 /* NSView-autolayout-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3912C693F2B0038D4B0 /* NSView-autolayout-extension.swift */; };
+		CF62C3A62C693F2B0038D4B0 /* PMVerticalGridView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3922C693F2B0038D4B0 /* PMVerticalGridView2.swift */; };
+		CF62C3A72C693F2B0038D4B0 /* PMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3932C693F2B0038D4B0 /* PMTableView.swift */; };
+		CF62C3A82C693F2B0038D4B0 /* PMVerticalStackView-divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3942C693F2B0038D4B0 /* PMVerticalStackView-divider.swift */; };
+		CF62C3A92C693F2B0038D4B0 /* PMHorizontalStackView-divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3952C693F2B0038D4B0 /* PMHorizontalStackView-divider.swift */; };
+		CF62C3AA2C693F2B0038D4B0 /* PMMarginSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3962C693F2B0038D4B0 /* PMMarginSize.swift */; };
+		CF62C3AB2C693F2B0038D4B0 /* PMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3972C693F2B0038D4B0 /* PMTextView.swift */; };
+		CF62C3AC2C693F2B0038D4B0 /* PMVerticalLayoutInHorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3982C693F2B0038D4B0 /* PMVerticalLayoutInHorizontalCollectionView.swift */; };
+		CF62C3AD2C693F2B0038D4B0 /* PMHorizontalStackView-separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3992C693F2B0038D4B0 /* PMHorizontalStackView-separator.swift */; };
+		CF62C3AE2C693F2B0038D4B0 /* PMVerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C39A2C693F2B0038D4B0 /* PMVerticalStackView.swift */; };
+		CF62C3AF2C693F2B0038D4B0 /* PMHorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C39B2C693F2B0038D4B0 /* PMHorizontalStackView.swift */; };
+		CF62C3B02C693F2B0038D4B0 /* PMHorizontalLayoutInVerticalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C39C2C693F2B0038D4B0 /* PMHorizontalLayoutInVerticalCollectionView.swift */; };
+		CF62C3B12C693F2B0038D4B0 /* NSControl-autolayout-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C39D2C693F2B0038D4B0 /* NSControl-autolayout-extension.swift */; };
+		CF62C3B22C693F2B0038D4B0 /* PMLayoutConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C39E2C693F2B0038D4B0 /* PMLayoutConstraintPriority.swift */; };
+		CF62C3B32C693F2B0038D4B0 /* PMAbstractStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C39F2C693F2B0038D4B0 /* PMAbstractStackView.swift */; };
+		CF62C3B42C693F2B0038D4B0 /* NSLayoutConstraint-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3A02C693F2B0038D4B0 /* NSLayoutConstraint-extensions.swift */; };
+		CF62C3B52C693F2B0038D4B0 /* PMVerticalStackView-separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3A12C693F2B0038D4B0 /* PMVerticalStackView-separator.swift */; };
+		CF62C3B62C693F2B0038D4B0 /* PMViewLayoutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3A22C693F2B0038D4B0 /* PMViewLayoutSettings.swift */; };
+		CF62C3B82C6940500038D4B0 /* AutoLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62C3B72C6940500038D4B0 /* AutoLayoutView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF4A8C612C6949D800D898D3 /* AutoLayoutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutWindow.swift; sourceTree = "<group>"; };
+		CF4A8C632C69504900D898D3 /* AutoLayoutVerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutVerticalStackView.swift; sourceTree = "<group>"; };
+		CF4A8C652C69531800D898D3 /* AutoLayoutAbstractStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutAbstractStackView.swift; sourceTree = "<group>"; };
+		CF62C37F2C693EE80038D4B0 /* vues-hierarchiques-et-contraintes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vues-hierarchiques-et-contraintes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF62C3822C693EE80038D4B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF62C3842C693EE90038D4B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF62C3872C693EE90038D4B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CF62C3892C693EE90038D4B0 /* vues_hierarchiques_et_contraintes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vues_hierarchiques_et_contraintes.entitlements; sourceTree = "<group>"; };
+		CF62C38F2C693F2B0038D4B0 /* PMTextViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextViewBase.swift; sourceTree = "<group>"; };
+		CF62C3902C693F2B0038D4B0 /* PMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
+		CF62C3912C693F2B0038D4B0 /* NSView-autolayout-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView-autolayout-extension.swift"; sourceTree = "<group>"; };
+		CF62C3922C693F2B0038D4B0 /* PMVerticalGridView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalGridView2.swift; sourceTree = "<group>"; };
+		CF62C3932C693F2B0038D4B0 /* PMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTableView.swift; sourceTree = "<group>"; };
+		CF62C3942C693F2B0038D4B0 /* PMVerticalStackView-divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMVerticalStackView-divider.swift"; sourceTree = "<group>"; };
+		CF62C3952C693F2B0038D4B0 /* PMHorizontalStackView-divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMHorizontalStackView-divider.swift"; sourceTree = "<group>"; };
+		CF62C3962C693F2B0038D4B0 /* PMMarginSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMarginSize.swift; sourceTree = "<group>"; };
+		CF62C3972C693F2B0038D4B0 /* PMTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextView.swift; sourceTree = "<group>"; };
+		CF62C3982C693F2B0038D4B0 /* PMVerticalLayoutInHorizontalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalLayoutInHorizontalCollectionView.swift; sourceTree = "<group>"; };
+		CF62C3992C693F2B0038D4B0 /* PMHorizontalStackView-separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMHorizontalStackView-separator.swift"; sourceTree = "<group>"; };
+		CF62C39A2C693F2B0038D4B0 /* PMVerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalStackView.swift; sourceTree = "<group>"; };
+		CF62C39B2C693F2B0038D4B0 /* PMHorizontalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHorizontalStackView.swift; sourceTree = "<group>"; };
+		CF62C39C2C693F2B0038D4B0 /* PMHorizontalLayoutInVerticalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHorizontalLayoutInVerticalCollectionView.swift; sourceTree = "<group>"; };
+		CF62C39D2C693F2B0038D4B0 /* NSControl-autolayout-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSControl-autolayout-extension.swift"; sourceTree = "<group>"; };
+		CF62C39E2C693F2B0038D4B0 /* PMLayoutConstraintPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLayoutConstraintPriority.swift; sourceTree = "<group>"; };
+		CF62C39F2C693F2B0038D4B0 /* PMAbstractStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAbstractStackView.swift; sourceTree = "<group>"; };
+		CF62C3A02C693F2B0038D4B0 /* NSLayoutConstraint-extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint-extensions.swift"; sourceTree = "<group>"; };
+		CF62C3A12C693F2B0038D4B0 /* PMVerticalStackView-separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMVerticalStackView-separator.swift"; sourceTree = "<group>"; };
+		CF62C3A22C693F2B0038D4B0 /* PMViewLayoutSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewLayoutSettings.swift; sourceTree = "<group>"; };
+		CF62C3B72C6940500038D4B0 /* AutoLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF62C37C2C693EE80038D4B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF62C3762C693EE80038D4B0 = {
+			isa = PBXGroup;
+			children = (
+				CF62C3812C693EE80038D4B0 /* vues-hierarchiques-et-contraintes */,
+				CF62C3802C693EE80038D4B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF62C3802C693EE80038D4B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF62C37F2C693EE80038D4B0 /* vues-hierarchiques-et-contraintes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF62C3812C693EE80038D4B0 /* vues-hierarchiques-et-contraintes */ = {
+			isa = PBXGroup;
+			children = (
+				CF62C39D2C693F2B0038D4B0 /* NSControl-autolayout-extension.swift */,
+				CF62C3A02C693F2B0038D4B0 /* NSLayoutConstraint-extensions.swift */,
+				CF62C3912C693F2B0038D4B0 /* NSView-autolayout-extension.swift */,
+				CF62C39F2C693F2B0038D4B0 /* PMAbstractStackView.swift */,
+				CF62C3902C693F2B0038D4B0 /* PMButton.swift */,
+				CF62C39C2C693F2B0038D4B0 /* PMHorizontalLayoutInVerticalCollectionView.swift */,
+				CF62C3952C693F2B0038D4B0 /* PMHorizontalStackView-divider.swift */,
+				CF62C3992C693F2B0038D4B0 /* PMHorizontalStackView-separator.swift */,
+				CF62C39B2C693F2B0038D4B0 /* PMHorizontalStackView.swift */,
+				CF62C39E2C693F2B0038D4B0 /* PMLayoutConstraintPriority.swift */,
+				CF62C3962C693F2B0038D4B0 /* PMMarginSize.swift */,
+				CF62C3932C693F2B0038D4B0 /* PMTableView.swift */,
+				CF62C3972C693F2B0038D4B0 /* PMTextView.swift */,
+				CF62C38F2C693F2B0038D4B0 /* PMTextViewBase.swift */,
+				CF62C3922C693F2B0038D4B0 /* PMVerticalGridView2.swift */,
+				CF62C3982C693F2B0038D4B0 /* PMVerticalLayoutInHorizontalCollectionView.swift */,
+				CF62C3942C693F2B0038D4B0 /* PMVerticalStackView-divider.swift */,
+				CF62C3A12C693F2B0038D4B0 /* PMVerticalStackView-separator.swift */,
+				CF62C39A2C693F2B0038D4B0 /* PMVerticalStackView.swift */,
+				CF62C3A22C693F2B0038D4B0 /* PMViewLayoutSettings.swift */,
+				CF62C3822C693EE80038D4B0 /* AppDelegate.swift */,
+				CF62C3842C693EE90038D4B0 /* Assets.xcassets */,
+				CF62C3862C693EE90038D4B0 /* MainMenu.xib */,
+				CF62C3892C693EE90038D4B0 /* vues_hierarchiques_et_contraintes.entitlements */,
+				CF62C3B72C6940500038D4B0 /* AutoLayoutView.swift */,
+				CF4A8C612C6949D800D898D3 /* AutoLayoutWindow.swift */,
+				CF4A8C632C69504900D898D3 /* AutoLayoutVerticalStackView.swift */,
+				CF4A8C652C69531800D898D3 /* AutoLayoutAbstractStackView.swift */,
+			);
+			path = "vues-hierarchiques-et-contraintes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF62C37E2C693EE80038D4B0 /* vues-hierarchiques-et-contraintes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF62C38C2C693EE90038D4B0 /* Build configuration list for PBXNativeTarget "vues-hierarchiques-et-contraintes" */;
+			buildPhases = (
+				CF62C37B2C693EE80038D4B0 /* Sources */,
+				CF62C37C2C693EE80038D4B0 /* Frameworks */,
+				CF62C37D2C693EE80038D4B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vues-hierarchiques-et-contraintes";
+			productName = "vues-hierarchiques-et-contraintes";
+			productReference = CF62C37F2C693EE80038D4B0 /* vues-hierarchiques-et-contraintes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF62C3772C693EE80038D4B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CF62C37E2C693EE80038D4B0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CF62C37A2C693EE80038D4B0 /* Build configuration list for PBXProject "vues-hierarchiques-et-contraintes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF62C3762C693EE80038D4B0;
+			productRefGroup = CF62C3802C693EE80038D4B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF62C37E2C693EE80038D4B0 /* vues-hierarchiques-et-contraintes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF62C37D2C693EE80038D4B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF62C3852C693EE90038D4B0 /* Assets.xcassets in Resources */,
+				CF62C3882C693EE90038D4B0 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF62C37B2C693EE80038D4B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF62C3AF2C693F2B0038D4B0 /* PMHorizontalStackView.swift in Sources */,
+				CF62C3B82C6940500038D4B0 /* AutoLayoutView.swift in Sources */,
+				CF62C3A42C693F2B0038D4B0 /* PMButton.swift in Sources */,
+				CF62C3B32C693F2B0038D4B0 /* PMAbstractStackView.swift in Sources */,
+				CF62C3AC2C693F2B0038D4B0 /* PMVerticalLayoutInHorizontalCollectionView.swift in Sources */,
+				CF62C3A82C693F2B0038D4B0 /* PMVerticalStackView-divider.swift in Sources */,
+				CF62C3B02C693F2B0038D4B0 /* PMHorizontalLayoutInVerticalCollectionView.swift in Sources */,
+				CF62C3B22C693F2B0038D4B0 /* PMLayoutConstraintPriority.swift in Sources */,
+				CF62C3AB2C693F2B0038D4B0 /* PMTextView.swift in Sources */,
+				CF62C3A92C693F2B0038D4B0 /* PMHorizontalStackView-divider.swift in Sources */,
+				CF4A8C642C69504900D898D3 /* AutoLayoutVerticalStackView.swift in Sources */,
+				CF4A8C622C6949D800D898D3 /* AutoLayoutWindow.swift in Sources */,
+				CF62C3A62C693F2B0038D4B0 /* PMVerticalGridView2.swift in Sources */,
+				CF62C3B42C693F2B0038D4B0 /* NSLayoutConstraint-extensions.swift in Sources */,
+				CF62C3AE2C693F2B0038D4B0 /* PMVerticalStackView.swift in Sources */,
+				CF62C3B52C693F2B0038D4B0 /* PMVerticalStackView-separator.swift in Sources */,
+				CF62C3A72C693F2B0038D4B0 /* PMTableView.swift in Sources */,
+				CF62C3832C693EE80038D4B0 /* AppDelegate.swift in Sources */,
+				CF62C3AA2C693F2B0038D4B0 /* PMMarginSize.swift in Sources */,
+				CF62C3A52C693F2B0038D4B0 /* NSView-autolayout-extension.swift in Sources */,
+				CF4A8C662C69531800D898D3 /* AutoLayoutAbstractStackView.swift in Sources */,
+				CF62C3AD2C693F2B0038D4B0 /* PMHorizontalStackView-separator.swift in Sources */,
+				CF62C3B62C693F2B0038D4B0 /* PMViewLayoutSettings.swift in Sources */,
+				CF62C3A32C693F2B0038D4B0 /* PMTextViewBase.swift in Sources */,
+				CF62C3B12C693F2B0038D4B0 /* NSControl-autolayout-extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF62C3862C693EE90038D4B0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF62C3872C693EE90038D4B0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF62C38A2C693EE90038D4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF62C38B2C693EE90038D4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CF62C38D2C693EE90038D4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vues-hierarchiques-et-contraintes/vues_hierarchiques_et_contraintes.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YW8QY74J2A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.pcmolinaro.pierre.vues-hierarchiques-et-contraintes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CF62C38E2C693EE90038D4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vues-hierarchiques-et-contraintes/vues_hierarchiques_et_contraintes.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YW8QY74J2A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.pcmolinaro.pierre.vues-hierarchiques-et-contraintes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF62C37A2C693EE80038D4B0 /* Build configuration list for PBXProject "vues-hierarchiques-et-contraintes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF62C38A2C693EE90038D4B0 /* Debug */,
+				CF62C38B2C693EE90038D4B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF62C38C2C693EE90038D4B0 /* Build configuration list for PBXNativeTarget "vues-hierarchiques-et-contraintes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF62C38D2C693EE90038D4B0 /* Debug */,
+				CF62C38E2C693EE90038D4B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF62C3772C693EE80038D4B0 /* Project object */;
+}

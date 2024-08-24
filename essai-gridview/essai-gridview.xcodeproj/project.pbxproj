@@ -10,26 +10,23 @@
 		CF1CB87B2AED197C00258319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CB87A2AED197C00258319 /* AppDelegate.swift */; };
 		CF1CB87D2AED197D00258319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1CB87C2AED197D00258319 /* Assets.xcassets */; };
 		CF1CB8802AED197D00258319 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1CB87E2AED197D00258319 /* MainMenu.xib */; };
-		CF2B87922C6901FF00494A84 /* NSControl-autolayout-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B877E2C6901FF00494A84 /* NSControl-autolayout-extension.swift */; };
+		CF2B87922C6901FF00494A84 /* NSControl+autolayout-settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B877E2C6901FF00494A84 /* NSControl+autolayout-settings.swift */; };
 		CF2B87932C6901FF00494A84 /* PMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B877F2C6901FF00494A84 /* PMTextView.swift */; };
-		CF2B87942C6901FF00494A84 /* PMHorizontalStackView-separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87802C6901FF00494A84 /* PMHorizontalStackView-separator.swift */; };
-		CF2B87952C6901FF00494A84 /* PMAbstractStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87812C6901FF00494A84 /* PMAbstractStackView.swift */; };
-		CF2B87962C6901FF00494A84 /* PMVerticalGridView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87822C6901FF00494A84 /* PMVerticalGridView2.swift */; };
-		CF2B87972C6901FF00494A84 /* NSView-autolayout-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87832C6901FF00494A84 /* NSView-autolayout-extension.swift */; };
-		CF2B87982C6901FF00494A84 /* PMLayoutConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87842C6901FF00494A84 /* PMLayoutConstraintPriority.swift */; };
-		CF2B87992C6901FF00494A84 /* NSLayoutConstraint-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87852C6901FF00494A84 /* NSLayoutConstraint-extensions.swift */; };
-		CF2B879A2C6901FF00494A84 /* PMHorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87862C6901FF00494A84 /* PMHorizontalStackView.swift */; };
-		CF2B879B2C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87872C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift */; };
-		CF2B879C2C6901FF00494A84 /* PMVerticalStackView-separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87882C6901FF00494A84 /* PMVerticalStackView-separator.swift */; };
-		CF2B879D2C6901FF00494A84 /* PMVerticalStackView-divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87892C6901FF00494A84 /* PMVerticalStackView-divider.swift */; };
-		CF2B879E2C6901FF00494A84 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878A2C6901FF00494A84 /* PMButton.swift */; };
-		CF2B879F2C6901FF00494A84 /* PMHorizontalStackView-divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878B2C6901FF00494A84 /* PMHorizontalStackView-divider.swift */; };
-		CF2B87A02C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878C2C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift */; };
-		CF2B87A12C6901FF00494A84 /* PMVerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878D2C6901FF00494A84 /* PMVerticalStackView.swift */; };
-		CF2B87A22C6901FF00494A84 /* PMMarginSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878E2C6901FF00494A84 /* PMMarginSize.swift */; };
+		CF2B87942C6901FF00494A84 /* AutoLayoutHorizontalStackView+separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87802C6901FF00494A84 /* AutoLayoutHorizontalStackView+separator.swift */; };
+		CF2B87952C6901FF00494A84 /* ALB_NSStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87812C6901FF00494A84 /* ALB_NSStackView.swift */; };
+		CF2B87962C6901FF00494A84 /* AutoLayoutGridView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87822C6901FF00494A84 /* AutoLayoutGridView2.swift */; };
+		CF2B87972C6901FF00494A84 /* NSView+autolayout-settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87832C6901FF00494A84 /* NSView+autolayout-settings.swift */; };
+		CF2B87982C6901FF00494A84 /* layout-compression-stretching-priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87842C6901FF00494A84 /* layout-compression-stretching-priority.swift */; };
+		CF2B87992C6901FF00494A84 /* NSLayoutConstraint+array-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87852C6901FF00494A84 /* NSLayoutConstraint+array-extension.swift */; };
+		CF2B879A2C6901FF00494A84 /* AutoLayoutHorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87862C6901FF00494A84 /* AutoLayoutHorizontalStackView.swift */; };
+		CF2B879C2C6901FF00494A84 /* AutoLayoutVerticalStackView+separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87882C6901FF00494A84 /* AutoLayoutVerticalStackView+separator.swift */; };
+		CF2B879D2C6901FF00494A84 /* AutoLayoutVerticalStackView+divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87892C6901FF00494A84 /* AutoLayoutVerticalStackView+divider.swift */; };
+		CF2B879E2C6901FF00494A84 /* ALB_NSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878A2C6901FF00494A84 /* ALB_NSButton.swift */; };
+		CF2B879F2C6901FF00494A84 /* AutoLayoutHorizontalStackView+divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878B2C6901FF00494A84 /* AutoLayoutHorizontalStackView+divider.swift */; };
+		CF2B87A12C6901FF00494A84 /* AutoLayoutVerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878D2C6901FF00494A84 /* AutoLayoutVerticalStackView.swift */; };
 		CF2B87A32C6901FF00494A84 /* PMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B878F2C6901FF00494A84 /* PMTableView.swift */; };
-		CF2B87A42C6901FF00494A84 /* PMViewLayoutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87902C6901FF00494A84 /* PMViewLayoutSettings.swift */; };
-		CF2B87A52C6901FF00494A84 /* PMTextViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87912C6901FF00494A84 /* PMTextViewBase.swift */; };
+		CF2B87A42C6901FF00494A84 /* AutoLayoutViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87902C6901FF00494A84 /* AutoLayoutViewSettings.swift */; };
+		CF2B87A52C6901FF00494A84 /* ALB_NSTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B87912C6901FF00494A84 /* ALB_NSTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,26 +35,23 @@
 		CF1CB87C2AED197D00258319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1CB87F2AED197D00258319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CF1CB8812AED197D00258319 /* essai_gridview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = essai_gridview.entitlements; sourceTree = "<group>"; };
-		CF2B877E2C6901FF00494A84 /* NSControl-autolayout-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSControl-autolayout-extension.swift"; sourceTree = "<group>"; };
+		CF2B877E2C6901FF00494A84 /* NSControl+autolayout-settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSControl+autolayout-settings.swift"; sourceTree = "<group>"; };
 		CF2B877F2C6901FF00494A84 /* PMTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextView.swift; sourceTree = "<group>"; };
-		CF2B87802C6901FF00494A84 /* PMHorizontalStackView-separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMHorizontalStackView-separator.swift"; sourceTree = "<group>"; };
-		CF2B87812C6901FF00494A84 /* PMAbstractStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAbstractStackView.swift; sourceTree = "<group>"; };
-		CF2B87822C6901FF00494A84 /* PMVerticalGridView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalGridView2.swift; sourceTree = "<group>"; };
-		CF2B87832C6901FF00494A84 /* NSView-autolayout-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView-autolayout-extension.swift"; sourceTree = "<group>"; };
-		CF2B87842C6901FF00494A84 /* PMLayoutConstraintPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLayoutConstraintPriority.swift; sourceTree = "<group>"; };
-		CF2B87852C6901FF00494A84 /* NSLayoutConstraint-extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint-extensions.swift"; sourceTree = "<group>"; };
-		CF2B87862C6901FF00494A84 /* PMHorizontalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHorizontalStackView.swift; sourceTree = "<group>"; };
-		CF2B87872C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalLayoutInHorizontalCollectionView.swift; sourceTree = "<group>"; };
-		CF2B87882C6901FF00494A84 /* PMVerticalStackView-separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMVerticalStackView-separator.swift"; sourceTree = "<group>"; };
-		CF2B87892C6901FF00494A84 /* PMVerticalStackView-divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMVerticalStackView-divider.swift"; sourceTree = "<group>"; };
-		CF2B878A2C6901FF00494A84 /* PMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
-		CF2B878B2C6901FF00494A84 /* PMHorizontalStackView-divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PMHorizontalStackView-divider.swift"; sourceTree = "<group>"; };
-		CF2B878C2C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHorizontalLayoutInVerticalCollectionView.swift; sourceTree = "<group>"; };
-		CF2B878D2C6901FF00494A84 /* PMVerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMVerticalStackView.swift; sourceTree = "<group>"; };
-		CF2B878E2C6901FF00494A84 /* PMMarginSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMarginSize.swift; sourceTree = "<group>"; };
+		CF2B87802C6901FF00494A84 /* AutoLayoutHorizontalStackView+separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayoutHorizontalStackView+separator.swift"; sourceTree = "<group>"; };
+		CF2B87812C6901FF00494A84 /* ALB_NSStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALB_NSStackView.swift; sourceTree = "<group>"; };
+		CF2B87822C6901FF00494A84 /* AutoLayoutGridView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutGridView2.swift; sourceTree = "<group>"; };
+		CF2B87832C6901FF00494A84 /* NSView+autolayout-settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+autolayout-settings.swift"; sourceTree = "<group>"; };
+		CF2B87842C6901FF00494A84 /* layout-compression-stretching-priority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "layout-compression-stretching-priority.swift"; sourceTree = "<group>"; };
+		CF2B87852C6901FF00494A84 /* NSLayoutConstraint+array-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+array-extension.swift"; sourceTree = "<group>"; };
+		CF2B87862C6901FF00494A84 /* AutoLayoutHorizontalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutHorizontalStackView.swift; sourceTree = "<group>"; };
+		CF2B87882C6901FF00494A84 /* AutoLayoutVerticalStackView+separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayoutVerticalStackView+separator.swift"; sourceTree = "<group>"; };
+		CF2B87892C6901FF00494A84 /* AutoLayoutVerticalStackView+divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayoutVerticalStackView+divider.swift"; sourceTree = "<group>"; };
+		CF2B878A2C6901FF00494A84 /* ALB_NSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALB_NSButton.swift; sourceTree = "<group>"; };
+		CF2B878B2C6901FF00494A84 /* AutoLayoutHorizontalStackView+divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayoutHorizontalStackView+divider.swift"; sourceTree = "<group>"; };
+		CF2B878D2C6901FF00494A84 /* AutoLayoutVerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutVerticalStackView.swift; sourceTree = "<group>"; };
 		CF2B878F2C6901FF00494A84 /* PMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTableView.swift; sourceTree = "<group>"; };
-		CF2B87902C6901FF00494A84 /* PMViewLayoutSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewLayoutSettings.swift; sourceTree = "<group>"; };
-		CF2B87912C6901FF00494A84 /* PMTextViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextViewBase.swift; sourceTree = "<group>"; };
+		CF2B87902C6901FF00494A84 /* AutoLayoutViewSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewSettings.swift; sourceTree = "<group>"; };
+		CF2B87912C6901FF00494A84 /* ALB_NSTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALB_NSTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,30 +84,27 @@
 		CF1CB8792AED197C00258319 /* essai-gridview */ = {
 			isa = PBXGroup;
 			children = (
-				CF2B877E2C6901FF00494A84 /* NSControl-autolayout-extension.swift */,
-				CF2B87852C6901FF00494A84 /* NSLayoutConstraint-extensions.swift */,
-				CF2B87832C6901FF00494A84 /* NSView-autolayout-extension.swift */,
-				CF2B87812C6901FF00494A84 /* PMAbstractStackView.swift */,
-				CF2B878A2C6901FF00494A84 /* PMButton.swift */,
-				CF2B878C2C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift */,
-				CF2B878B2C6901FF00494A84 /* PMHorizontalStackView-divider.swift */,
-				CF2B87802C6901FF00494A84 /* PMHorizontalStackView-separator.swift */,
-				CF2B87862C6901FF00494A84 /* PMHorizontalStackView.swift */,
-				CF2B87842C6901FF00494A84 /* PMLayoutConstraintPriority.swift */,
-				CF2B878E2C6901FF00494A84 /* PMMarginSize.swift */,
-				CF2B878F2C6901FF00494A84 /* PMTableView.swift */,
-				CF2B877F2C6901FF00494A84 /* PMTextView.swift */,
-				CF2B87912C6901FF00494A84 /* PMTextViewBase.swift */,
-				CF2B87822C6901FF00494A84 /* PMVerticalGridView2.swift */,
-				CF2B87872C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift */,
-				CF2B87892C6901FF00494A84 /* PMVerticalStackView-divider.swift */,
-				CF2B87882C6901FF00494A84 /* PMVerticalStackView-separator.swift */,
-				CF2B878D2C6901FF00494A84 /* PMVerticalStackView.swift */,
-				CF2B87902C6901FF00494A84 /* PMViewLayoutSettings.swift */,
+				CF2B878A2C6901FF00494A84 /* ALB_NSButton.swift */,
+				CF2B87812C6901FF00494A84 /* ALB_NSStackView.swift */,
+				CF2B87912C6901FF00494A84 /* ALB_NSTextView.swift */,
 				CF1CB87A2AED197C00258319 /* AppDelegate.swift */,
 				CF1CB87C2AED197D00258319 /* Assets.xcassets */,
+				CF2B87822C6901FF00494A84 /* AutoLayoutGridView2.swift */,
+				CF2B87862C6901FF00494A84 /* AutoLayoutHorizontalStackView.swift */,
+				CF2B878B2C6901FF00494A84 /* AutoLayoutHorizontalStackView+divider.swift */,
+				CF2B87802C6901FF00494A84 /* AutoLayoutHorizontalStackView+separator.swift */,
+				CF2B878D2C6901FF00494A84 /* AutoLayoutVerticalStackView.swift */,
+				CF2B87892C6901FF00494A84 /* AutoLayoutVerticalStackView+divider.swift */,
+				CF2B87882C6901FF00494A84 /* AutoLayoutVerticalStackView+separator.swift */,
+				CF2B87902C6901FF00494A84 /* AutoLayoutViewSettings.swift */,
 				CF1CB8812AED197D00258319 /* essai_gridview.entitlements */,
+				CF2B87842C6901FF00494A84 /* layout-compression-stretching-priority.swift */,
 				CF1CB87E2AED197D00258319 /* MainMenu.xib */,
+				CF2B877E2C6901FF00494A84 /* NSControl+autolayout-settings.swift */,
+				CF2B87852C6901FF00494A84 /* NSLayoutConstraint+array-extension.swift */,
+				CF2B87832C6901FF00494A84 /* NSView+autolayout-settings.swift */,
+				CF2B878F2C6901FF00494A84 /* PMTableView.swift */,
+				CF2B877F2C6901FF00494A84 /* PMTextView.swift */,
 			);
 			path = "essai-gridview";
 			sourceTree = "<group>";
@@ -193,26 +184,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF1CB87B2AED197C00258319 /* AppDelegate.swift in Sources */,
-				CF2B879B2C6901FF00494A84 /* PMVerticalLayoutInHorizontalCollectionView.swift in Sources */,
-				CF2B87922C6901FF00494A84 /* NSControl-autolayout-extension.swift in Sources */,
-				CF2B87A12C6901FF00494A84 /* PMVerticalStackView.swift in Sources */,
-				CF2B87A42C6901FF00494A84 /* PMViewLayoutSettings.swift in Sources */,
-				CF2B87982C6901FF00494A84 /* PMLayoutConstraintPriority.swift in Sources */,
-				CF2B87942C6901FF00494A84 /* PMHorizontalStackView-separator.swift in Sources */,
-				CF2B879D2C6901FF00494A84 /* PMVerticalStackView-divider.swift in Sources */,
+				CF2B87922C6901FF00494A84 /* NSControl+autolayout-settings.swift in Sources */,
+				CF2B87A12C6901FF00494A84 /* AutoLayoutVerticalStackView.swift in Sources */,
+				CF2B87A42C6901FF00494A84 /* AutoLayoutViewSettings.swift in Sources */,
+				CF2B87982C6901FF00494A84 /* layout-compression-stretching-priority.swift in Sources */,
+				CF2B87942C6901FF00494A84 /* AutoLayoutHorizontalStackView+separator.swift in Sources */,
+				CF2B879D2C6901FF00494A84 /* AutoLayoutVerticalStackView+divider.swift in Sources */,
 				CF2B87A32C6901FF00494A84 /* PMTableView.swift in Sources */,
-				CF2B879A2C6901FF00494A84 /* PMHorizontalStackView.swift in Sources */,
-				CF2B87952C6901FF00494A84 /* PMAbstractStackView.swift in Sources */,
-				CF2B87A02C6901FF00494A84 /* PMHorizontalLayoutInVerticalCollectionView.swift in Sources */,
-				CF2B87962C6901FF00494A84 /* PMVerticalGridView2.swift in Sources */,
-				CF2B879C2C6901FF00494A84 /* PMVerticalStackView-separator.swift in Sources */,
-				CF2B87972C6901FF00494A84 /* NSView-autolayout-extension.swift in Sources */,
+				CF2B879A2C6901FF00494A84 /* AutoLayoutHorizontalStackView.swift in Sources */,
+				CF2B87952C6901FF00494A84 /* ALB_NSStackView.swift in Sources */,
+				CF2B87962C6901FF00494A84 /* AutoLayoutGridView2.swift in Sources */,
+				CF2B879C2C6901FF00494A84 /* AutoLayoutVerticalStackView+separator.swift in Sources */,
+				CF2B87972C6901FF00494A84 /* NSView+autolayout-settings.swift in Sources */,
 				CF2B87932C6901FF00494A84 /* PMTextView.swift in Sources */,
-				CF2B879F2C6901FF00494A84 /* PMHorizontalStackView-divider.swift in Sources */,
-				CF2B87A22C6901FF00494A84 /* PMMarginSize.swift in Sources */,
-				CF2B879E2C6901FF00494A84 /* PMButton.swift in Sources */,
-				CF2B87992C6901FF00494A84 /* NSLayoutConstraint-extensions.swift in Sources */,
-				CF2B87A52C6901FF00494A84 /* PMTextViewBase.swift in Sources */,
+				CF2B879F2C6901FF00494A84 /* AutoLayoutHorizontalStackView+divider.swift in Sources */,
+				CF2B879E2C6901FF00494A84 /* ALB_NSButton.swift in Sources */,
+				CF2B87992C6901FF00494A84 /* NSLayoutConstraint+array-extension.swift in Sources */,
+				CF2B87A52C6901FF00494A84 /* ALB_NSTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

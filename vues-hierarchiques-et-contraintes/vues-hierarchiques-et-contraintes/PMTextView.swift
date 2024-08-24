@@ -14,11 +14,11 @@ final class PMTextView : NSScrollView {
 
   //································································································
 
-  fileprivate let mTextView = ALB_NSTextView ()
+  fileprivate let mTextView = PMTextViewBase ()
 
   //································································································
 
-  @MainActor init () {
+  init () {
     super.init (frame: .zero)
     self.pmConfigureForAutolayout (hStretchingResistance: .high, vStrechingResistance: .high)
 

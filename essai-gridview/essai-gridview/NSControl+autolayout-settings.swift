@@ -1,8 +1,8 @@
 //
-//  PMTableView.swift
+//  NSControl-autolayout-extension.swift
 //  essai-gridview
 //
-//  Created by Pierre Molinaro on 02/11/2023.
+//  Created by Pierre Molinaro on 01/11/2023.
 //
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
@@ -10,43 +10,20 @@ import AppKit
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-class PMTableView : NSTableView {
+extension NSControl {
 
   //--------------------------------------------------------------------------------------------------------------------
 
-  init (size inSize : NSControl.ControlSize) {
-    super.init (frame: .zero)
-    self.pmConfigureForAutolayout (hStretchingResistance: .low, vStrechingResistance: .low)
-    self.controlSize = inSize
-    self.font = NSFont.systemFont (ofSize: NSFont.systemFontSize (for: self.controlSize))
-
-    self.addTableColumn (NSTableColumn ())
-    self.addTableColumn (NSTableColumn ())
-  }
-
-  //--------------------------------------------------------------------------------------------------------------------
-
-  required init? (coder inCoder : NSCoder) {
-    fatalError ("init(coder:) has not been implemented")
-  }
-
-  //--------------------------------------------------------------------------------------------------------------------
-
-  override var intrinsicContentSize : NSSize { NSSize (width: 100, height: 100) }
-
-  //--------------------------------------------------------------------------------------------------------------------
-
-  private let mDefaultControlLayoutSettings = AutoLayoutViewSettings (
+  private static let mDefaultControlLayoutSettings = AutoLayoutViewSettings (
     vLayoutInHorizontalContainer: .lastBaseline,
     hLayoutInVerticalContainer: .fill
   )
 
   //--------------------------------------------------------------------------------------------------------------------
 
-  override var pmLayoutSettings : AutoLayoutViewSettings { self.mDefaultControlLayoutSettings }
+  override var pmLayoutSettings : AutoLayoutViewSettings { Self.mDefaultControlLayoutSettings }
 
   //--------------------------------------------------------------------------------------------------------------------
-
 }
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————

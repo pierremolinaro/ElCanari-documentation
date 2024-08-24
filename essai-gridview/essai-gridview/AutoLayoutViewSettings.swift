@@ -1,8 +1,8 @@
 //
-//  PMTableView.swift
+//  AutoLayoutViewSettings.swift
 //  essai-gridview
 //
-//  Created by Pierre Molinaro on 02/11/2023.
+//  Created by Pierre Molinaro on 01/11/2023.
 //
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
@@ -10,40 +10,20 @@ import AppKit
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-class PMTableView : NSTableView {
+class AutoLayoutViewSettings : NSObject {
 
   //--------------------------------------------------------------------------------------------------------------------
 
-  init (size inSize : NSControl.ControlSize) {
-    super.init (frame: .zero)
-    self.pmConfigureForAutolayout (hStretchingResistance: .low, vStrechingResistance: .low)
-    self.controlSize = inSize
-    self.font = NSFont.systemFont (ofSize: NSFont.systemFontSize (for: self.controlSize))
+  let hLayoutInVerticalContainer : ALB_NSStackView.HorizontalLayoutInVerticalCollectionView
+  let vLayoutInHorizontalContainer : ALB_NSStackView.VerticalLayoutInHorizontalCollectionView
 
-    self.addTableColumn (NSTableColumn ())
-    self.addTableColumn (NSTableColumn ())
+  //--------------------------------------------------------------------------------------------------------------------
+
+  init (vLayoutInHorizontalContainer inVerticalDisposition : ALB_NSStackView.VerticalLayoutInHorizontalCollectionView,
+        hLayoutInVerticalContainer inHorizontalDisposition : ALB_NSStackView.HorizontalLayoutInVerticalCollectionView) {
+    self.hLayoutInVerticalContainer = inHorizontalDisposition
+    self.vLayoutInHorizontalContainer = inVerticalDisposition
   }
-
-  //--------------------------------------------------------------------------------------------------------------------
-
-  required init? (coder inCoder : NSCoder) {
-    fatalError ("init(coder:) has not been implemented")
-  }
-
-  //--------------------------------------------------------------------------------------------------------------------
-
-  override var intrinsicContentSize : NSSize { NSSize (width: 100, height: 100) }
-
-  //--------------------------------------------------------------------------------------------------------------------
-
-  private let mDefaultControlLayoutSettings = AutoLayoutViewSettings (
-    vLayoutInHorizontalContainer: .lastBaseline,
-    hLayoutInVerticalContainer: .fill
-  )
-
-  //--------------------------------------------------------------------------------------------------------------------
-
-  override var pmLayoutSettings : AutoLayoutViewSettings { self.mDefaultControlLayoutSettings }
 
   //--------------------------------------------------------------------------------------------------------------------
 
